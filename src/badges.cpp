@@ -3,7 +3,7 @@
 	[[eosio::action]] void unicore::setbadge(uint64_t id, eosio::name host, eosio::string caption, eosio::string description, eosio::string iurl, eosio::string pic, uint64_t total, uint64_t power){
 		require_auth(host);
 		
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
 		
@@ -93,7 +93,7 @@
 	 */
 	void unicore::giftbadge_action(eosio::name host, eosio::name to, uint64_t badge_id, eosio::string comment, bool netted = false, bool own = true, uint64_t goal_id = 0, uint64_t task_id = 0){
 		
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 
 		eosio::check(acc != accounts.end(), "Host is not found");
@@ -165,7 +165,7 @@
 	[[eosio::action]] void unicore::backbadge(eosio::name host, eosio::name from, uint64_t usbadge_id, eosio::string comment) {
 
 		require_auth(host);
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
 		badge_index badges(_me, host.value);

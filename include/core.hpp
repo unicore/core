@@ -840,13 +840,16 @@ struct [[eosio::table, eosio::contract("unicore")]] refstat {
     struct [[eosio::table, eosio::contract("unicore")]] coredhistory{
         uint64_t id;
         uint64_t pool_id;
+        uint64_t pool_num;
+        uint64_t cycle_num;
+        std::string color;
         eosio::name username;
         std::string action;
         std::string message;
         eosio::asset amount;
         uint64_t primary_key() const {return id;}
 
-        EOSLIB_SERIALIZE(coredhistory, (id)(pool_id)(username)(action)(message)(amount));
+        EOSLIB_SERIALIZE(coredhistory, (id)(pool_id)(pool_num)(cycle_num)(color)(username)(action)(message)(amount));
     
     };
     

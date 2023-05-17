@@ -170,7 +170,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
     
     auto payer = has_auth(creator) ? creator : host;
 
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
 
@@ -375,7 +375,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	[[eosio::action]] void unicore::fundtask(eosio::name host, uint64_t task_id, eosio::asset amount, eosio::string comment){
 		require_auth(host);
 
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
 		
@@ -411,7 +411,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	 * @param[in]  op    The operation
 	 */
 	[[eosio::action]] void unicore::deltask(eosio::name host, uint64_t task_id){
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found ");
 
@@ -453,7 +453,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	 */
 	[[eosio::action]] void unicore::setpgoal(eosio::name host, uint64_t task_id, uint64_t goal_id){
 		require_auth(host);
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
 
@@ -483,7 +483,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	 */
 	[[eosio::action]] void unicore::setdoer(eosio::name host, uint64_t task_id, eosio::name doer){
 		require_auth(host);
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
 
@@ -520,7 +520,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 		eosio::check(has_auth(doer) || has_auth(host), "missing required authority");
 		eosio::name payer = has_auth(doer) ? doer : host;
 
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
 
@@ -570,7 +570,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	 */
 	[[eosio::action]] void unicore::jointask(eosio::name host, uint64_t task_id, eosio::name doer, std::string comment){
 		require_auth(doer);
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
 
@@ -619,7 +619,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	 */
 	[[eosio::action]] void unicore::settaskmeta(eosio::name host, uint64_t task_id, std::string meta){
 		require_auth(host);
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
 
@@ -645,7 +645,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	 */
 	[[eosio::action]] void unicore::setpriority(eosio::name host, uint64_t task_id, uint64_t priority){
 		
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
 		require_auth(acc -> architect);
@@ -670,7 +670,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	 */
 	[[eosio::action]] void unicore::validate(eosio::name host, uint64_t task_id, uint64_t goal_id, eosio::name doer){
 		require_auth(host);
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
 
@@ -708,7 +708,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	 */
 	[[eosio::action]] void unicore::tactivate(eosio::name host, uint64_t task_id){
 		require_auth(host);
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
 
@@ -733,7 +733,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	 */
 	[[eosio::action]] void unicore::tdeactivate(eosio::name host, uint64_t task_id){
 		require_auth(host);
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
 
@@ -759,7 +759,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	 */
 	[[eosio::action]] void unicore::tcomplete(eosio::name host, uint64_t task_id){
 		require_auth(host);
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
 
@@ -788,7 +788,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	[[eosio::action]] void unicore::setreport(eosio::name host, eosio::name username, uint64_t task_id, eosio::string data, uint64_t duration_secs, eosio::asset asset_per_hour){
 		
 		require_auth(username);
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		partners2_index users(_partners, _partners.value);
 
 		auto acc = accounts.find(host.value);
@@ -922,7 +922,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	[[eosio::action]] void unicore::editreport(eosio::name host, eosio::name username, uint64_t report_id, eosio::string data){
 		// require_auth(voter);
 		require_auth(username);
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
@@ -954,7 +954,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 			require_auth(host);
 		}
 		
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
@@ -981,7 +981,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	 */
 	[[eosio::action]] void unicore::approver(eosio::name host, uint64_t report_id, eosio::string comment){
 		
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
@@ -1024,11 +1024,11 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 			print("bonus_power: ", bonus_power);
 			print("amount for emit: ", amount);
 
-			action(
-	        permission_level{ _me, "active"_n },
-	        _me, "emitpower"_n,
-	        std::make_tuple( host , report->username, user_power, false) 
-	    ).send();
+			// action(
+	    //     permission_level{ _me, "active"_n },
+	    //     _me, "emitpower"_n,
+	    //     std::make_tuple( host , report->username, user_power, false) 
+	    // ).send();
 
 			//TODO ?
 			// action(
@@ -1206,7 +1206,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	 */
 	[[eosio::action]] void unicore::disapprover(eosio::name host, uint64_t report_id, eosio::string comment){
 		require_auth(host);
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
@@ -1232,7 +1232,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	 */
 	[[eosio::action]] void unicore::withdrawrepo(eosio::name username, eosio::name host, uint64_t report_id) {
 		require_auth(username);
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
@@ -1268,12 +1268,12 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 			};
 		};
 
-		if (report -> power_balance > 0)
-			action(
-	        permission_level{ _me, "active"_n },
-	        _me, "emitpower"_n,
-	        std::make_tuple( host , username, report -> power_balance, false) 
-	    ).send();
+		// if (report -> power_balance > 0)
+		// 	action(
+	  //       permission_level{ _me, "active"_n },
+	  //       _me, "emitpower"_n,
+	  //       std::make_tuple( host , username, report -> power_balance, false) 
+	  //   ).send();
 
 
 		reports.modify(report, username, [&](auto &r){
@@ -1295,7 +1295,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 	 */
 	[[eosio::action]] void unicore::distrepo(eosio::name username, eosio::name host, uint64_t report_id) {
 		require_auth(username);
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");

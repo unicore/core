@@ -34,7 +34,7 @@ using namespace eosio;
      */
     [[eosio::action]] void unicore::setarch(name host, name architect){
         
-        account_index accounts(_me, host.value);
+        account_index accounts(_me, _me.value);
         auto acc = accounts.find(host.value);
         eosio::check(acc != accounts.end(), "Host is not found");
         
@@ -55,7 +55,7 @@ using namespace eosio;
     [[eosio::action]] void unicore::compensator(eosio::name host, uint64_t compensator_percent){
         require_auth("eosio"_n);
 
-        // account_index accounts(_me, host.value);
+        // account_index accounts(_me, _me.value);
         // auto acc = accounts.find(host.value);
         // eosio::check(acc != accounts.end(), "Host is not found");
         
@@ -94,7 +94,7 @@ using namespace eosio;
     [[eosio::action]] void unicore::addvac(uint64_t id, bool is_edit, eosio::name creator, eosio::name host, eosio::name limit_type, eosio::asset income_limit, uint64_t weight, std::string title, std::string descriptor) {
         require_auth(creator);
 
-        account_index accounts(_me, host.value);
+        account_index accounts(_me, _me.value);
         vacs_index vacs(_me, host.value);
 
         auto acc = accounts.find(host.value);
@@ -176,7 +176,7 @@ using namespace eosio;
         require_auth(host);
         vacs_index vacs(_me, host.value);
 
-        account_index accounts(_me, host.value);
+        account_index accounts(_me, _me.value);
         auto acc = accounts.find(host.value);
         eosio::check(acc != accounts.end(), "Host is not found");
         
@@ -319,7 +319,7 @@ using namespace eosio;
         auto corehost = coreahosts.find(host.value);
 
         eosio::check(corehost == coreahosts.end(), "Core host is already found");
-        account_index accounts(_me, host.value);
+        account_index accounts(_me, _me.value);
         auto acc = accounts.find(host.value);
         
         eosio::check(acc != accounts.end(), "Host is not found");
@@ -437,7 +437,7 @@ using namespace eosio;
      */
     [[eosio::action]] void unicore::setlevels(eosio::name host, std::vector<uint64_t> levels){
         require_auth(host);
-        account_index accounts(_me, host.value);
+        account_index accounts(_me, _me.value);
         
         auto acc = accounts.find(host.value);
         eosio::check(acc != accounts.end(), "Account is not a host");
@@ -464,7 +464,7 @@ using namespace eosio;
     }
 
     [[eosio::action]] void unicore::setconsensus(eosio::name host, uint64_t consensus_percent, bool voting_only_up){
-        account_index accounts(_me, host.value);
+        account_index accounts(_me, _me.value);
         
         auto acc = accounts.find(host.value);
         eosio::check(acc != accounts.end(), "Account is not a host");
@@ -527,7 +527,7 @@ using namespace eosio;
         eosio::check(level_count <= _MAX_LEVELS, "Exceed the maximum number of levels");
         //END eosio::check
 
-        account_index accounts(_me, username.value);
+        account_index accounts(_me, _me.value);
         
         auto itr = accounts.find(username.value);
         eosio::check(itr == accounts.end(), "Account is already upgraded to Host");
@@ -647,7 +647,7 @@ using namespace eosio;
      * @param[in]  op    The operation
      */
    [[eosio::action]] void unicore::cchildhost(eosio::name parent_host, eosio::name chost) {
-    	account_index hosts(_me, parent_host.value);
+    	account_index hosts(_me, _me.value);
     	auto acc = hosts.find(parent_host.value);
     	eosio::check(acc != hosts.end(), "Parent host is not exist");
     	require_auth(parent_host);
@@ -690,7 +690,7 @@ using namespace eosio;
      * @param[in]  amount    The amount
      */
     void unicore::pay_for_upgrade(eosio::name username, eosio::asset amount, eosio::name code){
-    	account_index hosts(_me, username.value);
+    	account_index hosts(_me, _me.value);
 
     	auto host = hosts.find(username.value);
     	eosio::check(host != hosts.end(), "Host is not founded");
@@ -721,7 +721,7 @@ using namespace eosio;
     [[eosio::action]] void unicore::settiming(eosio::name host, uint64_t pool_timeout, uint64_t priority_seconds) {
         require_auth (host);
 
-        account_index hosts(_me, host.value);
+        account_index hosts(_me, _me.value);
         auto acc = hosts.find(host.value);
         
         eosio::check((priority_seconds <= 315400000), "Pool Priority Seconds must be greater or equal then 0 sec and less then 315400000 sec");
@@ -742,7 +742,7 @@ using namespace eosio;
     [[eosio::action]] void unicore::setflows(eosio::name host, uint64_t ref_percent, uint64_t dacs_percent, uint64_t cfund_percent, uint64_t hfund_percent){
         require_auth (host);        
         
-        account_index hosts(_me, host.value);
+        account_index hosts(_me, _me.value);
         auto acc = hosts.find(host.value);
         
         eosio::check(ref_percent + dacs_percent + cfund_percent + hfund_percent == HUNDR_PERCENT, "All payment percents should equal 100 * ONE_PERCENT (1000000)");
@@ -764,7 +764,7 @@ using namespace eosio;
      */
 
     [[eosio::action]] void unicore::edithost(eosio::name architect, eosio::name host, eosio::name platform, eosio::string title, eosio::string purpose, eosio::string manifest, eosio::name power_market_id, eosio::string meta){
-        account_index accs(_me, host.value);
+        account_index accs(_me, _me.value);
         auto acc = accs.find(host.value);
         
         eosio::check(has_auth(host) || has_auth(acc -> architect), "missing required authority");

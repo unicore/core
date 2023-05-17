@@ -104,7 +104,7 @@ void unicore::sub_balance(eosio::name username, eosio::asset quantity, eosio::na
     }
 
     void unicore::settype_static(eosio::name host, eosio::name type){
-        account_index accounts(_me, host.value);
+        account_index accounts(_me, _me.value);
         auto acc = accounts.find(host.value);
         eosio::check(acc != accounts.end(), "Host is not found");
         
@@ -140,7 +140,7 @@ void unicore::sub_balance(eosio::name username, eosio::asset quantity, eosio::na
         emission_index emis(_me, host.value);
         auto emi = emis.find(host.value);
         eosio::check(emi != emis.end(), "Emission pool for current host is not found");
-        account_index accounts(_me, host.value);
+        account_index accounts(_me, _me.value);
         auto acc = accounts.find(host.value);
         eosio::check(acc != accounts.end(), "Host is not found");
 
@@ -171,7 +171,7 @@ void unicore::sub_balance(eosio::name username, eosio::asset quantity, eosio::na
 
     
     eosio::asset unicore::emit(eosio::name host, eosio::asset host_income, eosio::asset max_income){
-        account_index accounts(_me, host.value);
+        account_index accounts(_me, _me.value);
         auto acc = accounts.find(host.value);
         auto root_symbol = acc->get_root_symbol();
 
@@ -505,7 +505,7 @@ void unicore::sub_balance(eosio::name username, eosio::asset quantity, eosio::na
      pool_index pools(_me, host.value);
      balance_index balances(_me, host.value);
      cycle_index cycles(_me, host.value);
-     account_index accounts(_me, host.value);
+     account_index accounts(_me, _me.value);
 
 
      auto acc = accounts.find(host.value);
@@ -585,7 +585,7 @@ void unicore::sub_balance(eosio::name username, eosio::asset quantity, eosio::na
 
 [[eosio::action]] void unicore::exittail(eosio::name username, eosio::name host, uint64_t id) {
     require_auth(username);
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     tail_index tails(_me, host.value);
     
@@ -606,7 +606,7 @@ void unicore::sub_balance(eosio::name username, eosio::asset quantity, eosio::na
 };
 
 void unicore::cut_tail(uint64_t current_pool_id, eosio::name host) {
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     eosio::name main_host = acc->get_ahost();
     auto root_symbol = acc->get_root_symbol();
@@ -697,7 +697,7 @@ void unicore::cut_tail(uint64_t current_pool_id, eosio::name host) {
  * @param[in]  main_host  The main host - указатель на имя аккаунта второстепенного хоста, содержающего измененные параметры вращения  (если такой есть)
  */
 void improve_params_of_new_cycle (eosio::name host, eosio::name main_host){
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     auto root_symbol = acc->get_root_symbol();
     
@@ -714,11 +714,15 @@ void improve_params_of_new_cycle (eosio::name host, eosio::name main_host){
         c.emitted = asset(0, root_symbol);   
     });
 
+    spiral_index spiral(_me, main_host.value);
+    auto sp = spiral.find(0);
+
     accounts.modify(acc, _me, [&](auto &dp){
         dp.current_pool_id  = last_cycle->finish_at_global_pool_id + 1;
         dp.cycle_start_id = dp.current_pool_id;
         dp.current_cycle_num = acc->current_cycle_num + 1;
         dp.current_pool_num  = 1;
+        dp.sale_shift = sp -> base_rate;
         // dp.priority_flag = true;       
     });
 }
@@ -738,7 +742,7 @@ void emplace_first_pools(eosio::name parent_host, eosio::name main_host, eosio::
     eosio::check(sp != spiral.end(), "Protocol is not found. Set parameters at first");
     sincome_index sincome(_me, parent_host.value);
     print("on emplace");
-    account_index accounts(_me, parent_host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(parent_host.value);
     cycle_index cycles(_me, parent_host.value);
     pool_index pools(_me, parent_host.value);
@@ -889,7 +893,7 @@ void unicore::change_bw_trade_graph(eosio::name host, uint64_t pool_id, uint64_t
  * @param[in]  host  The host
  */
 void start_new_cycle ( eosio::name host ) {
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     cycle_index cycles(_me, host.value);
             
     auto acc = accounts.find(host.value);
@@ -950,7 +954,7 @@ void start_new_cycle ( eosio::name host ) {
  * @param[in]  host  The host
  */
 void next_pool( eosio::name host) {
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     
     auto acc = accounts.find(host.value);
     auto main_host = acc->get_ahost();
@@ -1071,8 +1075,8 @@ void next_pool( eosio::name host) {
         accounts.modify(acc, _me, [&](auto &a){
            a.current_pool_num = pool -> pool_num + 1;
            a.current_pool_id  = pool -> id + 1;
-           a.sale_shift = rate -> buy_rate;// / sp -> base_rate;
-           print("SALE_SHIFT: ", a.sale_shift);
+           // a.sale_shift = rate -> buy_rate;// / sp -> base_rate;
+           // print("SALE_SHIFT: ", a.sale_shift);
            // a.priority_flag = false;     
         });
 
@@ -1197,7 +1201,7 @@ void next_pool( eosio::name host) {
     //     rates.erase(rate);  
     //   };
 
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     // if (acc -> total_shares < sp -> quants_precision){
         // accounts.modify(acc, _me, [&](auto &a){
@@ -1420,7 +1424,7 @@ void next_pool( eosio::name host) {
 [[eosio::action]] void unicore::setstartdate(eosio::name host, eosio::time_point_sec start_at){
     require_auth(host);
 
-    account_index hosts(_me, host.value);
+    account_index hosts(_me, _me.value);
     pool_index pools(_me, host.value);
 
     auto acc = hosts.find(host.value);
@@ -1455,7 +1459,7 @@ void next_pool( eosio::name host) {
 
     auto main_host = host;
 
-    account_index accounts(_me, main_host.value);
+    account_index accounts(_me, _me.value);
     gpercents_index gpercents(_me, _me.value);
     auto syspercent = gpercents.find("system"_n.value);
     eosio::check(syspercent != gpercents.end(), "Contract is not active");
@@ -1561,7 +1565,7 @@ void next_pool( eosio::name host) {
     else 
         require_auth(chost);
 
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto main_host = host;
     auto account = accounts.find(main_host.value);
 
@@ -1745,7 +1749,7 @@ void unicore::deposit ( eosio::name username, eosio::name host, eosio::asset amo
     print("on deposit");
     pool_index pools(_me, host.value);
 
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     
     eosio::name main_host = acc->get_ahost();
@@ -1812,10 +1816,16 @@ void unicore::add_coredhistory(eosio::name host, eosio::name username, uint64_t 
     auto coredhist_end = coredhistory.rbegin();
     eosio::name payer = action == "deposit" || "convert" ? _me : username;
 
+    pool_index pools(_me, host.value);
+    auto pool = pools.find(pool_id);
+
     coredhistory.emplace(payer, [&](auto &ch){
         ch.id = coredhistory.available_primary_key();
         ch.username = username;
         ch.pool_id = pool_id;
+        ch.pool_num = pool -> pool_num;
+        ch.cycle_num = pool -> cycle_num;
+        ch.color = pool -> color;
         ch.amount = amount;
         ch.action = action;
         ch.message = message;
@@ -1833,7 +1843,7 @@ void unicore::add_coredhistory(eosio::name host, eosio::name username, uint64_t 
 
 void unicore::refresh_state(eosio::name host){
 
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     auto root_symbol = acc->get_root_symbol();
 
@@ -1944,7 +1954,7 @@ void unicore::refresh_state(eosio::name host){
 
     eosio::check(has_auth(username) || has_auth(_self), "missing required authority");
 
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     eosio::check(acc != accounts.end(), "host is not found");
     
@@ -1993,7 +2003,7 @@ void unicore::refresh_state(eosio::name host){
 
     eosio::check(has_auth(username) || has_auth(_self), "missing required authority");
 
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     eosio::check(acc != accounts.end(), "host is not found");
     // eosio::name main_host = acc->get_ahost();
@@ -2032,7 +2042,7 @@ void unicore::refresh_state(eosio::name host){
 void unicore::buybalance(eosio::name buyer, eosio::name host, uint64_t balance_id, eosio::asset amount, eosio::name contract){
     require_auth(buyer);
 
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     eosio::check(acc != accounts.end(), "host is not found");
     eosio::name main_host = acc->get_ahost();
@@ -2189,7 +2199,7 @@ void unicore::buybalance(eosio::name buyer, eosio::name host, uint64_t balance_i
 
 void unicore::fill_pool(eosio::name username, eosio::name host, uint64_t quants, eosio::asset amount, uint64_t filled_pool_id){
     std::vector<eosio::asset> forecasts;
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     
     auto acc = accounts.find(host.value);
     auto main_host = acc -> get_ahost();
@@ -2253,6 +2263,7 @@ void unicore::fill_pool(eosio::name username, eosio::name host, uint64_t quants,
     
     unicore::change_bw_trade_graph(host, filled_pool_id, pool->cycle_num, pool->pool_num, ratem1->buy_rate, ratep1->buy_rate, total_quants, remain_quants, pool->color);
     
+    // double convert_rate = (double)sp -> base_rate; //(double)ratem1 -> buy_rate;// / (double)sp -> base_rate;
     double convert_rate = (double)ratem1 -> buy_rate;// / (double)sp -> base_rate;
     
     if (acc -> sale_shift == 0 || acc -> sale_shift < ratem1 -> buy_rate) {
@@ -2300,7 +2311,6 @@ void unicore::fill_pool(eosio::name username, eosio::name host, uint64_t quants,
         double convert_percent = (double)b.if_convert.amount / (double)sp->quants_precision / ((double)ratem1 -> total_in_box.amount - (double)pool -> remain.amount) * (double)HUNDR_PERCENT;
         b.convert_percent = uint64_t(ONE_PERCENT * convert_percent);
 
-
         double root_percent = (double)b.compensator_amount.amount  / (double)b.purchase_amount.amount * (double)HUNDR_PERCENT - (double)HUNDR_PERCENT; 
         b.root_percent = uint64_t(root_percent);
 
@@ -2330,7 +2340,6 @@ void unicore::fill_pool(eosio::name username, eosio::name host, uint64_t quants,
  * @param[in]  op    The operation
  */
 
-
 [[eosio::action]] void unicore::refreshbal(eosio::name username, eosio::name host, uint64_t balance_id, uint64_t partrefresh){
     eosio::check(has_auth(username) || has_auth("refresher"_n) || has_auth("eosio"_n), "missing required authority");
     
@@ -2348,7 +2357,7 @@ void unicore::fill_pool(eosio::name username, eosio::name host, uint64_t quants,
     
     auto chost = bal -> get_ahost();
     auto parent_host = bal -> host;
-    account_index accounts(_me, parent_host.value);
+    account_index accounts(_me, _me.value);
     
     auto acc = accounts.find(parent_host.value);
 
@@ -2694,7 +2703,7 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
     
     //TODO -> cycle / recursion
 
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     auto main_host = acc->get_ahost();
 
@@ -2896,7 +2905,7 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
 
     eosio::check(dac != dacs.end(), "DAC is not found");
     
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
 
     auto root_symbol = acc->get_root_symbol();
@@ -2936,7 +2945,7 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
 
 [[eosio::action]] void unicore::adddac(eosio::name username, eosio::name host, uint64_t weight, eosio::name limit_type, eosio::asset income_limit, std::string title, std::string descriptor) {
     
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     dacs_index dacs(_me, host.value);
 
     eosio::check( is_account( username ), "user account does not exist");
@@ -2989,7 +2998,7 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
 
 [[eosio::action]] void unicore::rmdac(eosio::name username, eosio::name host) {
     require_auth(host);
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     dacs_index dacs(_me, host.value);
 
     auto acc = accounts.find(host.value);
@@ -3046,7 +3055,7 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
 
     // require_auth(username);
     eosio::check(has_auth(username) || has_auth(_self), "missing required authority");
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     eosio::check(acc != accounts.end(), "host is not found");
     // eosio::name main_host = acc->get_ahost();
@@ -3114,7 +3123,7 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
     // require_auth(username);
     eosio::check(has_auth(username) || has_auth(_self), "missing required authority");
 
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     eosio::check(acc != accounts.end(), "host is not found");
     // eosio::name main_host = acc->get_ahost();
@@ -3163,6 +3172,7 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
     eosio::check(bal -> status == "process"_n, "This balance stay on sale and can be withdrawed by this method. Use withdrawsold method");
     eosio::check(bal -> available.amount > 0, "Cannot withdraw a zero balance. Please, write to help-center for resolve it");
 
+    eosio::check(bal -> withdrawed == false, "Balance is already withdrawed");
 
     uint64_t pools_in_cycle = cycle -> finish_at_global_pool_id - cycle -> start_at_global_pool_id + 1;
     /**
@@ -3253,11 +3263,11 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
     
         uint64_t quants_from_reserved;
         
-        action(
-            permission_level{ _me, "active"_n },
-            _me, "emitpower"_n,
-            std::make_tuple( host , username, -bal->if_convert.amount, false) 
-        ).send();
+        // action(
+        //     permission_level{ _me, "active"_n },
+        //     _me, "emitpower"_n,
+        //     std::make_tuple( host , username, -bal->if_convert.amount, false) 
+        // ).send();
         
         if (bal -> win == true) {
 
@@ -3297,7 +3307,9 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
             
             unicore::add_user_stat("withdraw"_n, username, acc->root_token_contract, bal->purchase_amount, bal->available);
             unicore::add_host_stat("withdraw"_n, username, host, bal->purchase_amount);
-        
+            
+            
+
         } else {
 
             pools.modify(last_pool, _me, [&](auto &p){
@@ -3316,10 +3328,10 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
 
         }
         
-        
+        balance.erase(bal);
         // check_good_status(host, username, bal -> purchase_amount - bal -> available);
 
-        balance.erase(bal);
+        
     
     }
 };
@@ -3331,7 +3343,7 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
         auto syspercent = gpercents.find("system"_n.value);
         eosio::check(syspercent != gpercents.end(), "Contract is not active");
 
-        account_index accounts(_me, host.value);
+        account_index accounts(_me, _me.value);
         auto acc = accounts.find(host.value);
         auto main_host = acc->get_ahost();
         auto root_symbol = acc->get_root_symbol();
@@ -3488,7 +3500,7 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
         partners2_index refs(_partners, _partners.value);
         auto ref = refs.find(username.value);
 
-        account_index accounts(_me, host.value);
+        account_index accounts(_me, _me.value);
         auto acc = accounts.find(host.value);
         
         eosio::check(acc -> root_token_contract == token_contract, "Wrong token contract");
@@ -3635,7 +3647,7 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
 
     [[eosio::action]] void unicore::refrollback(eosio::name host, eosio::name username, uint64_t balance_id){
         require_auth(host);
-        account_index accounts(_me, host.value);
+        account_index accounts(_me, _me.value);
         auto acc = accounts.find(host.value);
         auto root_symbol = acc->get_root_symbol();
         
@@ -3653,7 +3665,7 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
     void unicore::spread_to_dacs(eosio::name host, eosio::asset amount, eosio::name contract) {
 
         dacs_index dacs(_me, host.value);
-        account_index accounts(_me, host.value);
+        account_index accounts(_me, _me.value);
         auto acc = accounts.find(host.value);
         auto root_symbol = acc->get_root_symbol();
         eosio::check(contract == acc -> root_token_contract, "Wrong token contract for spread");
@@ -3842,7 +3854,7 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
 [[eosio::action]] void unicore::changemode(eosio::name host, eosio::name mode) {
     require_auth(host);
 
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     
     eosio::check(acc != accounts.end(), "Host is not found");
@@ -3919,7 +3931,7 @@ void unicore::add_asset_to_fund_action(eosio::name username, eosio::asset quanti
 
 eosio::asset unicore::buy_action(eosio::name username, eosio::name host, eosio::asset quantity, eosio::name code, bool modify_pool, bool transfer, bool spread_to_funds, eosio::asset summ = asset()){
     
-    // account_index accounts(_me, host.value);
+    // account_index accounts(_me, _me.value);
     // auto acc = accounts.find(host.value);
     
     // eosio::check(acc != accounts.end(), "Host is not found");
@@ -4046,7 +4058,7 @@ void unicore::buy_account(eosio::name username, eosio::name host, eosio::asset q
 
 void unicore::burn_action(eosio::name username, eosio::name host, eosio::asset quantity, eosio::name code, eosio::name status){
     
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     
     eosio::check(acc != accounts.end(), "Host is not found");
@@ -4125,14 +4137,14 @@ void unicore::burn_action(eosio::name username, eosio::name host, eosio::asset q
     }
     
 
-    // double power = (double)quantity.amount / (double)acc -> sale_shift * (double)sp->quants_precision;
-    // int64_t user_power = int64_t(power);
+    double power = (double)quantity.amount / (double)acc -> sale_shift * (double)sp->quants_precision;
+    int64_t user_power = int64_t(power);
 
-    // action(
-    //     permission_level{ _me, "active"_n },
-    //     _me, "emitpower"_n,
-    //     std::make_tuple( host , username, user_power, false) 
-    // ).send();
+    action(
+        permission_level{ _me, "active"_n },
+        _me, "emitpower"_n,
+        std::make_tuple( host , username, user_power, false) 
+    ).send();
 
     unicore::refresh_state(host);
     
@@ -4146,7 +4158,7 @@ void unicore::burn_action(eosio::name username, eosio::name host, eosio::asset q
 
 void unicore::subscribe_action(eosio::name username, eosio::name host, eosio::asset quantity, eosio::name code, eosio::name status){
     
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     
     eosio::check(acc != accounts.end(), "Host is not found");
@@ -4263,7 +4275,7 @@ void unicore::subscribe_action(eosio::name username, eosio::name host, eosio::as
 [[eosio::action]] void unicore::convert(eosio::name username, eosio::name host, uint64_t balance_id){
     require_auth("eosio"_n);
 
-    // account_index accounts(_me, host.value);
+    // account_index accounts(_me, _me.value);
 
     // pool_index pools(_me, host.value);
     // rate_index rates(_me, host.value);

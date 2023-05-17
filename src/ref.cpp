@@ -108,7 +108,7 @@ using namespace eosio;
   */
   [[eosio::action]] void unicore::withrbenefit(eosio::name username, eosio::name host, uint64_t id){
     require_auth(username);
-    account_index account(_me, host.value);
+    account_index account(_me, _me.value);
  
     auto acc = account.find(host.value);
     auto root_symbol = acc->get_root_symbol();

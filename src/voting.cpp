@@ -88,7 +88,7 @@ using namespace eosio;
 		votes_index votes(_me, voter.value);
 
 		auto goal = goals.find(goal_id);
-		account_index accounts (_me, (goal->host).value);
+		account_index accounts (_me, _me.value);
 		auto acc = accounts.find((goal->host).value);
 
 		// market_index market(_me, host.value);
@@ -193,7 +193,7 @@ using namespace eosio;
     // auto user = users.find(voter.value);
     // eosio::check(user != users.end(), "User is not registered");
 
-		account_index accounts (_me, host.value);
+		account_index accounts (_me, _me.value);
 		auto acc = accounts.find(host.value);
 
 		goals_index goals(_me, host.value);

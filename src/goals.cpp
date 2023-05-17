@@ -27,7 +27,7 @@ using namespace eosio;
       eosio::check(parent_goal != goals.end(), "Parent goal is not found");
     };
 
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 
 		auto acc = accounts.find(host.value);
     auto root_symbol = (acc->root_token).symbol;
@@ -125,7 +125,7 @@ using namespace eosio;
     require_auth(editor);
     
     goals_index goals(_me, host.value);
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
 
     auto acc = accounts.find(host.value);
     auto goal = goals.find(goal_id);
@@ -152,7 +152,7 @@ using namespace eosio;
 
   [[eosio::action]] void unicore::setbenefac(eosio::name host, uint64_t goal_id, eosio::name benefactor){
     
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
 
     require_auth(acc -> architect);
@@ -179,7 +179,7 @@ using namespace eosio;
 	[[eosio::action]] void unicore::dfundgoal(eosio::name architect, eosio::name host, uint64_t goal_id, eosio::asset amount, std::string comment){
 		require_auth(architect);
 
-		// account_index accounts(_me, host.value);
+		// account_index accounts(_me, _me.value);
 		// auto acc = accounts.find(host.value);
 		// eosio::check(acc->architect == architect, "Only architect can direct fund the goal");
 
@@ -207,7 +207,7 @@ using namespace eosio;
   [[eosio::action]] void unicore::fundchildgoa(eosio::name architect, eosio::name host, uint64_t goal_id, eosio::asset amount){
     require_auth(architect);
 
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
     eosio::check(acc->architect == architect, "Only architect can direct fund the goal");
 
@@ -337,7 +337,7 @@ using namespace eosio;
 		
 		goals_index goals(_me, host.value);
 	
-  	account_index accounts(_me, host.value);
+  	account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
     auto root_symbol = acc->get_root_symbol();
 
@@ -391,7 +391,7 @@ using namespace eosio;
    */
 	[[eosio::action]] void unicore::check(eosio::name architect, eosio::name host, uint64_t goal_id){
 		require_auth(architect);
-		account_index accounts(_me, host.value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find(host.value);
 		eosio::check(acc != accounts.end(), "Host is not found");
 
@@ -501,7 +501,7 @@ using namespace eosio;
  */
    [[eosio::action]] void unicore::setemi(eosio::name hostname, uint64_t percent, uint64_t gtop){
       require_auth(hostname);
-      account_index hosts (_me, hostname.value);
+      account_index hosts (_me, _me.value);
       auto host = hosts.find(hostname.value);
       eosio::check(host != hosts.end(), "Host not exist");
       
@@ -536,7 +536,7 @@ using namespace eosio;
 		
     eosio::check(goal -> benefactor == username, "Only coordinator can withdraw goal funds");
 
-		account_index accounts(_me, (goal->host).value);
+		account_index accounts(_me, _me.value);
 		auto acc = accounts.find((goal->host).value);
 		eosio::check(acc != accounts.end(), "Host is not founded");
 
@@ -606,7 +606,7 @@ using namespace eosio;
     // require_auth(from);
 
     goals_index goals(_me, host.value);
-    account_index accounts(_me, host.value);
+    account_index accounts(_me, _me.value);
     auto acc = accounts.find(host.value);
 
     eosio::name main_host = acc->get_ahost();
@@ -654,11 +654,11 @@ using namespace eosio;
     double power = (double)quantity.amount / (double)acc -> sale_shift * (double)sp -> quants_precision;
     uint64_t user_power = uint64_t(power);
 
-    action(
-        permission_level{ _me, "active"_n },
-        _me, "emitpower"_n,
-        std::make_tuple( host , from, user_power, false) 
-    ).send();
+    // action(
+    //     permission_level{ _me, "active"_n },
+    //     _me, "emitpower"_n,
+    //     std::make_tuple( host , from, user_power, false) 
+    // ).send();
 
 
     goals.modify(goal, _me, [&](auto &g){

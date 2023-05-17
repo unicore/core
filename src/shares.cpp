@@ -81,7 +81,7 @@ using namespace eosio;
   [[eosio::action]] void unicore::emitquote(eosio::name host, eosio::asset amount, eosio::name contract) {
     
     require_auth("eosio"_n);
-    account_index account(_me, host.value);
+    account_index account(_me, _me.value);
     auto acc = account.find(host.value);
     eosio::check(acc -> root_token_contract == contract, "Wrong token contract");
     
@@ -90,7 +90,7 @@ using namespace eosio;
   };
 
   void unicore::emittomarket(eosio::name host, eosio::name username, uint64_t user_shares, eosio::asset amount){
-    account_index account(_me, host.value);
+    account_index account(_me, _me.value);
     auto acc = account.find(host.value);
     
     spiral_index spiral(_me, host.value);
@@ -137,7 +137,7 @@ using namespace eosio;
     eosio::check(has_auth("auction"_n) || has_auth(_me), "missing required authority");
     print("on power emit: ", user_shares);
     
-    account_index account(_me, host.value);
+    account_index account(_me, _me.value);
     auto acc = account.find(host.value);
     
     if (user_shares < 0)
@@ -195,7 +195,7 @@ using namespace eosio;
   [[eosio::action]] void unicore::emitpower2(eosio::name host, uint64_t goal_id, uint64_t shares) {
     eosio::check(has_auth("auction"_n) || has_auth(_me), "missing required authority");
 
-    // account_index account(_me, host.value);
+    // account_index account(_me, _me.value);
     // auto acc = account.find(host.value);
     
     // // eosio::check(acc -> sale_mode == "auction"_n, "Wrong sale type");
@@ -236,7 +236,7 @@ using namespace eosio;
     // power3_index power(_me, host.value);
     // auto pexist = power.find(username.value);
     
-    // account_index account(_me, host.value);
+    // account_index account(_me, _me.value);
     // auto acc = account.find(host.value);
 
 
@@ -286,7 +286,7 @@ using namespace eosio;
 
     // }
 
-    //   account_index accounts(_me, host.value);
+    //   account_index accounts(_me, _me.value);
     //   auto exist = accounts.find(host.value);
       
       // power3_index power(_me, host.value);
@@ -364,7 +364,7 @@ using namespace eosio;
     auto v = vests.find(id);
     eosio::check(v != vests.end(), "Vesting object does not exist");
     eosio::check((v->available).amount > 0, "Only positive amount can be withdrawed");
-    account_index account(_me, (v->host).value);
+    account_index account(_me, _me.value);
     auto acc = account.find((v->host).value);
 
     action(
@@ -393,7 +393,7 @@ using namespace eosio;
    * Позволяет вывести часть финансового потока, направленного на держателя силы
   */
   [[eosio::action]] void unicore::withpbenefit(eosio::name username, eosio::name host, uint64_t log_id){
-      account_index accounts(_me, host.value);
+      account_index accounts(_me, _me.value);
       auto acc = accounts.find(host.value);
       auto main_host = acc -> get_ahost();
       powerstat_index powerstats(_me, host.value);
@@ -494,7 +494,7 @@ using namespace eosio;
    * а так же собрать доступные реферальные балансы в один объект
   */
   [[eosio::action]] void unicore::refreshpu(eosio::name username, eosio::name host, uint64_t log_id) {
-      account_index accounts(_me, host.value);
+      account_index accounts(_me, _me.value);
       auto acc = accounts.find(host.value);
 
       powerstat_index powerstats(_me, host.value);
@@ -602,7 +602,7 @@ using namespace eosio;
   */
    void unicore::log_event_with_shares (eosio::name username, eosio::name host, int64_t new_power){
      
-      account_index accounts(_me, host.value);
+      account_index accounts(_me, _me.value);
       auto acc = accounts.find(host.value);
 
       auto root_symbol = acc->get_root_symbol();
@@ -758,7 +758,7 @@ using namespace eosio;
    */
 
   void unicore::back_shares_with_badge_action (eosio::name host, eosio::name from, uint64_t shares){
-    // account_index accounts(_me, host.value);
+    // account_index accounts(_me, _me.value);
     // auto acc = accounts.find(host.value);
     // eosio::check(acc != accounts.end(), "Host is not found");
     
@@ -793,7 +793,7 @@ using namespace eosio;
    */
 
   void unicore::give_shares_with_badge_action (eosio::name host, eosio::name reciever, uint64_t shares){
-    // account_index accounts(_me, host.value);
+    // account_index accounts(_me, _me.value);
     // auto acc = accounts.find(host.value);
     // eosio::check(acc != accounts.end(), "Host is not found");
     
@@ -879,7 +879,7 @@ using namespace eosio;
   [[eosio::action]] void unicore::dispmarket(eosio::name host){
     require_auth(host);
     
-    account_index account(_me, host.value);
+    account_index account(_me, _me.value);
 
     auto acc = account.find(host.value);
     eosio::check(acc != account.end(), "Host is not found");
@@ -901,7 +901,7 @@ using namespace eosio;
   [[eosio::action]] void unicore::enpmarket(eosio::name host){
     require_auth(host);
     
-    account_index account(_me, host.value);
+    account_index account(_me, _me.value);
 
     auto acc = account.find(host.value);
     eosio::check(acc != account.end(), "Host is not found");
@@ -967,7 +967,7 @@ using namespace eosio;
 
     // delegation_index delegations(_me, from.value);
     
-    // account_index accounts(_me, host.value);
+    // account_index accounts(_me, _me.value);
     // auto acc = accounts.find(host.value);
 
     // auto power_from = power_from_idx.find(from.value);
@@ -1090,7 +1090,7 @@ using namespace eosio;
    * @param[in]  amount  The amount
    */
   uint64_t unicore::buyshares_action ( eosio::name buyer, eosio::name host, eosio::asset amount, eosio::name code, bool is_frozen ){
-    // account_index accounts(_me, host.value);
+    // account_index accounts(_me, _me.value);
     // partners2_index users(_partners,_partners.value);
     // auto user = users.find(buyer.value);
     

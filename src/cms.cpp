@@ -54,7 +54,7 @@
 
     cmsconfig_index cmsconfigs(_me, username.value);
     
-    account_index accounts(_me, username.value);  
+    account_index accounts(_me, _me.value);  
 
     auto acc = accounts.find(username.value);
     // check(acc != accounts.end(), "Host is not found");
