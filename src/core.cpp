@@ -3170,7 +3170,7 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
     eosio::check(last_pool -> remain_quants <= pool->total_quants, "Prevented withdraw. Only BP can restore this balance");
     
     eosio::check(bal -> status == "process"_n, "This balance stay on sale and can be withdrawed by this method. Use withdrawsold method");
-    eosio::check(bal -> available.amount > 0, "Cannot withdraw a zero balance. Please, write to help-center for resolve it");
+    // eosio::check(bal -> available.amount > 0, "Cannot withdraw a zero balance. Please, write to help-center for resolve it");
 
     eosio::check(bal -> withdrawed == false, "Balance is already withdrawed");
 
@@ -3311,7 +3311,7 @@ std::vector <eosio::asset> unicore::calculate_forecast(eosio::name username, eos
             
 
         } else {
-
+            eosio::check(false, "balance cannot be withdrawed directly");
             pools.modify(last_pool, _me, [&](auto &p){
                  p.total_loss_withdraw = last_pool -> total_loss_withdraw + amount;               
             });
