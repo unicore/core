@@ -639,10 +639,6 @@ extern "C" {
                     execute_action(name(receiver), name(code), &unicore::rmahost);
                     break;
                 };
-                case "settype"_n.value: {
-                    execute_action(name(receiver), name(code), &unicore::settype);
-                    break;
-                };
                 case "enpmarket"_n.value: {
                     execute_action(name(receiver), name(code), &unicore::enpmarket);
                     break;
@@ -923,11 +919,6 @@ extern "C" {
                     execute_action(name(receiver), name(code), &unicore::rmdac);
                     break;
                 }
-                case "suggestrole"_n.value : {
-                    execute_action(name(receiver), name(code), &unicore::suggestrole);
-                    break;
-                }
-
                 case "withdrdacinc"_n.value: {
                     execute_action(name(receiver), name(code), &unicore::withdrdacinc);
                     break;

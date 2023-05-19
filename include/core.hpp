@@ -76,10 +76,7 @@ class [[eosio::contract]] unicore : public eosio::contract {
 
         [[eosio::action]] void changemode(eosio::name host, eosio::name mode);
 
-        static eosio::asset convert_to_power(eosio::asset quantity, eosio::name host);
         [[eosio::action]] void convert(eosio::name username, eosio::name host, uint64_t balance_id);
-
-        static eosio::asset calculate_asset_from_power(eosio::asset quantity, eosio::name host);
 
         [[eosio::action]] void setparams(eosio::name host, eosio::name chost, uint64_t size_of_pool,
             uint64_t quants_precision, uint64_t overlap, uint64_t profit_growth, uint64_t base_rate,
@@ -175,10 +172,7 @@ class [[eosio::contract]] unicore : public eosio::contract {
 
         [[eosio::action]] void edithost(eosio::name architect, eosio::name host, eosio::name platform, eosio::string title, eosio::string purpose, eosio::string manifest, eosio::name power_market_id, eosio::string meta);
         [[eosio::action]] void fixs(eosio::name host, eosio::name username);
-        [[eosio::action]] void settype(eosio::name host, eosio::name type);
         [[eosio::action]] void setlevels(eosio::name host, std::vector<uint64_t> levels);
-
-        static void settype_static(eosio::name host, eosio::name type);
 
 
         [[eosio::action]] void settiming(eosio::name host, uint64_t pool_timeout, uint64_t priority_seconds);
@@ -207,8 +201,6 @@ class [[eosio::contract]] unicore : public eosio::contract {
         [[eosio::action]] void adddac(eosio::name username, eosio::name host, uint64_t weight, eosio::name limit_type, eosio::asset income_limit, std::string title, std::string descriptor);
         [[eosio::action]] void rmdac(eosio::name username, eosio::name host);
 
-        [[eosio::action]] void suggestrole(eosio::name username, std::string title, std::string descriptor);
-        
         // [[eosio::action]] void editrole(eosio::name username, eosio::name host, uint64_t weight);
         // [[eosio::action]] void rmrole(eosio::name username, eosio::name host, uint64_t weight);
 
@@ -218,7 +210,6 @@ class [[eosio::contract]] unicore : public eosio::contract {
 
         static void spread_to_refs(eosio::name host, eosio::name username, eosio::asset spread_amount, eosio::asset from_amount, eosio::name token_contract);
 
-        static void spread_action(eosio::name username, eosio::name host, eosio::asset quantity, eosio::name code);
         static void log_event_with_shares (eosio::name username, eosio::name host, int64_t new_power);
 
         [[eosio::action]] void withdrdacinc(eosio::name username, eosio::name host);
@@ -348,7 +339,7 @@ class [[eosio::contract]] unicore : public eosio::contract {
 
         static void make_vesting_action(eosio::name owner, eosio::name host, eosio::name contract, eosio::asset amount, uint64_t vesting_seconds, eosio::name type);
         static void create_bancor_market(eosio::name name, eosio::name host, uint64_t total_shares, eosio::asset quote_amount, eosio::name quote_token_contract, uint64_t vesting_seconds);
-        static std::vector <eosio::asset> calculate_forecast(eosio::name username, eosio::name host, uint64_t quants, uint64_t pool_num, eosio::asset purchase_amount, bool calculate_first, bool calculate_zero);
+        static std::vector <eosio::asset> calculate_forecast(eosio::name username, eosio::name host, uint64_t quants, uint64_t pool_num, eosio::asset compensator_amount, eosio::asset purchase_amount, bool calculate_first, bool calculate_zero);
         static void fill_pool(eosio::name username, eosio::name host, uint64_t quants, eosio::asset amount, uint64_t filled_pool_id);
         static void check_and_modify_sale_fund(eosio::asset amount, hosts acc);
         static void give_shares_with_badge_action (eosio::name host, eosio::name reciever, uint64_t shares);
@@ -483,7 +474,7 @@ class [[eosio::contract]] unicore : public eosio::contract {
         eosio::asset if_convert; 
         eosio::asset if_convert_to_power;
         eosio::asset solded_for;
-        bool withdrawed = false;
+        eosio::asset withdrawed;
         std::vector<eosio::asset> forecasts;
         eosio::asset ref_amount; 
         eosio::asset dac_amount;
