@@ -2448,13 +2448,13 @@ void unicore::fill_pool(eosio::name username, eosio::name host, uint64_t quants,
                         asset_cfund_amount = asset((uint64_t)total_cfund_min_sys, root_symbol); 
                         asset_hfund_amount = asset((uint64_t)total_hfund_min_sys, root_symbol);
                          
-                        } else {
-                            asset_ref_amount = asset(0, root_symbol);
-                            asset_dac_amount = asset(0, root_symbol);
-                            asset_sys_amount = asset(0, root_symbol);
-                            asset_cfund_amount = asset(0, root_symbol);
-                            asset_hfund_amount = asset(0, root_symbol);
-                        }
+                    } else {
+                        asset_ref_amount = asset(0, root_symbol);
+                        asset_dac_amount = asset(0, root_symbol);
+                        asset_sys_amount = asset(0, root_symbol);
+                        asset_cfund_amount = asset(0, root_symbol);
+                        asset_hfund_amount = asset(0, root_symbol);
+                    }
                         
                         uint64_t old_convert_amount = bal -> if_convert.amount;
 
@@ -2491,8 +2491,9 @@ void unicore::fill_pool(eosio::name username, eosio::name host, uint64_t quants,
                             b.compensator_amount = available;
                             b.win = true;
                             b.forecasts = forecasts;
-                            //TODO
+                            
                             double double_if_convert = double(b.compensator_amount.amount) * (double)sp->quants_precision / double(acc -> sale_shift);
+                            
                             b.if_convert = asset(uint64_t(double_if_convert), _POWER);
                             b.if_convert_to_power = b.if_convert;
                             
@@ -2564,21 +2565,6 @@ void unicore::fill_pool(eosio::name username, eosio::name host, uint64_t quants,
                         b.forecasts = forecasts0;
                         double root_percent = (double)bal->compensator_amount.amount / (double)bal -> purchase_amount.amount * (double)HUNDR_PERCENT  - (double)HUNDR_PERCENT; 
                         b.root_percent = uint64_t(root_percent); 
-                    
-                        //TODO
-                        double double_if_convert = (double)bal->compensator_amount.amount  * (double)sp->quants_precision / (double)acc -> sale_shift;// / (double)sp -> base_rate;
-                        b.if_convert = asset(uint64_t(double_if_convert), _POWER);
-                        b.if_convert_to_power = asset(b.if_convert.amount, _POWER);
-                        double convert_percent = (double)b.if_convert.amount / (double)sp->quants_precision  / ((double)rate -> total_in_box.amount - (double)look_pool -> remain.amount) * (double)HUNDR_PERCENT;
-                        b.convert_percent = uint64_t(ONE_PERCENT * convert_percent);
-                        b.ref_amount = asset(0, root_symbol);
-                        int64_t power_to_emit = (int64_t(b.if_convert.amount) - int64_t(old_convert_amount.amount));
-                        
-                        action(
-                            permission_level{ _me, "active"_n },
-                            _me, "emitpower"_n,
-                            std::make_tuple( host , username, power_to_emit, false) 
-                        ).send();
                     });
                 };
             }
