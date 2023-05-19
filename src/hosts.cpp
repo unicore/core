@@ -725,7 +725,7 @@ using namespace eosio;
         auto acc = hosts.find(host.value);
         
         eosio::check((priority_seconds <= 315400000), "Pool Priority Seconds must be greater or equal then 0 sec and less then 315400000 sec");
-        eosio::check((pool_timeout >= 60) && (pool_timeout < 7884000),"Pool Timeout must be greater or equal then 1 sec and less then 7884000 sec");
+        eosio::check((pool_timeout >= 60) && (pool_timeout <= 94610000000),"Pool Timeout must be greater or equal then 1 sec and less then 7884000 sec");
         eosio::check(acc -> current_pool_num < 3, "Timing changes only possible on the waiting mode");
 
         eosio::name main_host = acc->get_ahost();
