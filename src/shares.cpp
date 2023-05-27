@@ -168,12 +168,12 @@ using namespace eosio;
         p.staked = user_shares;    
       });
 
-       unicore::log_event_with_shares(username, host, user_shares);
+       // unicore::log_event_with_shares(username, host, user_shares);
         
     } else {
         // unicore::propagate_votes_changes(host, username, pexist->power, pexist->power + user_shares);
         
-        unicore::log_event_with_shares(username, host, pexist->power + user_shares);
+        // unicore::log_event_with_shares(username, host, pexist->power + user_shares);
         
         power.modify(pexist, _me, [&](auto &p) {
             p.power += user_shares;
@@ -1025,59 +1025,6 @@ using namespace eosio;
     // }    
   }
 
-
-
-
-  /**
-   * @brief      Метод возврата делегированной силы
-   *
-   * @param[in]  op    The operation
-   */
-  [[eosio::action]] void unicore::undelshares(eosio::name from, eosio::name reciever, eosio::name host, uint64_t shares){
-    require_auth(reciever);
-
-    // power3_index power_from_idx (_me, host.value);
-    // power3_index power_to_idx (_me, host.value);
-
-    // delegation_index delegations(_me, reciever.value);
-    // auto dlgtns = delegations.find(from.value);
-
-    // eosio::check(dlgtns != delegations.end(), "Nothing to undelegate");
-    // eosio::check(dlgtns -> shares >= shares, "Not enought shares for undelegate");
-    // eosio::check(shares > 0, "Undelegate amount must be greater then zero");
-    
-    // auto power_from = power_from_idx.find(from.value);
-    // auto power_to = power_to_idx.find(reciever.value);
-
-    // if (dlgtns->shares - shares == 0){
-    //  delegations.erase(dlgtns);
-    // } else {
-    //  delegations.modify(dlgtns, reciever, [&](auto &d){
-    //    d.shares -= shares;
-    //  });
-    // }
-
-    // //modify power object of sender and propagate votes changes;
-    // unicore::propagate_votes_changes(host, from, power_from->power, power_from->power - shares);
-    // log_event_with_shares(from, host, power_from->power - shares);
-
-    // power_from_idx.modify(power_from, reciever, [&](auto &pf){
-    //  pf.power -= shares;
-    //  pf.delegated -= shares;
-
-    // });
-
-    // //modify
-    // unicore::propagate_votes_changes(host, reciever, power_to->power, power_to->power + shares);
-    // log_event_with_shares(reciever, host, power_from->power + shares);
-
-    // power_to_idx.modify(power_to, reciever, [&](auto &pt){
-    //  pt.staked += shares;
-    //  pt.power  += shares;
-    // });
-
-
-  }
 
 
 

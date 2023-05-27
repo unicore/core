@@ -838,4 +838,27 @@ using namespace eosio;
     }
 
 
+
+[[eosio::action]] void unicore::setstartdate(eosio::name host, eosio::time_point_sec start_at){
+    require_auth(host);
+
+    account_index hosts(_me, _me.value);
+    pool_index pools(_me, host.value);
+
+    auto acc = hosts.find(host.value);
+    
+    eosio::check(acc -> current_pool_num == 1, "Only on the first pool start date can be changed");
+    auto pool1 = pools.find(acc -> current_pool_id);
+    auto pool2 = pools.find(acc-> current_pool_id + 1);
+
+    pools.modify(pool1, host, [&](auto &p){
+        p.pool_started_at = start_at;
+    });
+
+    pools.modify(pool2, host, [&](auto &p){
+        p.pool_started_at = start_at;
+    });
+}
+
+
 // }

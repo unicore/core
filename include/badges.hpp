@@ -1,7 +1,7 @@
 /*!
     \brief Структура наградных значков хоста Двойной Спирали, их изображений, пиктограмм и предоставляемой силы.
 */
-	struct  [[eosio::table, eosio::contract("unicore")]] badges{
+	struct  [[eosio::table, eosio::contract("unicore")]] badges {
 		uint64_t id;
 		eosio::string caption;
 		eosio::string description;
@@ -26,18 +26,18 @@
 		eosio::name host;
 		uint64_t badge_id;
 		bool netted = false;
-    uint64_t goal_id;
-    uint64_t task_id;
-    
+	    uint64_t goal_id;
+	    uint64_t task_id;
+	    
 		uint64_t count = 1;
-    eosio::string caption;
-    eosio::string description;
-    eosio::string iurl;
-    eosio::string pic;
+	    eosio::string caption;
+	    eosio::string description;
+	    eosio::string iurl;
+	    eosio::string pic;
 		eosio::string comment;
 		uint64_t power;
-    eosio::time_point_sec first_recieved_at;
-    eosio::time_point_sec last_recieved_at;
+	    eosio::time_point_sec first_recieved_at;
+	    eosio::time_point_sec last_recieved_at;
 
 		uint64_t primary_key() const {return id;}
 		uint64_t host_key() const {return host.value;}

@@ -62,6 +62,8 @@
         uint64_t total_power_on_distribution;
         uint64_t remain_power_on_distribution;
 
+        uint64_t cashback;
+        eosio::asset refs_amount;
 
 
         
@@ -98,7 +100,7 @@
         
         EOSLIB_SERIALIZE( goals, (id)(parent_id)(type)(creator)(benefactor)(host)(status)(who_can_create_tasks)(benefactors_weight)(duration)(priority)(title)(description)(target)(target1)(target2)(available)(withdrawed)(debt_count)(debt_amount)(positive_votes)(negative_votes)(filled_votes)(total_tasks)
             (total_reports)(approved_reports)(is_encrypted)(public_key)(created)(start_at)(finish_at)(expired_at)(voters)(report)(meta)
-            (second_circuit_votes)(total_asset_on_distribution)(remain_asset_on_distribution)(total_power_on_distribution)(remain_power_on_distribution))
+            (second_circuit_votes)(total_asset_on_distribution)(remain_asset_on_distribution)(total_power_on_distribution)(remain_power_on_distribution)(cashback)(refs_amount))
     };
 
     typedef eosio::multi_index <"goals"_n, goals,
@@ -111,43 +113,8 @@
         eosio::indexed_by<"creator"_n, eosio::const_mem_fun<goals, uint64_t, &goals::byusername>>,
         eosio::indexed_by<"created"_n, eosio::const_mem_fun<goals, uint64_t, &goals::bycreated>>,
         eosio::indexed_by<"bypriority"_n, eosio::const_mem_fun<goals, uint64_t, &goals::bypriority>>
-        
     > goals_index;
 
-
-// /*!
-//    \brief Структура целей хоста Двойной Спирали.
-// */
-
-    struct [[eosio::table, eosio::contract("unicore")]]  goals3 {
-        uint64_t id;
-        eosio::asset total_on_distribution;
-        eosio::asset remain_on_distribution;
-
-        uint64_t primary_key()const { return id; }
-        
-        EOSLIB_SERIALIZE( goals3, (id)(total_on_distribution)(remain_on_distribution))
-    };
-
-    typedef eosio::multi_index <"goals3"_n, goals3> goals3_index;
-
-
-
-// /*!
-//    \brief Структура целей хоста Двойной Спирали.
-// */
-
-    struct [[eosio::table, eosio::contract("unicore")]]  goals4 {
-        uint64_t id;
-        uint64_t cashback;
-        eosio::asset refs_amount;
-
-        uint64_t primary_key()const { return id; }
-        
-        EOSLIB_SERIALIZE( goals4, (id)(cashback)(refs_amount))
-    };
-
-    typedef eosio::multi_index <"goals4"_n, goals4> goals4_index;
 
 
 

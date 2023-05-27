@@ -75,58 +75,33 @@ using namespace eosio;
         eosio::check(status == "adviser"_n || status == "assistant"_n, "wrong status. [adviser, assistant]");
         uint64_t minburn = status == "adviser"_n ? adviser_amount : assistant_amount;
 
-
-        uint64_t threemburn = minburn * 0.9;    //unicore::getcondition(host, "threemburn");
-        uint64_t sixmburn = minburn * 0.8;//unicore::getcondition(host, "sixmburn");
-        uint64_t ninemburn = minburn * 0.7;//unicore::getcondition(host, "ninemburn");
-        uint64_t twelvemburn = minburn * 0.5;//unicore::getcondition(host, "twelvemburn");
-
+        uint64_t times = amount.amount / minburn;        
         
-        eosio::check(host != "core"_n, "cant subscribe on the core host, there is only burn");
-
-        uint64_t burnperiod = 30; //days //unicore::getcondition(host, "burnperiod");
-        
-        uint64_t times = 0;
-        
-        if (twelvemburn > 0 && amount.amount >= twelvemburn * 12) {
-            times = amount.amount / twelvemburn;
-        } else if (ninemburn > 0 && amount.amount >= ninemburn * 9) {
-            times = amount.amount / ninemburn;
-        } else if (sixmburn > 0 && amount.amount >= sixmburn * 6) {
-            times = amount.amount / sixmburn;
-        } else if (threemburn > 0 && amount.amount >= threemburn * 3) {
-            times = amount.amount / threemburn;
-        } else if (minburn > 0 && amount.amount >= minburn) {
-            times = amount.amount / minburn;
-        }
-
         if (times > 0) {
             
             corepartners_index cpartners(_me, host.value);
             auto partner = cpartners.find(username.value);
-            
             
             if (partner == cpartners.end()) {
                 
                 cpartners.emplace(_me, [&](auto &p) {
                     p.username = username;
                     p.status = status;
-                    p.total_good = amount;
                     p.join_at = eosio::time_point_sec(eosio::current_time_point().sec_since_epoch());
-                    p.expiration = eosio::time_point_sec(eosio::current_time_point().sec_since_epoch() + times * burnperiod * 86400); //
+                    p.expiration = eosio::time_point_sec(eosio::current_time_point().sec_since_epoch() + times * 30 * 86400); //
                 });
 
             } else {
 
                 cpartners.modify(partner, _me, [&](auto &p) {
+
                     if (partner -> status == status){
-                        p.expiration = eosio::time_point_sec(partner->expiration.sec_since_epoch() + times * burnperiod * 86400); 
+                        p.expiration = eosio::time_point_sec(partner->expiration.sec_since_epoch() + times * 30 * 86400); 
                     } else {
-                        p.expiration = eosio::time_point_sec(eosio::current_time_point().sec_since_epoch() + times * burnperiod * 86400);
+                        p.expiration = eosio::time_point_sec(eosio::current_time_point().sec_since_epoch() + times * 30 * 86400);
                     }
 
                     p.status = status;
-                    p.total_good += amount;
                 });
 
             }

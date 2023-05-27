@@ -572,22 +572,6 @@ using namespace eosio;
 
 
 
-
-    [[eosio::action]] void unicore::withdrbeninc(eosio::name username, eosio::name host, uint64_t goal_id){
-       
-    }
-
-
-    [[eosio::action]] void unicore::addben(eosio::name creator, eosio::name username, eosio::name host, uint64_t goal_id, uint64_t weight) {
-        
-    };
-
-
-    [[eosio::action]] void unicore::rmben(eosio::name creator, eosio::name username, eosio::name host, uint64_t goal_id){
-        
-    };
-
-
     void unicore::spread_to_benefactors(eosio::name host, eosio::asset amount, uint64_t goal_id){
 
     }
@@ -631,25 +615,16 @@ using namespace eosio;
     eosio::asset core_quantity = quantity;
     eosio::asset refs_quantity = asset(0, root_symbol);
 
-    goals4_index goals4(_me, host.value);
     
-    auto goal4 = goals4.find(goal_id);
-    
-    if (goal4 != goals4.end()) {
+    if (goal -> cashback > 0) {
 
 
-      core_quantity = quantity * (HUNDR_PERCENT - goal4 -> cashback) / HUNDR_PERCENT;
+      core_quantity = quantity * (HUNDR_PERCENT - goal -> cashback) / HUNDR_PERCENT;
 
       refs_quantity = quantity - core_quantity;
 
-      goals4.modify(goal4, _me, [&](auto &g4){
-        g4.refs_amount += refs_quantity; 
-      });
+     
     };
-
-    // print(" quantity: ", quantity);
-    // print(" core_quantity: ", core_quantity);
-    // print(" refs_quantity: ", refs_quantity);
 
     double power = (double)quantity.amount / (double)acc -> sale_shift * (double)sp -> quants_precision;
     uint64_t user_power = uint64_t(power);
@@ -665,27 +640,13 @@ using namespace eosio;
       g.available += core_quantity;
       g.withdrawed += refs_quantity;
       g.target1 += asset(user_power, _POWER);
+      g.refs_amount += refs_quantity;
     });
 
 
     if (refs_quantity.amount > 0) {
       unicore::spread_to_refs(host, from, quantity, refs_quantity, acc -> root_token_contract);
     }
-
-  }
-
-  /**
-   * @brief      Метод финансирования цели через оператора сообщества.
-   * Позволяет оператору сообщества расходовать баланс целей на перечисления прямым спонсорам. 
-   * Используется в риверсной экономической модели, когда корневой токен сообщества является котировочным токеном силы сообщества, 
-   * и накаким другим способом изначально не распределяется, кроме как на спонсоров целей (дефицитная ICO - модель).
-   *
-   * @param[in]  op    The operation
-   */
-  [[eosio::action]] void unicore::gsponsor(eosio::name hoperator, eosio::name host, eosio::name reciever, uint64_t goal_id, eosio::asset amount){
-    require_auth (hoperator);
-
-  
 
   }
 
