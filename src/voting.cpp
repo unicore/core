@@ -93,7 +93,7 @@ using namespace eosio;
 
 		// market_index market(_me, host.value);
 		// auto itr = market.find(0);
-		auto liquid_shares = acc->total_shares;
+		auto liquid_shares = acc->total_loyality;
 		 // - itr->base.balance.amount;
 
 		// print("LIQUIDSHARES ", liquid_shares);

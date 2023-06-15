@@ -1314,7 +1314,7 @@ void unicore::check_and_gift_netted_badge(eosio::name username, eosio::name host
 
 			//TODO!
 			
-			auto liquid_shares = acc->total_shares > 0 ? acc -> total_shares : 1;
+			auto liquid_shares = acc->total_loyality > 0 ? acc -> total_loyality : 1;
 
 			uint64_t votes = goal -> positive_votes > goal -> filled_votes ? goal -> positive_votes : goal -> filled_votes; 
 			

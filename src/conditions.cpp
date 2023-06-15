@@ -279,3 +279,55 @@ using namespace eosio;
             conditions.erase(condition);
         }
     }
+
+
+
+
+ [[eosio::action]] void unicore::addpermiss(eosio::name owner, eosio::name host, eosio::name to, std::string memo){
+        require_auth (owner);
+
+        permissions_index permissions(_me, owner.value);
+        
+        auto by_host_permission_index = permissions.template get_index<"byhostto"_n>();
+        auto ids = combine_ids(host.value, to.value);
+
+        auto user_host_permission = by_host_permission_index.find(ids);
+
+        if (user_host_permission == by_host_permission_index.end()){
+
+            permissions.emplace(owner, [&](auto &p){
+                p.id = unicore::get_global_id("permission"_n);
+                p.host = host;
+                p.to = to;
+                p.memo = memo;
+            });
+
+        }
+    }
+
+
+[[eosio::action]] void unicore::rmpermiss(eosio::name username, uint64_t id){
+        require_auth (username);
+
+        permissions_index permissions(_me, username.value);
+        
+        auto permission = permissions.find(id);
+
+        permissions.erase(permission);
+       
+}
+
+bool unicore::check_permission(eosio::name owner, eosio::name host, eosio::name to){
+
+        permissions_index permissions(_me, owner.value);
+        
+        auto by_host_permission_index = permissions.template get_index<"byhostto"_n>();
+        auto ids = combine_ids(host.value, to.value);
+
+        auto user_host_permission = by_host_permission_index.find(ids);
+
+        if (user_host_permission == by_host_permission_index.end())
+            return false;
+        else return true;
+}
+

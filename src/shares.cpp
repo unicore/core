@@ -133,30 +133,21 @@ using namespace eosio;
    * 
    * @param[in]  op    The operation
    */
-  [[eosio::action]] void unicore::emitpower(eosio::name host, eosio::name username, int64_t user_shares, bool is_change){
-    eosio::check(has_auth("auction"_n) || has_auth(_me), "missing required authority");
-    print("on power emit: ", user_shares);
+  [[eosio::action]] void unicore::emitquants(eosio::name host, eosio::name username, int64_t quants, bool is_change){
+    eosio::check(has_auth(_me), "missing required authority");
     
     account_index account(_me, _me.value);
     auto acc = account.find(host.value);
     
-    if (user_shares < 0)
-      eosio::check(acc -> total_shares >= abs(user_shares), "System overflow");
+    if (quants < 0)
+      eosio::check(acc -> total_quants >= abs(quants), "System overflow");
 
-    print(" before set shares: ", acc -> total_shares);
-    
     if (is_change == false)
       account.modify(acc, _me, [&](auto &a){
-        a.total_shares += user_shares;
-        print(" after set shares: ", a.total_shares);
-        
-        //check for market exist
-        //if not exist - create
-
-        // a.quote_amount += asset(10000 * user_shares, acc -> quote_amount.symbol);
+        a.total_quants += quants;
       });
 
-    power3_index power(_me, host.value);
+    quants_index power(_me, host.value);
     auto pexist = power.find(username.value);
     
 
@@ -164,20 +155,17 @@ using namespace eosio;
 
       power.emplace(_me, [&](auto &p) {
         p.username = username;
-        p.power = user_shares;
-        p.staked = user_shares;    
+        p.power = quants;
       });
 
-       // unicore::log_event_with_shares(username, host, user_shares);
+       unicore::log_event_with_shares(username, host, 0, quants);
         
     } else {
         // unicore::propagate_votes_changes(host, username, pexist->power, pexist->power + user_shares);
-        
-        // unicore::log_event_with_shares(username, host, pexist->power + user_shares);
+        unicore::log_event_with_shares(username, host, 0, pexist->power + quants);
         
         power.modify(pexist, _me, [&](auto &p) {
-            p.power += user_shares;
-            p.staked += user_shares;
+            p.power += quants;
         });
     };
 
@@ -425,61 +413,30 @@ using namespace eosio;
       eosio::check(powerstat -> window_closed_at.sec_since_epoch() < eosio::current_time_point().sec_since_epoch(), "Window is not closed yet.");
       
       
-
-      powerstats.modify(powerstat, payer, [&](auto &ps){
-          ps.total_distributed = powerstat -> total_distributed + powerlog -> available;
+      powerstats.modify(powerstat, payer, [&](auto &ps) {
+          ps.total_distributed = powerstat -> total_distributed + powerlog -> available_by_loyality + powerlog -> available_by_quants;
       });
 
-      if (powerlog -> available.amount > 0) {
 
-        spiral_index spiral(_me, main_host.value);
-        auto sp = spiral.find(0);
+      if (powerlog -> available_by_loyality.amount > 0) {
+          
+        std::string memo = std::string("вывод выгоды по токенам лояльности") + std::string(" из DAO ") + host.to_string(); 
 
-        pool_index pools(_me, host.value);
-        auto pool = pools.find(acc -> current_pool_id);
-        
-        rate_index rates(_me, main_host.value);
+        unicore::push_to_dacs_funds(powerlog->username, powerlog -> available_by_loyality, acc -> root_token_contract, memo);
 
-        auto rate = rates.find(pool -> pool_num - 1);
+      } 
 
-        if (pool -> remain < powerlog -> available) {
 
-          uint128_t dquants = uint128_t(sp -> quants_precision * (uint128_t)pool -> remain.amount / (uint128_t)rate -> buy_rate);
-            
-          uint64_t quants = dquants;
-        
-          if (pool -> remain.amount > 0){
-            unicore::fill_pool(username, host, quants, pool -> remain, acc -> current_pool_id);
-            
-            powerlogs.modify(powerlog, payer, [&](auto &pl){
-              pl.available -= pool -> remain;
-            });
-          }
-        } else {
-          uint128_t dquants = uint128_t(sp -> quants_precision * (uint128_t)powerlog -> available.amount / (uint128_t)rate -> buy_rate);
-            
-          uint64_t quants = dquants;
-        
-          unicore::fill_pool(username, host, quants, powerlog -> available, acc -> current_pool_id);
-          powerlogs.erase(powerlog);
+      if (powerlog -> available_by_quants.amount > 0 ) {
 
-        }
-        
-        unicore::refresh_state(host);
+        std::string memo = std::string("вывод выгоды по токенам центра") + std::string(" из DAO ") + host.to_string(); 
 
-        // action(
-        //     permission_level{ _me, "active"_n },
-        //     acc->root_token_contract, "transfer"_n,
-        //     std::make_tuple( _me, powerlog->username, powerlog -> available, std::string("power dividends")) 
-        // ).send();
+        unicore::push_to_dacs_funds(powerlog->username, powerlog -> available_by_quants, acc -> root_token_contract, memo);
 
-      } else {
-        powerlogs.erase(powerlog);  
       }
-      
-      
 
-    
+      powerlogs.erase(powerlog);  
+          
 
   }
   
@@ -529,9 +486,7 @@ using namespace eosio;
         if (prev_log -> username == username) {
           eosio::check(prev_log -> id == powerlog -> id, "Cannot refresh object with previous objects. Refresh previous first.");
         }
-        // user_power_by_window_idx.find(prev_log_ids);
-        // if (prev_log -> username == username && )
-        // eosio::check(prev_log == user_power_by_window_idx.end(), "Cannot refresh object with previous objects. Refresh previous first.");
+        
       };
 
 
@@ -543,53 +498,54 @@ using namespace eosio;
       
 
       if (powerlog -> updated == false){ //not updated
+        //TODO MODIFY IT
 
-        double share = double(powerlog -> power) / double(powerstat -> liquid_power);
-        eosio::asset user_amount = asset(share * powerstat -> total_available.amount, powerstat -> total_available.symbol);
+        // double share = double(powerlog -> power) / double(powerstat -> liquid_power);
+        // eosio::asset user_amount = asset(share * powerstat -> total_available.amount, powerstat -> total_available.symbol);
         
-        eosio::asset ref_user_amount = asset(share * powerstat -> total_partners_available.amount, powerstat -> total_partners_available.symbol);
+        // eosio::asset ref_user_amount = asset(share * powerstat -> total_partners_available.amount, powerstat -> total_partners_available.symbol);
 
-        eosio::check(powerstat -> total_remain >= user_amount, "system error: not enough funds on the window");
+        // eosio::check(powerstat -> total_remain >= user_amount, "system error: not enough funds on the window");
 
-        powerstats.modify(powerstat, payer, [&](auto &ps){
-            ps.total_remain = powerstat -> total_remain - user_amount;
-            ps.total_partners_distributed += ref_user_amount;
-        });
+        // powerstats.modify(powerstat, payer, [&](auto &ps){
+        //     ps.total_remain = powerstat -> total_remain - user_amount;
+        //     ps.total_partners_distributed += ref_user_amount;
+        // });
 
-        if (ref_user_amount.amount > 0) {
-          unicore::spread_to_refs(host, powerlog -> username, ref_user_amount, powerstat -> total_partners_available, acc -> root_token_contract);  
-        };
+        // if (ref_user_amount.amount > 0) {
+        //   unicore::spread_to_refs(host, powerlog -> username, ref_user_amount, powerstat -> total_partners_available, acc -> root_token_contract);  
+        // };
         
 
-        powerlogs.modify(powerlog, payer, [&](auto &ps){
-            ps.available = user_amount;
-            ps.distributed_to_partners = ref_user_amount;
-            ps.updated = true;
-        });
+        // powerlogs.modify(powerlog, payer, [&](auto &ps){
+        //     ps.available = user_amount;
+        //     ps.distributed_to_partners = ref_user_amount;
+        //     ps.updated = true;
+        // });
 
 
-        //get next log and push new if not exist
-        powerstat++;
+        // //get next log and push new if not exist
+        // powerstat++;
         
-        eosio::check(powerstat != powerstats.end(), "Next window is not opened yet");
+        // eosio::check(powerstat != powerstats.end(), "Next window is not opened yet");
 
-        auto user_power_by_window_idx = powerlogs.template get_index<"userwindowid"_n>();
-        auto next_log_ids = combine_ids(username.value, powerstat -> id);
-        auto next_log = user_power_by_window_idx.find(next_log_ids);
+        // auto user_power_by_window_idx = powerlogs.template get_index<"userwindowid"_n>();
+        // auto next_log_ids = combine_ids(username.value, powerstat -> id);
+        // auto next_log = user_power_by_window_idx.find(next_log_ids);
 
-        if (next_log == user_power_by_window_idx.end()) {
+        // if (next_log == user_power_by_window_idx.end()) {
 
-          powerlogs.emplace(payer, [&](auto &pl){
-              pl.id = unicore::get_global_id("powerlog"_n);
-              pl.host = host;
-              pl.username = username;
-              pl.window_id = powerstat -> id;
-              pl.power = powerlog -> power;
-              pl.available = asset(0, powerlog -> available.symbol);
-              pl.distributed_to_partners = asset(0, powerlog -> available.symbol);
-              pl.updated = false;
-            });
-        };
+        //   powerlogs.emplace(payer, [&](auto &pl){
+        //       pl.id = unicore::get_global_id("powerlog"_n);
+        //       pl.host = host;
+        //       pl.username = username;
+        //       pl.window_id = powerstat -> id;
+        //       pl.power = powerlog -> power;
+        //       pl.available = asset(0, powerlog -> available.symbol);
+        //       pl.distributed_to_partners = asset(0, powerlog -> available.symbol);
+        //       pl.updated = false;
+        //     });
+        // };
       };
       
   }
@@ -600,16 +556,15 @@ using namespace eosio;
    * Используется для расчета доли владения в финансовом потоке cfund в рамках границы пула
    *
   */
-   void unicore::log_event_with_shares (eosio::name username, eosio::name host, int64_t new_power){
+   void unicore::log_event_with_shares (eosio::name username, eosio::name host, int64_t loyality_power, int64_t quants_power) {
      
       account_index accounts(_me, _me.value);
       auto acc = accounts.find(host.value);
 
-      auto root_symbol = acc->get_root_symbol();
+      auto root_symbol = acc -> get_root_symbol();
 
       powerstat_index powerstats(_me, host.value);
       powerlog_index powerlogs(_me, host.value);
-      
 
       auto first_window = powerstats.find(0);
       
@@ -622,9 +577,10 @@ using namespace eosio;
         auto current_window = powerstats.find(cycle);
         
         if (current_window != powerstats.end()) {
-            print("set shares: ", acc -> total_shares);
+            
             powerstats.modify(current_window, _me, [&](auto &ps) {
-                ps.liquid_power = acc -> total_shares;
+                ps.liquid_quants = acc -> total_quants;
+                ps.liquid_loyality = acc -> total_loyality;
             });
        
             auto user_power_by_window_idx = powerlogs.template get_index<"userwindowid"_n>();
@@ -632,26 +588,26 @@ using namespace eosio;
             
             auto log = user_power_by_window_idx.find(log_ids);
             
-            if (log == user_power_by_window_idx.end()){
+            if (log == user_power_by_window_idx.end()) {
               //emplace
-              print("on emplace power: ", new_power);
-              powerlogs.emplace(_me, [&](auto &pl){
+              powerlogs.emplace(_me, [&](auto &pl) {
                 pl.id = unicore::get_global_id("powerlog"_n);
                 pl.host = host;
                 pl.username = username;
                 pl.window_id = cycle;
-                pl.power = new_power;
-                pl.available = asset(0, root_symbol);
+                pl.loyality_power = loyality_power;
+                pl.quants_power = quants_power;
+                pl.available_by_quants = asset(0, root_symbol);
+                pl.available_by_loyality = asset(0, root_symbol);
                 pl.distributed_to_partners = asset(0, root_symbol);
               });
 
             } else {
               //modify
-              print("modify log power from: ", log -> power);
-              print("modify log power to: ", log -> power + new_power);
-
+              
               user_power_by_window_idx.modify(log, _me, [&](auto &pl){
-                pl.power = new_power;
+                pl.loyality_power = log -> loyality_power + loyality_power;
+                pl.quants_power = quants_power;
               });
             }
 
@@ -663,7 +619,8 @@ using namespace eosio;
               ps.id = cycle;
               ps.window_open_at = eosio::time_point_sec(first_window_start_secs + _WINDOW_SECS * cycle);
               ps.window_closed_at = eosio::time_point_sec(first_window_start_secs + _WINDOW_SECS * (cycle + 1));
-              ps.liquid_power = acc -> total_shares;
+              ps.liquid_quants = acc -> total_quants;
+              ps.liquid_loyality = acc -> total_loyality;
               ps.total_available = asset(0, root_symbol);
               ps.total_remain = asset(0, root_symbol);
               ps.total_distributed = asset(0, root_symbol);
@@ -671,13 +628,15 @@ using namespace eosio;
               ps.total_partners_available = asset(0, root_symbol);
           });
 
-          powerlogs.emplace(_me, [&](auto &pl){
+          powerlogs.emplace(_me, [&](auto &pl) {
               pl.id = unicore::get_global_id("powerlog"_n);
               pl.host = host;
               pl.username = username;
               pl.window_id = cycle;
-              pl.power = new_power;
-              pl.available = asset(0, root_symbol);
+              pl.loyality_power = loyality_power;
+              pl.quants_power = quants_power;
+              pl.available_by_quants = asset(0, root_symbol);
+              pl.available_by_loyality = asset(0, root_symbol);
               pl.distributed_to_partners = asset(0, root_symbol);
             });
 
@@ -901,18 +860,18 @@ using namespace eosio;
   [[eosio::action]] void unicore::enpmarket(eosio::name host){
     require_auth(host);
     
-    account_index account(_me, _me.value);
+    // account_index account(_me, _me.value);
 
-    auto acc = account.find(host.value);
-    eosio::check(acc != account.end(), "Host is not found");
+    // auto acc = account.find(host.value);
+    // eosio::check(acc != account.end(), "Host is not found");
 
-    // eosio::check(acc->power_market_id == ""_n, "Power market already enabled");
+    // // eosio::check(acc->power_market_id == ""_n, "Power market already enabled");
 
-    account.modify(acc, host, [&](auto &a){
-      a.power_market_id = host;
-    });
+    // account.modify(acc, host, [&](auto &a){
+    //   a.power_market_id = host;
+    // });
     
-    unicore::create_bancor_market("power"_n, host, acc -> total_shares, acc->quote_amount, acc -> quote_token_contract, 0); 
+    // unicore::create_bancor_market("power"_n, host, acc -> total_shares, acc->quote_amount, acc -> quote_token_contract, 0); 
   
   }
 

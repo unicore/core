@@ -198,6 +198,16 @@ extern "C" {
                             auto username_string = parameter.substr(delimeter2+1, parameter.length());
                             auto username = name(username_string.c_str());
 
+                            account_index accounts(_me, _me.value);
+                            auto acc = accounts.find(host.value);
+                            sincome_index sincome(_me, host.value);
+        
+                            auto sinc = sincome.find(acc -> current_pool_id);
+                            
+                            sincome.modify(sinc, _me, [&](auto &s){
+                                s.paid_to_refs += op.quantity;
+                            });
+
                             unicore::spread_to_refs(host, username, op.quantity, op.quantity, name(code));
 
                             break;
@@ -231,11 +241,26 @@ extern "C" {
 
                             auto delimeter2 = parameter.find('-');
                     
-                            auto host_string = op.memo.substr(4, delimeter2);
-                            
-                            auto host = name(host_string.c_str());
+                            eosio::name host;
+                           
+                            std::string message = "";
+                    
+                            if (delimeter2 != -1){
+                                auto host_string = op.memo.substr(4, delimeter2);
+                                
+                                host = name(host_string.c_str());
+                                
+                                message = parameter.substr(delimeter2+1, parameter.length());
+                        
+                            } else {
+                                auto host_string = op.memo.substr(4, parameter.length());
+                                host = name(host_string.c_str());
+                            }
 
-                            unicore::spread_to_dacs(host, op.quantity, name(code));
+
+                            unicore::push_to_dacs_funds(host, op.quantity, name(code), message);
+
+                            
 
                             break;
                         }
@@ -284,9 +309,9 @@ extern "C" {
                     //HOSTS
                     (upgrade)(setconsensus)(compensator)(setlevels)(cchildhost)(setwebsite)
                     (setahost)(closeahost)(openahost)(rmahost)(enpmarket)(emittomarket)
-                    (emitquote)(emitpower)(emitpower2)(dispmarket)(settiming)(setflows)
+                    (emitquote)(emitquants)(emitpower2)(dispmarket)(settiming)(setflows)
                     //CORE
-                    (setparams)(start)(setstartdate)(refreshbal)(refreshst)(withdraw)
+                    (setparams)(start)(setstartdate)(refreshbal)(setbalmeta)(refreshst)(withdraw)
                     (withdrawsold)(priorenter)(gwithdraw)(setemi)(edithost)(setcondition)
                     //BADGES
                     (setbadge)(delbadge)(giftbadge)(backbadge)
@@ -298,10 +323,10 @@ extern "C" {
                     //VACS
                     (addvac)(rmvac)(addvprop)(rmvprop)(approvevac)(apprvprop)
                     //DACS
-                    (adddac)(rmdac)(withdrdacinc)(fixs)
+                    (adddac)(rmdac)(withdrdacinc)(fixs)(spreadlist)
                     //PRODUCTS
-                    (createprod)(editprod)(buyproduct)
-
+                    (createprod)(editprod)(buysyssubscr)(addflow)(buysecret)(deriveprod)
+                    (addpermiss)(rmpermiss)(payvirtual)
                 )
              
             }

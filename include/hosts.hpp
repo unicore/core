@@ -127,7 +127,8 @@
         std::string purpose;
         bool voting_only_up = false;
         eosio::name power_market_id;
-        uint64_t total_shares;
+        uint64_t total_quants;
+        uint64_t total_loyality;
         eosio::asset quote_amount;
         eosio::name quote_token_contract;
         std::string quote_symbol;
@@ -164,7 +165,7 @@
             (dacs_percent)(cfund_percent)(hfund_percent)(sys_percent)(levels)(gsponsor_model)(direct_goal_withdraw)(dac_mode)(total_dacs_weight)(ahost)(chosts)
             (sale_is_enabled)(sale_mode)(sale_token_contract)(asset_on_sale)(asset_on_sale_precision)(asset_on_sale_symbol)(sale_shift)
             (non_active_chost)(need_switch)(fhosts_mode)(fhosts)
-            (title)(purpose)(voting_only_up)(power_market_id)(total_shares)(quote_amount)(quote_token_contract)(quote_symbol)(quote_precision)(root_token_contract)(root_token)(symbol)(precision)
+            (title)(purpose)(voting_only_up)(power_market_id)(total_quants)(total_loyality)(quote_amount)(quote_token_contract)(quote_symbol)(quote_precision)(root_token_contract)(root_token)(symbol)(precision)
             (to_pay)(payed)(cycle_start_id)(current_pool_id)
             (current_cycle_num)(current_pool_num)(parameters_setted)(activated)(priority_flag)(total_goals)(achieved_goals)(total_tasks)(completed_tasks)(total_reports)(approved_reports)(meta))
 
@@ -351,6 +352,26 @@
     };
 
     typedef eosio::multi_index <"dacs"_n, dacs> dacs_index;
+
+
+
+
+/*!
+   \brief Структура листа пополнений фондов DAC
+*/
+    struct [[eosio::table, eosio::contract("unicore")]] dacsincome {
+        uint64_t id;
+        eosio::asset amount;
+        eosio::name contract;
+        std::string memo;
+
+        uint64_t primary_key() const {return id;}  
+        
+        EOSLIB_SERIALIZE(dacsincome, (id)(amount)(contract)(memo))      
+    };
+
+    typedef eosio::multi_index <"dacsincome"_n, dacsincome> dacsincome_index;
+
 
 
 /*!

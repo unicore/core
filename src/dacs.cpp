@@ -1,3 +1,73 @@
+// https://chat.openai.com/share/33082b92-ec10-461b-9e7a-e47b1d23134f
+// void unicore::add_member(eosio::name new_member, uint8_t weight) {
+//     require_auth(eosio::name("host")); // Замените на имя хоста DAC
+
+//     // Проверка наличия пользователя в DAC
+//     dacs_index dacs(_me, _me.value);
+//     auto existing = dacs.find(new_member.value);
+//     eosio::check(existing == dacs.end(), "User is already a member of the DAC.");
+
+//     // Добавление нового пользователя в DAC
+//     dacs.emplace(_me, [&](auto &d) {
+//         d.username = new_member;
+//         d.weight = weight;
+//         // Остальные параметры...
+//     });
+
+//     // Получение текущего authority для аккаунта хоста
+//     eosio::authority current_auth = eosio::get_auth(eosio::name("host"), eosio::name("active"));
+
+//     // Добавление нового участника в authority аккаунта хоста в сортированном порядке
+//     auto it = std::upper_bound(current_auth.accounts.begin(), current_auth.accounts.end(), new_member.to_string(), 
+//         [](const std::string &str, const eosio::key_weight &kw) { 
+//             return str < kw.key.actor.to_string(); 
+//         }
+//     );
+//     current_auth.accounts.insert(it, {{new_member, eosio::name("active")}, weight});
+
+//     // Обновление threshold authority аккаунта хоста на основе общего веса участников DAC
+//     current_auth.threshold += weight;
+
+//     // Обновление authority аккаунта хоста
+//     eosio::action(
+//         eosio::permission_level{eosio::name("host"), eosio::name("owner")},
+//         eosio::name("eosio"),
+//         eosio::name("updateauth"),
+//         std::make_tuple(eosio::name("host"), eosio::name("active"), eosio::name("owner"), current_auth)
+//     ).send();
+// }
+
+// void unicore::remove_member(eosio::name member_to_remove) {
+//     require_auth(eosio::name("host")); // Замените на имя хоста DAC
+
+//     // Проверка наличия пользователя в DAC
+//     dacs_index dacs(_me, _me.value);
+//     auto existing = dacs.find(member_to_remove.value);
+//     eosio::check(existing != dacs.end(), "User is not a member of the DAC.");
+
+//     // Получение текущего authority для аккаунта хоста
+//     eosio::authority current_auth = eosio::get_auth(eosio::name("host"), eosio::name("active"));
+
+//     // Удаление участника из authority аккаунта хоста
+//     for (auto it = current_auth.accounts.begin(); it != current_auth.accounts.end(); ++it) {
+//         if (it->permission.actor == member_to_remove) {
+//             current_auth.threshold -= it->weight;
+//             current_auth.accounts.erase(it);
+//             break;
+//         }
+//     }
+
+//     // Обновление authority аккаунта хоста
+//     eosio::action(
+//         eosio::permission_level{eosio::name("host"), eosio::name("owner")},
+//         eosio::name("eosio"),
+//         eosio::name("updateauth"),
+//         std::make_tuple(eosio::name("host"), eosio::name("active"), eosio::name("owner"), current_auth)
+//     ).send();
+
+//     // Удаление участника из DAC
+//     dacs.erase(existing);
+// }
 
 
 [[eosio::action]] void unicore::withdrdacinc(eosio::name username, eosio::name host){

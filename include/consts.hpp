@@ -26,6 +26,7 @@ static constexpr eosio::name _gateway = "gateway"_n;
 static constexpr eosio::name _saving = "eosio.saving"_n;
 static constexpr eosio::name _core_host = "core"_n;
 static constexpr eosio::name _p2p = "p2p"_n;
+static constexpr eosio::name _deriver = "unicore"_n;
 
 constexpr uint64_t DEPOSIT = 100;
 constexpr uint64_t DEPOSIT_FOR_SOMEONE = 101;

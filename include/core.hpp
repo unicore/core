@@ -87,6 +87,8 @@ class [[eosio::contract]] unicore : public eosio::contract {
         [[eosio::action]] void priorenter(eosio::name username, eosio::name host, uint64_t balance_id);
         [[eosio::action]] void refreshbal(eosio::name username, eosio::name host, uint64_t balance_id, uint64_t partrefresh);
         
+        [[eosio::action]] void setbalmeta(eosio::name username, eosio::name host, uint64_t balance_id, std::string meta);
+
         [[eosio::action]] void setstartdate(eosio::name host, eosio::time_point_sec start_at); 
         [[eosio::action]] void checkstatus(eosio::name host, eosio::name username);
 
@@ -96,7 +98,7 @@ class [[eosio::contract]] unicore : public eosio::contract {
         
         static void refresh_state(eosio::name host);
 
-        [[eosio::action]] void init(uint64_t system_income);
+        [[eosio::action]] void init(uint64_t system_income, uint64_t operator_income);
 
         [[eosio::action]] void refreshst(eosio::name username, eosio::name host);
 
@@ -180,17 +182,23 @@ class [[eosio::contract]] unicore : public eosio::contract {
         //DACS
         [[eosio::action]] void adddac(eosio::name username, eosio::name host, uint64_t weight, eosio::name limit_type, eosio::asset income_limit, std::string title, std::string descriptor);
         [[eosio::action]] void rmdac(eosio::name username, eosio::name host);
+        
+        [[eosio::action]] void spreadlist(eosio::name host);
+
 
         // [[eosio::action]] void editrole(eosio::name username, eosio::name host, uint64_t weight);
         // [[eosio::action]] void rmrole(eosio::name username, eosio::name host, uint64_t weight);
 
-        static void spread_to_dacs(eosio::name host, eosio::asset amount, eosio::name contract);
+        static void spread_to_dacs(eosio::name host);
+        static std::tuple <eosio::asset, eosio::name, std::string> push_from_dacs_funds(eosio::name host);
+        static void push_to_dacs_funds(eosio::name host, eosio::asset amount, eosio::name contract, std::string memo);
+
 
         static void spread_to_funds(eosio::name code, eosio::name host, eosio::asset quantity, std::string comment);
 
         static void spread_to_refs(eosio::name host, eosio::name username, eosio::asset spread_amount, eosio::asset from_amount, eosio::name token_contract);
 
-        static void log_event_with_shares (eosio::name username, eosio::name host, int64_t new_power);
+        static void log_event_with_shares (eosio::name username, eosio::name host, int64_t loyality_power, int64_t quants_power);
 
         [[eosio::action]] void withdrdacinc(eosio::name username, eosio::name host);
         [[eosio::action]] void setwebsite(eosio::name host, eosio::name ahostname, eosio::string website, eosio::name type, std::string meta);
@@ -217,7 +225,7 @@ class [[eosio::contract]] unicore : public eosio::contract {
         [[eosio::action]] void enpmarket(eosio::name host);
 
         [[eosio::action]] void emitquote(eosio::name host, eosio::asset amount, eosio::name contract);
-        [[eosio::action]] void emitpower(eosio::name host, eosio::name username, int64_t user_shares, bool is_change);
+        [[eosio::action]] void emitquants(eosio::name host, eosio::name username, int64_t user_shares, bool is_change);
         [[eosio::action]] void emitpower2(eosio::name host, uint64_t goal_id, uint64_t shares);
         [[eosio::action]] void emittomarket(eosio::name host, eosio::name username, uint64_t user_shares, eosio::asset amount);
         [[eosio::action]] void withrbenefit(eosio::name username, eosio::name host, uint64_t id);
@@ -257,7 +265,7 @@ class [[eosio::contract]] unicore : public eosio::contract {
         [[eosio::action]] void setinctask(eosio::name username, uint64_t income_id, bool with_badge, uint64_t my_goal_id, uint64_t my_badge_id);
 
 
-
+        
         [[eosio::action]] void deltask(eosio::name host, uint64_t task_id);
         [[eosio::action]] void paydebt(eosio::name host, uint64_t goal_id);
 
@@ -272,9 +280,13 @@ class [[eosio::contract]] unicore : public eosio::contract {
 
 
         //PRODUCTS
-        [[eosio::action]] void createprod(name host, eosio::name type, std::string title, std::string description, std::string encrypted_data, std::string public_key, eosio::name token_contract, asset price, uint64_t duration);
-        [[eosio::action]] void editprod(eosio::name host, eosio::name type, uint64_t product_id, std::string title, std::string description, std::string encrypted_data, std::string public_key, asset price, uint64_t duration);
-        [[eosio::action]] void buyproduct(eosio::name buyer, eosio::name host, uint64_t product_id, uint64_t quantity);
+        [[eosio::action]] void createprod(name host, eosio::name type, uint64_t referral_percent, std::string title, std::string description, std::string encrypted_data, eosio::name token_contract, asset price, uint64_t duration);
+        [[eosio::action]] void editprod(eosio::name host, eosio::name type, uint64_t referral_percent, uint64_t product_id, std::string title, std::string description, std::string encrypted_data, asset price, uint64_t duration);
+        [[eosio::action]] void deriveprod(eosio::name host, uint64_t user_product_id, std::string encrypted_data);
+
+        [[eosio::action]] void buysecret(eosio::name buyer, eosio::name host, uint64_t flow_id);
+        [[eosio::action]] void buysyssubscr(eosio::name buyer, eosio::name host, uint64_t product_id, uint64_t quantity);
+        [[eosio::action]] void addflow(name host, uint64_t product_id, eosio::time_point_sec start_at, eosio::time_point_sec closed_at, std::string encrypted_data, std::string meta);        
 
         static void add_vbalance(eosio::name username, eosio::name host, eosio::asset quantity);
         static void sub_vbalance(eosio::name username, eosio::name host, eosio::asset quantity);
@@ -291,6 +303,13 @@ class [[eosio::contract]] unicore : public eosio::contract {
         //CONDITIONS
         [[eosio::action]] void setcondition(eosio::name host, eosio::string key, uint64_t value);
         [[eosio::action]] void rmcondition(eosio::name host, uint64_t key); 
+       
+        [[eosio::action]] void addpermiss(eosio::name owner, eosio::name host, eosio::name to, std::string memo);
+        [[eosio::action]] void rmpermiss(eosio::name username, uint64_t id);
+        [[eosio::action]] void payvirtual(eosio::name username, eosio::name from, eosio::name host, eosio::name contract, eosio::asset total, eosio::asset spread_to_refs);
+
+        static bool check_permission(eosio::name username, eosio::name host, eosio::name action);
+
         static void rmfromhostwl(eosio::name host, eosio::name username);
         static void check_status(eosio::name host, eosio::name username, eosio::asset amount, eosio::name status);
         static void check_subscribe(eosio::name host, eosio::name username, eosio::asset amount, eosio::name status);
@@ -629,12 +648,12 @@ struct [[eosio::table, eosio::contract("unicore")]] refstat {
    \brief Структура для учёта развития циклов хоста Двойной Спирали.
 */
 
-    struct [[eosio::table, eosio::contract("unicore")]] cycle{
+    struct [[eosio::table, eosio::contract("unicore")]] cycle {
         uint64_t id;
         eosio::name ahost;
         uint64_t start_at_global_pool_id;
         uint64_t finish_at_global_pool_id;
-        eosio::asset emitted;
+        eosio::asset emitted; //change to burned
         uint64_t primary_key() const {return id;}
 
         EOSLIB_SERIALIZE(cycle, (id)(ahost)(start_at_global_pool_id)(finish_at_global_pool_id)(emitted));

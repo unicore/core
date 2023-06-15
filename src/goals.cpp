@@ -140,7 +140,6 @@ using namespace eosio;
       g.meta = meta;
     });      
     
-    print("ok");
   };
 
   /**

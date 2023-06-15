@@ -517,16 +517,13 @@ using namespace eosio;
 
         for (auto level : levels){
             level_count++;
-            // eosio::check(level <= prev_level, "Percentage on each referal level should decrease or not change");
-            //TODO WHY?
             eosio::check(level != 0, "Zero-level is prohibited.");
             percent_count += level;
         };
 
         eosio::check(percent_count == 100 * ONE_PERCENT, "Summ of all levels should be 100%");
         eosio::check(level_count <= _MAX_LEVELS, "Exceed the maximum number of levels");
-        //END eosio::check
-
+        
         account_index accounts(_me, _me.value);
         
         auto itr = accounts.find(username.value);
@@ -568,7 +565,8 @@ using namespace eosio;
             a.activated = false;
             a.dac_mode = 0;
             a.total_dacs_weight = 0;
-            a.total_shares = total_shares;
+            a.total_quants = 0;
+            a.total_loyality = 0;
 
             a.quote_amount = asset(0, root_token.symbol);
             a.quote_symbol = root_token.symbol.code().to_string();

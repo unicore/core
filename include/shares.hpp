@@ -65,6 +65,49 @@
   > power3_index;
 
 
+  
+/*!
+   \brief Обновленная структура силы пользователя у хоста Двойной Спирали.
+*/
+
+  struct [[eosio::table, eosio::contract("unicore")]] loyality {
+    eosio::name username;
+    uint64_t power;
+    
+    uint64_t primary_key() const {return username.value;}
+
+    uint64_t bypower() const {return power;}
+    
+    EOSLIB_SERIALIZE(struct loyality, (username)(power))
+  };
+
+  typedef eosio::multi_index<"loyality"_n, loyality,
+    eosio::indexed_by<"bypower"_n, eosio::const_mem_fun<loyality, uint64_t, &loyality::bypower>>
+  > loyality_index;
+
+
+
+/*!
+   \brief Обновленная структура силы пользователя у хоста Двойной Спирали.
+*/
+
+  struct [[eosio::table, eosio::contract("unicore")]] quants {
+    eosio::name username;
+    uint64_t power;
+    
+    uint64_t primary_key() const {return username.value;}
+
+    uint64_t bypower() const {return power;}
+
+
+    EOSLIB_SERIALIZE(struct quants, (username)(power))
+  };
+
+  typedef eosio::multi_index<"quants"_n, quants,
+    eosio::indexed_by<"byquants"_n, eosio::const_mem_fun<quants, uint64_t, &quants::bypower>>
+  > quants_index;
+
+
 /*!
    \brief Обновленная структура силы пользователя у хоста Двойной Спирали.
 */
@@ -91,7 +134,8 @@
     uint64_t id;
     eosio::time_point_sec window_open_at;
     eosio::time_point_sec window_closed_at;
-    uint64_t liquid_power;
+    uint64_t liquid_quants;
+    uint64_t liquid_loyality;
 
     eosio::asset total_available;
     eosio::asset total_remain;
@@ -104,7 +148,7 @@
     uint64_t byopen() const {return window_open_at.sec_since_epoch();}
         
 
-    EOSLIB_SERIALIZE(struct powerstat, (id)(window_open_at)(window_closed_at)(liquid_power)(total_available)(total_remain)(total_distributed)(total_partners_available)(total_partners_distributed))
+    EOSLIB_SERIALIZE(struct powerstat, (id)(window_open_at)(window_closed_at)(liquid_quants)(liquid_loyality)(total_available)(total_remain)(total_distributed)(total_partners_available)(total_partners_distributed))
   };
 
   typedef eosio::multi_index<"powerstat"_n, powerstat,
@@ -112,25 +156,27 @@
   > powerstat_index;
 
 
+
 /*!
    \brief Структура истории преобретения силы пользователем у хоста Двойной Спирали.
 */
-
   struct [[eosio::table, eosio::contract("unicore")]] powerlog {
     uint64_t id; //auto by cycle
     eosio::name host;
     eosio::name username;
     uint64_t window_id;
-    uint64_t power;
+    uint64_t loyality_power;
+    uint64_t quants_power;
     bool updated = false;
-    eosio::asset available;
+    eosio::asset available_by_loyality;
+    eosio::asset available_by_quants;
     eosio::asset distributed_to_partners;
 
     uint64_t primary_key() const {return id;}
     
     uint128_t userwindowid() const { return combine_ids(username.value, window_id); }
     
-    EOSLIB_SERIALIZE(struct powerlog, (id)(host)(username)(window_id)(power)(updated)(available)(distributed_to_partners))
+    EOSLIB_SERIALIZE(struct powerlog, (id)(host)(username)(window_id)(loyality_power)(quants_power)(updated)(available_by_loyality)(available_by_quants)(distributed_to_partners))
   };
 
   typedef eosio::multi_index<"powerlog"_n, powerlog,
