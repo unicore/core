@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d4/d48/structvacs" kind="struct" language="C++" prot="public">
+    <compoundname>vacs</compoundname>
+    <includes refid="d3/dcd/hosts_8hpp" local="no">hosts.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/d48/structvacs_1a7ee15c9203c307f828103e1ff269f5d7" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t vacs::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>vacs::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="269" column="18" bodyfile="include/hosts.hpp" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d48/structvacs_1a92789d98dd7c5145119308688279e71b" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name vacs::creator</definition>
+        <argsstring></argsstring>
+        <name>creator</name>
+        <qualifiedname>vacs::creator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="270" column="21" bodyfile="include/hosts.hpp" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d48/structvacs_1a8a85a9aa09a4715080494b176ca3d406" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool vacs::approved</definition>
+        <argsstring></argsstring>
+        <name>approved</name>
+        <qualifiedname>vacs::approved</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="271" column="14" bodyfile="include/hosts.hpp" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d48/structvacs_1a11f60e17d33622d6e4309dd8ae08e18f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool vacs::closed</definition>
+        <argsstring></argsstring>
+        <name>closed</name>
+        <qualifiedname>vacs::closed</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="272" column="14" bodyfile="include/hosts.hpp" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d48/structvacs_1afa646f5dc2e17215ba4b0d72b4d67b2c" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name vacs::limit_type</definition>
+        <argsstring></argsstring>
+        <name>limit_type</name>
+        <qualifiedname>vacs::limit_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="273" column="21" bodyfile="include/hosts.hpp" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d48/structvacs_1aae267f9df7a2cb666adb997126387dc1" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset vacs::income_limit</definition>
+        <argsstring></argsstring>
+        <name>income_limit</name>
+        <qualifiedname>vacs::income_limit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="274" column="22" bodyfile="include/hosts.hpp" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d48/structvacs_1a117f42cdc01ba0d853cbb9f9015e8e99" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t vacs::proposals</definition>
+        <argsstring></argsstring>
+        <name>proposals</name>
+        <qualifiedname>vacs::proposals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="275" column="18" bodyfile="include/hosts.hpp" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d48/structvacs_1a9cb7a2c336ca54c69178a6cbc488ffb4" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t vacs::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <qualifiedname>vacs::weight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="277" column="18" bodyfile="include/hosts.hpp" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d48/structvacs_1aeef598457e4bef3ff3c02eb77d5b0177" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string vacs::role</definition>
+        <argsstring></argsstring>
+        <name>role</name>
+        <qualifiedname>vacs::role</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="278" column="21" bodyfile="include/hosts.hpp" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d48/structvacs_1a32302c94a14ab33a5722b03f7ab850a9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string vacs::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <qualifiedname>vacs::description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="279" column="21" bodyfile="include/hosts.hpp" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d48/structvacs_1ae84328b732c9610c831056ffe9afcc4e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t vacs::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>vacs::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="282" column="18" bodyfile="include/hosts.hpp" bodystart="282" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d48/structvacs_1a37e7e3920a78ac5daf2491bb5991cdca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t vacs::bycreator</definition>
+        <argsstring>() const</argsstring>
+        <name>bycreator</name>
+        <qualifiedname>vacs::bycreator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="284" column="18" bodyfile="include/hosts.hpp" bodystart="284" bodyend="284"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура вакансии хоста Двойной Спирали. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>asset</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>vacs</label>
+        <link refid="d4/d48/structvacs"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>income_limit</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>description</edgelabel>
+          <edgelabel>role</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/hosts.hpp" line="268" column="5" bodyfile="include/hosts.hpp" bodystart="268" bodyend="287"/>
+    <listofallmembers>
+      <member refid="d4/d48/structvacs_1a8a85a9aa09a4715080494b176ca3d406" prot="public" virt="non-virtual"><scope>vacs</scope><name>approved</name></member>
+      <member refid="d4/d48/structvacs_1a37e7e3920a78ac5daf2491bb5991cdca" prot="public" virt="non-virtual"><scope>vacs</scope><name>bycreator</name></member>
+      <member refid="d4/d48/structvacs_1a11f60e17d33622d6e4309dd8ae08e18f" prot="public" virt="non-virtual"><scope>vacs</scope><name>closed</name></member>
+      <member refid="d4/d48/structvacs_1a92789d98dd7c5145119308688279e71b" prot="public" virt="non-virtual"><scope>vacs</scope><name>creator</name></member>
+      <member refid="d4/d48/structvacs_1a32302c94a14ab33a5722b03f7ab850a9" prot="public" virt="non-virtual"><scope>vacs</scope><name>description</name></member>
+      <member refid="d4/d48/structvacs_1a7ee15c9203c307f828103e1ff269f5d7" prot="public" virt="non-virtual"><scope>vacs</scope><name>id</name></member>
+      <member refid="d4/d48/structvacs_1aae267f9df7a2cb666adb997126387dc1" prot="public" virt="non-virtual"><scope>vacs</scope><name>income_limit</name></member>
+      <member refid="d4/d48/structvacs_1afa646f5dc2e17215ba4b0d72b4d67b2c" prot="public" virt="non-virtual"><scope>vacs</scope><name>limit_type</name></member>
+      <member refid="d4/d48/structvacs_1ae84328b732c9610c831056ffe9afcc4e" prot="public" virt="non-virtual"><scope>vacs</scope><name>primary_key</name></member>
+      <member refid="d4/d48/structvacs_1a117f42cdc01ba0d853cbb9f9015e8e99" prot="public" virt="non-virtual"><scope>vacs</scope><name>proposals</name></member>
+      <member refid="d4/d48/structvacs_1aeef598457e4bef3ff3c02eb77d5b0177" prot="public" virt="non-virtual"><scope>vacs</scope><name>role</name></member>
+      <member refid="d4/d48/structvacs_1a9cb7a2c336ca54c69178a6cbc488ffb4" prot="public" virt="non-virtual"><scope>vacs</scope><name>weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structcmscontent" kind="struct" language="C++" prot="public">
+    <compoundname>cmscontent</compoundname>
+    <includes refid="cms_8hpp" local="no">cms.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcmscontent_1a728f21709bd37994b31c334cc2d91888" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name cmscontent::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>cmscontent::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cms.hpp" line="5" column="17" bodyfile="include/cms.hpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcmscontent_1a954b44d1b345443ea24776a2cd46179d" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name cmscontent::lang</definition>
+        <argsstring></argsstring>
+        <name>lang</name>
+        <qualifiedname>cmscontent::lang</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cms.hpp" line="6" column="17" bodyfile="include/cms.hpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcmscontent_1aedaaa678ac48fc729cf9de6da8a9b927" prot="public" static="no" mutable="no">
+        <type>eosio::string</type>
+        <definition>eosio::string cmscontent::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <qualifiedname>cmscontent::content</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cms.hpp" line="7" column="19" bodyfile="include/cms.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcmscontent_1ac36e99c6076f64079d59ac390593a3c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t cmscontent::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>cmscontent::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cms.hpp" line="9" column="14" bodyfile="include/cms.hpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structcmscontent_1a97ea071f0bbbdfb0dcb997761e22b5ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t cmscontent::bylang</definition>
+        <argsstring>() const</argsstring>
+        <name>bylang</name>
+        <qualifiedname>cmscontent::bylang</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cms.hpp" line="10" column="14" bodyfile="include/cms.hpp" bodystart="10" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура хранилища контента и оформления платформ. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>cmscontent</label>
+        <link refid="structcmscontent"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>content</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/cms.hpp" line="4" column="1" bodyfile="include/cms.hpp" bodystart="4" bodyend="13"/>
+    <listofallmembers>
+      <member refid="structcmscontent_1a97ea071f0bbbdfb0dcb997761e22b5ce" prot="public" virt="non-virtual"><scope>cmscontent</scope><name>bylang</name></member>
+      <member refid="structcmscontent_1aedaaa678ac48fc729cf9de6da8a9b927" prot="public" virt="non-virtual"><scope>cmscontent</scope><name>content</name></member>
+      <member refid="structcmscontent_1a954b44d1b345443ea24776a2cd46179d" prot="public" virt="non-virtual"><scope>cmscontent</scope><name>lang</name></member>
+      <member refid="structcmscontent_1ac36e99c6076f64079d59ac390593a3c9" prot="public" virt="non-virtual"><scope>cmscontent</scope><name>primary_key</name></member>
+      <member refid="structcmscontent_1a728f21709bd37994b31c334cc2d91888" prot="public" virt="non-virtual"><scope>cmscontent</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

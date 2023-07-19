@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d8/d42/structcounts" kind="struct" language="C++" prot="public">
+    <compoundname>counts</compoundname>
+    <includes refid="da/d47/core_8hpp" local="no">core.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d8/d42/structcounts_1abb0a4ba564917c262c6a5fbd10134c3e" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name counts::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>counts::key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="399" column="19" bodyfile="include/core.hpp" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d42/structcounts_1a1d634f6cc442797b55520f4e86e1cd4f" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name counts::secondary_key</definition>
+        <argsstring></argsstring>
+        <name>secondary_key</name>
+        <qualifiedname>counts::secondary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="400" column="19" bodyfile="include/core.hpp" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d42/structcounts_1a97b0d7a1f98cdf29ac0e4420651fb7ef" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t counts::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>counts::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="401" column="16" bodyfile="include/core.hpp" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d42/structcounts_1a025bbb14817ee83da9a0af58e755a794" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double counts::double_value</definition>
+        <argsstring></argsstring>
+        <name>double_value</name>
+        <qualifiedname>counts::double_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="402" column="16" bodyfile="include/core.hpp" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/d42/structcounts_1a541e185e1f5e763b257a196d86538597" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t counts::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>counts::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return id - primary_key </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="404" column="16" bodyfile="include/core.hpp" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d42/structcounts_1aa11cd18d5dafe5d4fbc21a89b3a20aa2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint128_t</type>
+        <definition>uint128_t counts::keyskey</definition>
+        <argsstring>() const</argsstring>
+        <name>keyskey</name>
+        <qualifiedname>counts::keyskey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(contract, blocked_now.symbol) - комбинированный secondary_key для получения курса по имени выходного контракта и символу </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="405" column="17" bodyfile="include/core.hpp" bodystart="405" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d42/structcounts_1a31343922bf3e266ed43f3db640fcf5e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint128_t</type>
+        <definition>uint128_t counts::keyvalue</definition>
+        <argsstring>() const</argsstring>
+        <name>keyvalue</name>
+        <qualifiedname>counts::keyvalue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(contract, blocked_now.symbol) - комбинированный secondary_key для получения курса по имени выходного контракта и символу </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="406" column="17" bodyfile="include/core.hpp" bodystart="406" bodyend="405"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Таблица хранения счётчиков </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Contract: _me</title><para></para>
+</simplesect>
+<simplesect kind="par"><title>Scope: nft | _me</title><para></para>
+</simplesect>
+<simplesect kind="par"><title>Table: counts</title><para></para>
+</simplesect>
+Таблица хранит категории событий хоста. </para>
+    </detaileddescription>
+    <location file="include/core.hpp" line="398" column="5" bodyfile="include/core.hpp" bodystart="398" bodyend="410"/>
+    <listofallmembers>
+      <member refid="d8/d42/structcounts_1a025bbb14817ee83da9a0af58e755a794" prot="public" virt="non-virtual"><scope>counts</scope><name>double_value</name></member>
+      <member refid="d8/d42/structcounts_1abb0a4ba564917c262c6a5fbd10134c3e" prot="public" virt="non-virtual"><scope>counts</scope><name>key</name></member>
+      <member refid="d8/d42/structcounts_1aa11cd18d5dafe5d4fbc21a89b3a20aa2" prot="public" virt="non-virtual"><scope>counts</scope><name>keyskey</name></member>
+      <member refid="d8/d42/structcounts_1a31343922bf3e266ed43f3db640fcf5e0" prot="public" virt="non-virtual"><scope>counts</scope><name>keyvalue</name></member>
+      <member refid="d8/d42/structcounts_1a541e185e1f5e763b257a196d86538597" prot="public" virt="non-virtual"><scope>counts</scope><name>primary_key</name></member>
+      <member refid="d8/d42/structcounts_1a1d634f6cc442797b55520f4e86e1cd4f" prot="public" virt="non-virtual"><scope>counts</scope><name>secondary_key</name></member>
+      <member refid="d8/d42/structcounts_1a97b0d7a1f98cdf29ac0e4420651fb7ef" prot="public" virt="non-virtual"><scope>counts</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

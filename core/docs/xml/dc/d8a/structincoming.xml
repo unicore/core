@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dc/d8a/structincoming" kind="struct" language="C++" prot="public">
+    <compoundname>incoming</compoundname>
+    <includes refid="d2/dbd/tasks_8hpp" local="no">tasks.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dc/d8a/structincoming_1a9ee49a4eb869acf3122ebe8285cb4194" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t incoming::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>incoming::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="268" column="18" bodyfile="include/tasks.hpp" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d8a/structincoming_1a242c3f43114c14b76ec2e7c63d8c231a" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name incoming::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <qualifiedname>incoming::host</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="269" column="21" bodyfile="include/tasks.hpp" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d8a/structincoming_1ade1b23166cc5f00c5671a4eeb15acd4c" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t incoming::goal_id</definition>
+        <argsstring></argsstring>
+        <name>goal_id</name>
+        <qualifiedname>incoming::goal_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="270" column="18" bodyfile="include/tasks.hpp" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d8a/structincoming_1a3380ef481a49b4516746460ec43c0ed0" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t incoming::task_id</definition>
+        <argsstring></argsstring>
+        <name>task_id</name>
+        <qualifiedname>incoming::task_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="271" column="18" bodyfile="include/tasks.hpp" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d8a/structincoming_1a0389fa468d16a51288e568a0eec33e5d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool incoming::with_badge</definition>
+        <argsstring></argsstring>
+        <name>with_badge</name>
+        <qualifiedname>incoming::with_badge</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="272" column="14" bodyfile="include/tasks.hpp" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d8a/structincoming_1a7da14ab3595bd9ddf804e2dfc52513ba" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t incoming::my_goal_id</definition>
+        <argsstring></argsstring>
+        <name>my_goal_id</name>
+        <qualifiedname>incoming::my_goal_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="273" column="18" bodyfile="include/tasks.hpp" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d8a/structincoming_1a157d02a8368b540707e942e22d1905e9" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t incoming::my_badge_id</definition>
+        <argsstring></argsstring>
+        <name>my_badge_id</name>
+        <qualifiedname>incoming::my_badge_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="274" column="18" bodyfile="include/tasks.hpp" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d8a/structincoming_1ae9c10bc16472d43fb3ccb4d92ceafe09" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t incoming::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>incoming::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="276" column="18" bodyfile="include/tasks.hpp" bodystart="276" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8a/structincoming_1aa1299c15e18b2512be11f58769a5a5da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint128_t</type>
+        <definition>uint128_t incoming::byhosttask</definition>
+        <argsstring>() const</argsstring>
+        <name>byhosttask</name>
+        <qualifiedname>incoming::byhosttask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="278" column="19" bodyfile="include/tasks.hpp" bodystart="278" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8a/structincoming_1ad317d70b568a875fa44fabff231421e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint128_t</type>
+        <definition>uint128_t incoming::byhostgoal</definition>
+        <argsstring>() const</argsstring>
+        <name>byhostgoal</name>
+        <qualifiedname>incoming::byhostgoal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="279" column="19" bodyfile="include/tasks.hpp" bodystart="279" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8a/structincoming_1a2e9ca9eb34ff5437c38d36fc4f98a7ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t incoming::bymygoal</definition>
+        <argsstring>() const</argsstring>
+        <name>bymygoal</name>
+        <qualifiedname>incoming::bymygoal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="280" column="18" bodyfile="include/tasks.hpp" bodystart="280" bodyend="280"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура задач, где аккаунт деятель. <zwj/>/ struct [[eosio::table, eosio::contract(&quot;unicore&quot;)]] iamdoer { uint64_t id; eosio::name host; uint64_t task_id;. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>uint64_t primary_key() const {return id;} uint64_t byhost() const {return host.value;} uint128_t byhosttask() const { return combine_ids(host.value, task_id); }</para>
+<para>EOSLIB_SERIALIZE(iamdoer, (id)(host)(task_id)) };</para>
+<para>typedef eosio::multi_index&lt; &quot;iamdoer&quot;_n, iamdoer, eosio::indexed_by&lt;&quot;byhost&quot;_n, eosio::const_mem_fun&lt;iamdoer, uint64_t, &amp;iamdoer::byhost&gt;&gt;, eosio::indexed_by&lt;&quot;byhosttask&quot;_n, eosio::const_mem_fun&lt;iamdoer, uint128_t, &amp;iamdoer::byhosttask&gt;&gt; <blockquote><para><zwj/>iamdoer_index; </para>
+</blockquote></para>
+<para>/*!</para>
+<para>Структура входящих целей и задач </para>
+    </detaileddescription>
+    <location file="include/tasks.hpp" line="267" column="5" bodyfile="include/tasks.hpp" bodystart="267" bodyend="283"/>
+    <listofallmembers>
+      <member refid="dc/d8a/structincoming_1ad317d70b568a875fa44fabff231421e9" prot="public" virt="non-virtual"><scope>incoming</scope><name>byhostgoal</name></member>
+      <member refid="dc/d8a/structincoming_1aa1299c15e18b2512be11f58769a5a5da" prot="public" virt="non-virtual"><scope>incoming</scope><name>byhosttask</name></member>
+      <member refid="dc/d8a/structincoming_1a2e9ca9eb34ff5437c38d36fc4f98a7ec" prot="public" virt="non-virtual"><scope>incoming</scope><name>bymygoal</name></member>
+      <member refid="dc/d8a/structincoming_1ade1b23166cc5f00c5671a4eeb15acd4c" prot="public" virt="non-virtual"><scope>incoming</scope><name>goal_id</name></member>
+      <member refid="dc/d8a/structincoming_1a242c3f43114c14b76ec2e7c63d8c231a" prot="public" virt="non-virtual"><scope>incoming</scope><name>host</name></member>
+      <member refid="dc/d8a/structincoming_1a9ee49a4eb869acf3122ebe8285cb4194" prot="public" virt="non-virtual"><scope>incoming</scope><name>id</name></member>
+      <member refid="dc/d8a/structincoming_1a157d02a8368b540707e942e22d1905e9" prot="public" virt="non-virtual"><scope>incoming</scope><name>my_badge_id</name></member>
+      <member refid="dc/d8a/structincoming_1a7da14ab3595bd9ddf804e2dfc52513ba" prot="public" virt="non-virtual"><scope>incoming</scope><name>my_goal_id</name></member>
+      <member refid="dc/d8a/structincoming_1ae9c10bc16472d43fb3ccb4d92ceafe09" prot="public" virt="non-virtual"><scope>incoming</scope><name>primary_key</name></member>
+      <member refid="dc/d8a/structincoming_1a3380ef481a49b4516746460ec43c0ed0" prot="public" virt="non-virtual"><scope>incoming</scope><name>task_id</name></member>
+      <member refid="dc/d8a/structincoming_1a0389fa468d16a51288e568a0eec33e5d" prot="public" virt="non-virtual"><scope>incoming</scope><name>with_badge</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

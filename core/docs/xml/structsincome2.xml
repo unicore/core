@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structsincome2" kind="struct" language="C++" prot="public">
+    <compoundname>sincome2</compoundname>
+    <includes refid="core_8hpp" local="no">core.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsincome2_1a2fc56b3db567d9dbee93795cfc0621df" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t sincome2::pool_id</definition>
+        <argsstring></argsstring>
+        <name>pool_id</name>
+        <qualifiedname>sincome2::pool_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="937" column="18" bodyfile="include/core.hpp" bodystart="937" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsincome2_1a562248e01d10f7967f6f8eeb069f4614" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset sincome2::burned_loss_amount</definition>
+        <argsstring></argsstring>
+        <name>burned_loss_amount</name>
+        <qualifiedname>sincome2::burned_loss_amount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="938" column="22" bodyfile="include/core.hpp" bodystart="938" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structsincome2_1a4894afa5216d13f6fec791f3e3bf1d88" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t sincome2::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>sincome2::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="940" column="18" bodyfile="include/core.hpp" bodystart="940" bodyend="940"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Доп структура учёта системного дохода фондов хоста Двойной Спирали. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>asset</label>
+      </node>
+      <node id="1">
+        <label>sincome2</label>
+        <link refid="structsincome2"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>burned_loss_amount</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/core.hpp" line="936" column="5" bodyfile="include/core.hpp" bodystart="936" bodyend="944"/>
+    <listofallmembers>
+      <member refid="structsincome2_1a562248e01d10f7967f6f8eeb069f4614" prot="public" virt="non-virtual"><scope>sincome2</scope><name>burned_loss_amount</name></member>
+      <member refid="structsincome2_1a2fc56b3db567d9dbee93795cfc0621df" prot="public" virt="non-virtual"><scope>sincome2</scope><name>pool_id</name></member>
+      <member refid="structsincome2_1a4894afa5216d13f6fec791f3e3bf1d88" prot="public" virt="non-virtual"><scope>sincome2</scope><name>primary_key</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

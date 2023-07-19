@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['back_5fshares_5fwith_5fbadge_5faction_0',['back_shares_with_badge_action',['../classunicore.html#aa78e3ba614a74bf7edd3fdfa0b048b23',1,'unicore']]],
+  ['backbadge_1',['backbadge',['../classunicore.html#a6e7db779eb5836300fabe105012388c2',1,'unicore']]],
+  ['badges_2',['badges',['../structbadges.html',1,'']]],
+  ['balance_3',['balance',['../structbalance.html',1,'']]],
+  ['balance2_4',['balance2',['../structbalance2.html',1,'']]],
+  ['balance4_5',['balance4',['../structbalance4.html',1,'']]],
+  ['benefactors_6',['benefactors',['../structbenefactors.html',1,'']]],
+  ['burn_5faction_7',['burn_action',['../classunicore.html#a6ad2fe18dc872283eeff5387d2815b34',1,'unicore']]],
+  ['buy_5faccount_8',['buy_account',['../classunicore.html#a98f88515bc39a8534fbe42aba341ae3b',1,'unicore']]],
+  ['buy_5faction_9',['buy_action',['../classunicore.html#a278664e711bbb5194481633ae96bbc75',1,'unicore']]],
+  ['buyshares_5faction_10',['buyshares_action',['../classunicore.html#ab899e878b848c48c9f6656c74565970d',1,'unicore']]],
+  ['bwtradegraph_11',['bwtradegraph',['../structbwtradegraph.html',1,'']]],
+  ['byconsym_12',['byconsym',['../structubalance.html#a69574254b2a86663044d95cb3927dbb7',1,'ubalance::byconsym()'],['../structusdrates.html#a269eb39bbee27ee11f66312904d65a02',1,'usdrates::byconsym()']]],
+  ['byconuser_13',['byconuser',['../structuserstat.html#a38f2ddb37e7f943998e21338129932f5',1,'userstat::byconuser()'],['../structrefstat.html#a7e832c9b43444f95205f564ef22c19d1',1,'refstat::byconuser()']]],
+  ['byuserblock_14',['byuserblock',['../structuserstat.html#a8147a3f0284a7cc82e17980bcb3fedad',1,'userstat::byuserblock()'],['../structhoststat.html#af444490c8bc844e5f7e07d06014ce028',1,'hoststat::byuserblock()']]],
+  ['byusernom_15',['byusernom',['../structuserstat.html#a08f43d7d0aa401263f4eb9a4232477dd',1,'userstat']]],
+  ['byuserwith_16',['byuserwith',['../structrefstat.html#ae37f2dbc2600e6f0d6877f2ded12bfb6',1,'refstat']]]
+];

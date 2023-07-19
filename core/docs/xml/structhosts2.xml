@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structhosts2" kind="struct" language="C++" prot="public">
+    <compoundname>hosts2</compoundname>
+    <includes refid="hosts_8hpp" local="no">hosts.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhosts2_1abe43d4f81e560ed0d064e37f72ea29aa" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name hosts2::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <qualifiedname>hosts2::username</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="213" column="21" bodyfile="include/hosts.hpp" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts2_1a0b5d9184976b6386bbd926d7099d69ac" prot="public" static="no" mutable="no">
+        <type>eosio::time_point_sec</type>
+        <definition>eosio::time_point_sec hosts2::sale_price_updated_at</definition>
+        <argsstring></argsstring>
+        <name>sale_price_updated_at</name>
+        <qualifiedname>hosts2::sale_price_updated_at</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="214" column="31" bodyfile="include/hosts.hpp" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts2_1ada9a20ae223bc40d035d4b89c3b0f155" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts2::sale_price</definition>
+        <argsstring></argsstring>
+        <name>sale_price</name>
+        <qualifiedname>hosts2::sale_price</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="215" column="18" bodyfile="include/hosts.hpp" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structhosts2_1a68dbdf967c6fc56ac256b0d6369b2e5c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hosts2::EOSLIB_SERIALIZE</definition>
+        <argsstring>(hosts2,(username)(sale_price_updated_at)(sale_price)) uint64_t primary_key() const</argsstring>
+        <name>EOSLIB_SERIALIZE</name>
+        <qualifiedname>hosts2::EOSLIB_SERIALIZE</qualifiedname>
+        <param>
+          <type><ref refid="structhosts2" kindref="compound">hosts2</ref></type>
+        </param>
+        <param>
+          <type>(username)(sale_price_updated_at)(sale_price)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="217" column="9" bodyfile="include/hosts.hpp" bodystart="217" bodyend="219"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Расширение структуры хоста Двойной Спирали. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/hosts.hpp" line="212" column="5" bodyfile="include/hosts.hpp" bodystart="212" bodyend="221"/>
+    <listofallmembers>
+      <member refid="structhosts2_1a68dbdf967c6fc56ac256b0d6369b2e5c" prot="public" virt="non-virtual"><scope>hosts2</scope><name>EOSLIB_SERIALIZE</name></member>
+      <member refid="structhosts2_1ada9a20ae223bc40d035d4b89c3b0f155" prot="public" virt="non-virtual"><scope>hosts2</scope><name>sale_price</name></member>
+      <member refid="structhosts2_1a0b5d9184976b6386bbd926d7099d69ac" prot="public" virt="non-virtual"><scope>hosts2</scope><name>sale_price_updated_at</name></member>
+      <member refid="structhosts2_1abe43d4f81e560ed0d064e37f72ea29aa" prot="public" virt="non-virtual"><scope>hosts2</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

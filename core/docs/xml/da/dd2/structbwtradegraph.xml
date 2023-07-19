@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="da/dd2/structbwtradegraph" kind="struct" language="C++" prot="public">
+    <compoundname>bwtradegraph</compoundname>
+    <includes refid="da/d47/core_8hpp" local="no">core.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="da/dd2/structbwtradegraph_1acfa9ef5e4f6d67b1957f0d48b432c824" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t bwtradegraph::pool_id</definition>
+        <argsstring></argsstring>
+        <name>pool_id</name>
+        <qualifiedname>bwtradegraph::pool_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="726" column="18" bodyfile="include/core.hpp" bodystart="726" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dd2/structbwtradegraph_1a1d72d90e14e12cfcf6f013b4a1616ef5" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t bwtradegraph::cycle_num</definition>
+        <argsstring></argsstring>
+        <name>cycle_num</name>
+        <qualifiedname>bwtradegraph::cycle_num</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="727" column="18" bodyfile="include/core.hpp" bodystart="727" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dd2/structbwtradegraph_1aa1fe7048fd9317355d7e1a29cc8a46e5" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t bwtradegraph::pool_num</definition>
+        <argsstring></argsstring>
+        <name>pool_num</name>
+        <qualifiedname>bwtradegraph::pool_num</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="728" column="18" bodyfile="include/core.hpp" bodystart="728" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dd2/structbwtradegraph_1ab7b42c19235f0979ed66f2582cd63fa8" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t bwtradegraph::open</definition>
+        <argsstring></argsstring>
+        <name>open</name>
+        <qualifiedname>bwtradegraph::open</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="729" column="18" bodyfile="include/core.hpp" bodystart="729" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dd2/structbwtradegraph_1af013eda31c295b475060840c0898d4f6" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t bwtradegraph::high</definition>
+        <argsstring></argsstring>
+        <name>high</name>
+        <qualifiedname>bwtradegraph::high</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="730" column="18" bodyfile="include/core.hpp" bodystart="730" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dd2/structbwtradegraph_1a303e09c6464e5eebde73ee5222fb371a" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t bwtradegraph::low</definition>
+        <argsstring></argsstring>
+        <name>low</name>
+        <qualifiedname>bwtradegraph::low</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="731" column="18" bodyfile="include/core.hpp" bodystart="731" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dd2/structbwtradegraph_1a6c83afcc1c4c2e5882a13c7c2da02c54" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t bwtradegraph::close</definition>
+        <argsstring></argsstring>
+        <name>close</name>
+        <qualifiedname>bwtradegraph::close</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="732" column="18" bodyfile="include/core.hpp" bodystart="732" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dd2/structbwtradegraph_1a138cd8201cbb657b3dcbeba547c9c279" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool bwtradegraph::is_white</definition>
+        <argsstring></argsstring>
+        <name>is_white</name>
+        <qualifiedname>bwtradegraph::is_white</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="733" column="14" bodyfile="include/core.hpp" bodystart="733" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/dd2/structbwtradegraph_1a19590e9b3e4adbd376cdf46c1eacc87c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t bwtradegraph::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>bwtradegraph::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="734" column="18" bodyfile="include/core.hpp" bodystart="734" bodyend="734"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dd2/structbwtradegraph_1a978bf2b0e04ef88c0370b3989fe85e73" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t bwtradegraph::bycycle</definition>
+        <argsstring>() const</argsstring>
+        <name>bycycle</name>
+        <qualifiedname>bwtradegraph::bycycle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="735" column="18" bodyfile="include/core.hpp" bodystart="735" bodyend="735"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура для отображения Двойной Спирали в виде торгового графика типа BLACK-AND-WHITE. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/core.hpp" line="725" column="5" bodyfile="include/core.hpp" bodystart="725" bodyend="738"/>
+    <listofallmembers>
+      <member refid="da/dd2/structbwtradegraph_1a978bf2b0e04ef88c0370b3989fe85e73" prot="public" virt="non-virtual"><scope>bwtradegraph</scope><name>bycycle</name></member>
+      <member refid="da/dd2/structbwtradegraph_1a6c83afcc1c4c2e5882a13c7c2da02c54" prot="public" virt="non-virtual"><scope>bwtradegraph</scope><name>close</name></member>
+      <member refid="da/dd2/structbwtradegraph_1a1d72d90e14e12cfcf6f013b4a1616ef5" prot="public" virt="non-virtual"><scope>bwtradegraph</scope><name>cycle_num</name></member>
+      <member refid="da/dd2/structbwtradegraph_1af013eda31c295b475060840c0898d4f6" prot="public" virt="non-virtual"><scope>bwtradegraph</scope><name>high</name></member>
+      <member refid="da/dd2/structbwtradegraph_1a138cd8201cbb657b3dcbeba547c9c279" prot="public" virt="non-virtual"><scope>bwtradegraph</scope><name>is_white</name></member>
+      <member refid="da/dd2/structbwtradegraph_1a303e09c6464e5eebde73ee5222fb371a" prot="public" virt="non-virtual"><scope>bwtradegraph</scope><name>low</name></member>
+      <member refid="da/dd2/structbwtradegraph_1ab7b42c19235f0979ed66f2582cd63fa8" prot="public" virt="non-virtual"><scope>bwtradegraph</scope><name>open</name></member>
+      <member refid="da/dd2/structbwtradegraph_1acfa9ef5e4f6d67b1957f0d48b432c824" prot="public" virt="non-virtual"><scope>bwtradegraph</scope><name>pool_id</name></member>
+      <member refid="da/dd2/structbwtradegraph_1aa1fe7048fd9317355d7e1a29cc8a46e5" prot="public" virt="non-virtual"><scope>bwtradegraph</scope><name>pool_num</name></member>
+      <member refid="da/dd2/structbwtradegraph_1a19590e9b3e4adbd376cdf46c1eacc87c" prot="public" virt="non-virtual"><scope>bwtradegraph</scope><name>primary_key</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

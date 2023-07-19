@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structvesting" kind="struct" language="C++" prot="public">
+    <compoundname>vesting</compoundname>
+    <includes refid="shares_8hpp" local="no">shares.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvesting_1a6288cd23eebb2f8bd05aec23647f7d6d" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t vesting::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>vesting::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="181" column="12" bodyfile="include/shares.hpp" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvesting_1ab795bee0918bd741aae82e5fb3f053a8" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name vesting::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <qualifiedname>vesting::host</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="182" column="17" bodyfile="include/shares.hpp" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvesting_1a8cac984b9edf45bea6c467398008d3dd" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name vesting::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <qualifiedname>vesting::owner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="183" column="15" bodyfile="include/shares.hpp" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvesting_1a210e4616f4ee4389d3368f2c882294f2" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name vesting::contract</definition>
+        <argsstring></argsstring>
+        <name>contract</name>
+        <qualifiedname>vesting::contract</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="184" column="17" bodyfile="include/shares.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvesting_1ac6972755c998eb9887cce0d463dc9bdb" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name vesting::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>vesting::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="185" column="17" bodyfile="include/shares.hpp" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvesting_1a75d56f291bccd7edb0fd7097b7b6727f" prot="public" static="no" mutable="no">
+        <type>eosio::time_point_sec</type>
+        <definition>eosio::time_point_sec vesting::startat</definition>
+        <argsstring></argsstring>
+        <name>startat</name>
+        <qualifiedname>vesting::startat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="186" column="25" bodyfile="include/shares.hpp" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvesting_1af9d969971c6d91333ae2282a6e05e742" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t vesting::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <qualifiedname>vesting::duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="187" column="12" bodyfile="include/shares.hpp" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvesting_1a1de75a68c605d780b132c09749d957b0" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset vesting::amount</definition>
+        <argsstring></argsstring>
+        <name>amount</name>
+        <qualifiedname>vesting::amount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="188" column="16" bodyfile="include/shares.hpp" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvesting_1acd1b02df1f7b77e08e64dee70c93dea5" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset vesting::available</definition>
+        <argsstring></argsstring>
+        <name>available</name>
+        <qualifiedname>vesting::available</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="189" column="16" bodyfile="include/shares.hpp" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvesting_1ab60d72a07a57b50a714c8638527fe056" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset vesting::withdrawed</definition>
+        <argsstring></argsstring>
+        <name>withdrawed</name>
+        <qualifiedname>vesting::withdrawed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="190" column="16" bodyfile="include/shares.hpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structvesting_1a35ede92a5445d2ab793b0bbbc18c5acb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t vesting::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>vesting::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="192" column="12" bodyfile="include/shares.hpp" bodystart="192" bodyend="192"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура учёта вестинг-балансов пользователей при возврате силы хосту Двойной Спирали. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>asset</label>
+      </node>
+      <node id="1">
+        <label>vesting</label>
+        <link refid="structvesting"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>amount</edgelabel>
+          <edgelabel>available</edgelabel>
+          <edgelabel>withdrawed</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/shares.hpp" line="180" column="3" bodyfile="include/shares.hpp" bodystart="180" bodyend="195"/>
+    <listofallmembers>
+      <member refid="structvesting_1a1de75a68c605d780b132c09749d957b0" prot="public" virt="non-virtual"><scope>vesting</scope><name>amount</name></member>
+      <member refid="structvesting_1acd1b02df1f7b77e08e64dee70c93dea5" prot="public" virt="non-virtual"><scope>vesting</scope><name>available</name></member>
+      <member refid="structvesting_1a210e4616f4ee4389d3368f2c882294f2" prot="public" virt="non-virtual"><scope>vesting</scope><name>contract</name></member>
+      <member refid="structvesting_1af9d969971c6d91333ae2282a6e05e742" prot="public" virt="non-virtual"><scope>vesting</scope><name>duration</name></member>
+      <member refid="structvesting_1ab795bee0918bd741aae82e5fb3f053a8" prot="public" virt="non-virtual"><scope>vesting</scope><name>host</name></member>
+      <member refid="structvesting_1a6288cd23eebb2f8bd05aec23647f7d6d" prot="public" virt="non-virtual"><scope>vesting</scope><name>id</name></member>
+      <member refid="structvesting_1a8cac984b9edf45bea6c467398008d3dd" prot="public" virt="non-virtual"><scope>vesting</scope><name>owner</name></member>
+      <member refid="structvesting_1a35ede92a5445d2ab793b0bbbc18c5acb" prot="public" virt="non-virtual"><scope>vesting</scope><name>primary_key</name></member>
+      <member refid="structvesting_1a75d56f291bccd7edb0fd7097b7b6727f" prot="public" virt="non-virtual"><scope>vesting</scope><name>startat</name></member>
+      <member refid="structvesting_1ac6972755c998eb9887cce0d463dc9bdb" prot="public" virt="non-virtual"><scope>vesting</scope><name>type</name></member>
+      <member refid="structvesting_1ab60d72a07a57b50a714c8638527fe056" prot="public" virt="non-virtual"><scope>vesting</scope><name>withdrawed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

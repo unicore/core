@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structintelown" kind="struct" language="C++" prot="public">
+    <compoundname>intelown</compoundname>
+    <includes refid="tasks_8hpp" local="no">tasks.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structintelown_1a5733a6a45dcea06b1dba051419f5ad3e" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name intelown::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <qualifiedname>intelown::username</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="201" column="17" bodyfile="include/tasks.hpp" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structintelown_1a29d48440cbf4dfc3f04c65edf1e8d85d" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t intelown::total_reports</definition>
+        <argsstring></argsstring>
+        <name>total_reports</name>
+        <qualifiedname>intelown::total_reports</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="202" column="14" bodyfile="include/tasks.hpp" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structintelown_1ae6b81fee0d80a9137e533edff63c4e66" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t intelown::approved_reports</definition>
+        <argsstring></argsstring>
+        <name>approved_reports</name>
+        <qualifiedname>intelown::approved_reports</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="203" column="14" bodyfile="include/tasks.hpp" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structintelown_1a3de06d945f7ea736bfa7480aefc7d553" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t intelown::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>intelown::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="205" column="14" bodyfile="include/tasks.hpp" bodystart="205" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура статистики интеллектуальной собственности пользователя </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tasks.hpp" line="200" column="1" bodyfile="include/tasks.hpp" bodystart="200" bodyend="210"/>
+    <listofallmembers>
+      <member refid="structintelown_1ae6b81fee0d80a9137e533edff63c4e66" prot="public" virt="non-virtual"><scope>intelown</scope><name>approved_reports</name></member>
+      <member refid="structintelown_1a3de06d945f7ea736bfa7480aefc7d553" prot="public" virt="non-virtual"><scope>intelown</scope><name>primary_key</name></member>
+      <member refid="structintelown_1a29d48440cbf4dfc3f04c65edf1e8d85d" prot="public" virt="non-virtual"><scope>intelown</scope><name>total_reports</name></member>
+      <member refid="structintelown_1a5733a6a45dcea06b1dba051419f5ad3e" prot="public" virt="non-virtual"><scope>intelown</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

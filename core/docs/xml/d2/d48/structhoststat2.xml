@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d2/d48/structhoststat2" kind="struct" language="C++" prot="public">
+    <compoundname>hoststat2</compoundname>
+    <includes refid="da/d47/core_8hpp" local="no">core.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d2/d48/structhoststat2_1aaabbf870f64eb7a072abd1a19d69d391" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name hoststat2::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <qualifiedname>hoststat2::username</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="651" column="17" bodyfile="include/core.hpp" bodystart="651" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d48/structhoststat2_1a6b27f29716974f3de6b7d6efea105289" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset hoststat2::volume</definition>
+        <argsstring></argsstring>
+        <name>volume</name>
+        <qualifiedname>hoststat2::volume</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="652" column="18" bodyfile="include/core.hpp" bodystart="652" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d48/structhoststat2_1acbff629afd223d49edfb20cf5508501a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t hoststat2::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>hoststat2::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="654" column="14" bodyfile="include/core.hpp" bodystart="654" bodyend="654"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура статистики балансов пользователя у одного хоста Двойной Спирали </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>asset</label>
+      </node>
+      <node id="1">
+        <label>hoststat2</label>
+        <link refid="d2/d48/structhoststat2"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>volume</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/core.hpp" line="650" column="1" bodyfile="include/core.hpp" bodystart="650" bodyend="659"/>
+    <listofallmembers>
+      <member refid="d2/d48/structhoststat2_1acbff629afd223d49edfb20cf5508501a" prot="public" virt="non-virtual"><scope>hoststat2</scope><name>primary_key</name></member>
+      <member refid="d2/d48/structhoststat2_1aaabbf870f64eb7a072abd1a19d69d391" prot="public" virt="non-virtual"><scope>hoststat2</scope><name>username</name></member>
+      <member refid="d2/d48/structhoststat2_1a6b27f29716974f3de6b7d6efea105289" prot="public" virt="non-virtual"><scope>hoststat2</scope><name>volume</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>include</compoundname>
+    <innerfile refid="badges_8hpp">badges.hpp</innerfile>
+    <innerfile refid="cms_8hpp">cms.hpp</innerfile>
+    <innerfile refid="conditions_8hpp">conditions.hpp</innerfile>
+    <innerfile refid="consts_8hpp">consts.hpp</innerfile>
+    <innerfile refid="core_8hpp">core.hpp</innerfile>
+    <innerfile refid="crypto_8hpp">crypto.hpp</innerfile>
+    <innerfile refid="eosio_8token_8hpp">eosio.token.hpp</innerfile>
+    <innerfile refid="exchange__state_8hpp">exchange_state.hpp</innerfile>
+    <innerfile refid="goals_8hpp">goals.hpp</innerfile>
+    <innerfile refid="hosts_8hpp">hosts.hpp</innerfile>
+    <innerfile refid="ipfs_8hpp">ipfs.hpp</innerfile>
+    <innerfile refid="ref_8hpp">ref.hpp</innerfile>
+    <innerfile refid="shares_8hpp">shares.hpp</innerfile>
+    <innerfile refid="tasks_8hpp">tasks.hpp</innerfile>
+    <innerfile refid="voting_8hpp">voting.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/"/>
+  </compounddef>
+</doxygen>

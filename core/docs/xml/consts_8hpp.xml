@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="consts_8hpp" kind="file" language="C++">
+    <compoundname>consts.hpp</compoundname>
+    <includedby refid="core_8hpp" local="yes">include/core.hpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/consts.hpp</label>
+        <link refid="consts_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/core.hpp</label>
+        <link refid="core_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="consts_8hpp_1a93f92c144cdf10f82041cf2915df4125" prot="public" static="no">
+        <name>QUARKS_IN_QUANTS</name>
+        <initializer>1000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="2" column="11" bodyfile="include/consts.hpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="consts_8hpp_1aa9f63b1425189a885d45283038d46e7a" prot="public" static="no">
+        <name>ONE_PERCENT</name>
+        <initializer>10000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="3" column="11" bodyfile="include/consts.hpp" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="consts_8hpp_1a8ec130df1bd54190ef5002472e93eacc" prot="public" static="no">
+        <name>HUNDR_PERCENT</name>
+        <initializer>1000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="4" column="11" bodyfile="include/consts.hpp" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="consts_8hpp_1ae2b9f95ea7a57a5b151ce455dc4a94f3" prot="public" static="no">
+        <name>SYS_PERCENT</name>
+        <initializer>100000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="5" column="11" bodyfile="include/consts.hpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="consts_8hpp_1ac1b623eb0896d58a879419a09f6d0b06" prot="public" static="no">
+        <name>TOTAL_SEGMENTS</name>
+        <initializer>1000000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="6" column="11" bodyfile="include/consts.hpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="consts_8hpp_1af0ada0970b97e0bde2b9b77a3c69cf5c" prot="public" static="no">
+        <name>MAX_CORE_HISTORY_LENGTH</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="7" column="11" bodyfile="include/consts.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="consts_8hpp_1a5e7c95bb699bd751d7c77a9680eb6b11" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr eosio::symbol</type>
+        <definition>constexpr eosio::symbol _SYM</definition>
+        <argsstring></argsstring>
+        <name>_SYM</name>
+        <initializer>= eosio::symbol(eosio::symbol_code(&quot;FLOWER&quot;), 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="9" column="34" bodyfile="include/consts.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1a08002c143ad11e721b3ab3e5f2be2ecf" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr eosio::symbol</type>
+        <definition>constexpr eosio::symbol _POWER</definition>
+        <argsstring></argsstring>
+        <name>_POWER</name>
+        <initializer>= eosio::symbol(eosio::symbol_code(&quot;POWER&quot;), 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="10" column="34" bodyfile="include/consts.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1a77ebe0f30be291725f47ad3531064d2d" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr eosio::symbol</type>
+        <definition>constexpr eosio::symbol _USDT</definition>
+        <argsstring></argsstring>
+        <name>_USDT</name>
+        <initializer>= eosio::symbol(eosio::symbol_code(&quot;USDT&quot;), 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="11" column="34" bodyfile="include/consts.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1a06f337139733dc09729bd5f836f178ed" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint64_t</type>
+        <definition>constexpr uint64_t _DATA_ORDER_EXPIRATION</definition>
+        <argsstring></argsstring>
+        <name>_DATA_ORDER_EXPIRATION</name>
+        <initializer>= 86400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="13" column="29" bodyfile="include/consts.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1ac483e042b256c4a671a1edeb1922edbc" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint64_t</type>
+        <definition>constexpr uint64_t _SHARES_VESTING_DURATION</definition>
+        <argsstring></argsstring>
+        <name>_SHARES_VESTING_DURATION</name>
+        <initializer>= 604800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="14" column="29" bodyfile="include/consts.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1ad04c5d49dee2d3123f058381609874c1" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint64_t</type>
+        <definition>constexpr uint64_t _WINDOW_SECS</definition>
+        <argsstring></argsstring>
+        <name>_WINDOW_SECS</name>
+        <initializer>= 86400 * 30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="15" column="29" bodyfile="include/consts.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1a5c58ad53b19ec333b6e817cdf21b393f" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint64_t</type>
+        <definition>constexpr uint64_t _TOTAL_VOTES</definition>
+        <argsstring></argsstring>
+        <name>_TOTAL_VOTES</name>
+        <initializer>= 12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="16" column="29" bodyfile="include/consts.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1abc1b34c2c20b002f6784126e4b5ac74c" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint64_t</type>
+        <definition>constexpr uint64_t _MAX_LEVELS</definition>
+        <argsstring></argsstring>
+        <name>_MAX_LEVELS</name>
+        <initializer>= 26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="17" column="29" bodyfile="include/consts.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1a7d90a1f36152be9560f8b838614ce41a" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint64_t</type>
+        <definition>constexpr uint64_t _VOTING_TIME_EXPIRATION</definition>
+        <argsstring></argsstring>
+        <name>_VOTING_TIME_EXPIRATION</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="18" column="29" bodyfile="include/consts.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1a8e8fc36888e3ba12b2080be690e41410" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint64_t</type>
+        <definition>constexpr uint64_t _START_VOTES</definition>
+        <argsstring></argsstring>
+        <name>_START_VOTES</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="19" column="29" bodyfile="include/consts.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1a29addb6634f276cf16b67b0fd316a62d" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr eosio::name</type>
+        <definition>constexpr eosio::name _me</definition>
+        <argsstring></argsstring>
+        <name>_me</name>
+        <initializer>= &quot;unicore&quot;_n</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="21" column="32" bodyfile="include/consts.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1aa9b7db1458d5b98cdb67071a78f9b427" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr eosio::name</type>
+        <definition>constexpr eosio::name _partners</definition>
+        <argsstring></argsstring>
+        <name>_partners</name>
+        <initializer>= &quot;part&quot;_n</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="22" column="32" bodyfile="include/consts.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1a5d3b52b33ade724dd9930ae9f5c6eb9c" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr eosio::name</type>
+        <definition>constexpr eosio::name _curator</definition>
+        <argsstring></argsstring>
+        <name>_curator</name>
+        <initializer>= &quot;curator&quot;_n</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="23" column="32" bodyfile="include/consts.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1ae4d59ec28af0642e3072dd36dd0a537b" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr eosio::name</type>
+        <definition>constexpr eosio::name _registrator</definition>
+        <argsstring></argsstring>
+        <name>_registrator</name>
+        <initializer>= &quot;registrator&quot;_n</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="24" column="32" bodyfile="include/consts.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1a55ba70333702ff882cdb79c9c1fcb9e6" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr eosio::name</type>
+        <definition>constexpr eosio::name _gateway</definition>
+        <argsstring></argsstring>
+        <name>_gateway</name>
+        <initializer>= &quot;gateway&quot;_n</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="25" column="32" bodyfile="include/consts.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1a888d4be6148a432820fea81e960ddc11" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr eosio::name</type>
+        <definition>constexpr eosio::name _saving</definition>
+        <argsstring></argsstring>
+        <name>_saving</name>
+        <initializer>= &quot;eosio.saving&quot;_n</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="26" column="32" bodyfile="include/consts.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1af850ec25313431f4090ebfee7ba7142a" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr eosio::name</type>
+        <definition>constexpr eosio::name _core_host</definition>
+        <argsstring></argsstring>
+        <name>_core_host</name>
+        <initializer>= &quot;core&quot;_n</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="27" column="32" bodyfile="include/consts.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="consts_8hpp_1a62c843b5901bf77fa2481467b01c12b6" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr eosio::name</type>
+        <definition>constexpr eosio::name _p2p</definition>
+        <argsstring></argsstring>
+        <name>_p2p</name>
+        <initializer>= &quot;p2p&quot;_n</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/consts.hpp" line="28" column="32" bodyfile="include/consts.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>namespace<sp/>eosio<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>QUARKS_IN_QUANTS<sp/>1000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>ONE_PERCENT<sp/>10000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>HUNDR_PERCENT<sp/>1000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>SYS_PERCENT<sp/>100000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>TOTAL_SEGMENTS<sp/>1000000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>MAX_CORE_HISTORY_LENGTH<sp/>1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>eosio::symbol<sp/>_SYM<sp/><sp/><sp/><sp/><sp/>=<sp/>eosio::symbol(eosio::symbol_code(</highlight><highlight class="stringliteral">&quot;FLOWER&quot;</highlight><highlight class="normal">),<sp/>4);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>eosio::symbol<sp/>_POWER<sp/><sp/><sp/><sp/><sp/>=<sp/>eosio::symbol(eosio::symbol_code(</highlight><highlight class="stringliteral">&quot;POWER&quot;</highlight><highlight class="normal">),<sp/>0);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>eosio::symbol<sp/>_USDT<sp/><sp/><sp/><sp/><sp/>=<sp/>eosio::symbol(eosio::symbol_code(</highlight><highlight class="stringliteral">&quot;USDT&quot;</highlight><highlight class="normal">),<sp/>4);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint64_t<sp/>_DATA_ORDER_EXPIRATION<sp/>=<sp/>86400;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint64_t<sp/>_SHARES_VESTING_DURATION<sp/>=<sp/>604800;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint64_t<sp/>_WINDOW_SECS<sp/>=<sp/>86400<sp/>*<sp/>30;</highlight><highlight class="comment">//60;//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint64_t<sp/>_TOTAL_VOTES<sp/>=<sp/>12;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint64_t<sp/>_MAX_LEVELS<sp/>=<sp/>26;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint64_t<sp/>_VOTING_TIME_EXPIRATION<sp/>=<sp/>5;<sp/></highlight><highlight class="comment">//86400</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint64_t<sp/>_START_VOTES<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>eosio::name<sp/>_me<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;unicore&quot;</highlight><highlight class="normal">_n;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>eosio::name<sp/>_partners<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;part&quot;</highlight><highlight class="normal">_n;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>eosio::name<sp/>_curator<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;curator&quot;</highlight><highlight class="normal">_n;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>eosio::name<sp/>_registrator<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;registrator&quot;</highlight><highlight class="normal">_n;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>eosio::name<sp/>_gateway<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;gateway&quot;</highlight><highlight class="normal">_n;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>eosio::name<sp/>_saving<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;eosio.saving&quot;</highlight><highlight class="normal">_n;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>eosio::name<sp/>_core_host<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;core&quot;</highlight><highlight class="normal">_n;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>eosio::name<sp/>_p2p<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;p2p&quot;</highlight><highlight class="normal">_n;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="include/consts.hpp"/>
+  </compounddef>
+</doxygen>

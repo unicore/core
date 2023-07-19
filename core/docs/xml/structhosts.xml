@@ -1,0 +1,1001 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structhosts" kind="struct" language="C++" prot="public">
+    <compoundname>hosts</compoundname>
+    <includes refid="hosts_8hpp" local="no">hosts.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhosts_1a20938bba05a37320a8875a506d1d2ad1" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name hosts::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <qualifiedname>hosts::username</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="87" column="21" bodyfile="include/hosts.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1acd94c0fd8841fa120966a7ed2ede2e99" prot="public" static="no" mutable="no">
+        <type>eosio::time_point_sec</type>
+        <definition>eosio::time_point_sec hosts::registered_at</definition>
+        <argsstring></argsstring>
+        <name>registered_at</name>
+        <qualifiedname>hosts::registered_at</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="88" column="31" bodyfile="include/hosts.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a7bbcbedf69f3a70bee5dca8da4f0f299" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name hosts::architect</definition>
+        <argsstring></argsstring>
+        <name>architect</name>
+        <qualifiedname>hosts::architect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="89" column="21" bodyfile="include/hosts.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1ae597139b6e779b34e63f5c0a78bd2675" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name hosts::hoperator</definition>
+        <argsstring></argsstring>
+        <name>hoperator</name>
+        <qualifiedname>hosts::hoperator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="90" column="21" bodyfile="include/hosts.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a5d51b449fc6701419c2e06b6045e1c79" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name hosts::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>hosts::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="91" column="21" bodyfile="include/hosts.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a7654231d14b15269cf881e0e181b041c" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name hosts::chat_mode</definition>
+        <argsstring></argsstring>
+        <name>chat_mode</name>
+        <qualifiedname>hosts::chat_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="92" column="21" bodyfile="include/hosts.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a6fb16cf97e6aa242fa89eeb4b7c5e70b" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::consensus_percent</definition>
+        <argsstring></argsstring>
+        <name>consensus_percent</name>
+        <qualifiedname>hosts::consensus_percent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="93" column="18" bodyfile="include/hosts.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a3cd22dae2f7d51f9e30ae3d3d5222c92" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::referral_percent</definition>
+        <argsstring></argsstring>
+        <name>referral_percent</name>
+        <qualifiedname>hosts::referral_percent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="94" column="18" bodyfile="include/hosts.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a4042ea164fa4913cfb00eeba3f237770" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::dacs_percent</definition>
+        <argsstring></argsstring>
+        <name>dacs_percent</name>
+        <qualifiedname>hosts::dacs_percent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="95" column="18" bodyfile="include/hosts.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a5b1777c0a1e69811b2eb17830f65d73b" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::cfund_percent</definition>
+        <argsstring></argsstring>
+        <name>cfund_percent</name>
+        <qualifiedname>hosts::cfund_percent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="96" column="18" bodyfile="include/hosts.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1adccbeedcff76e76d268dd5309c62d306" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::hfund_percent</definition>
+        <argsstring></argsstring>
+        <name>hfund_percent</name>
+        <qualifiedname>hosts::hfund_percent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="97" column="18" bodyfile="include/hosts.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1ad10dbf7c3e730b8b2d13045d5068062f" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::sys_percent</definition>
+        <argsstring></argsstring>
+        <name>sys_percent</name>
+        <qualifiedname>hosts::sys_percent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="98" column="18" bodyfile="include/hosts.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1abdbbf47c6df55db5df5c85a4080bc219" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; uint64_t &gt;</type>
+        <definition>std::vector&lt;uint64_t&gt; hosts::levels</definition>
+        <argsstring></argsstring>
+        <name>levels</name>
+        <qualifiedname>hosts::levels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="99" column="21" bodyfile="include/hosts.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a254c752856c4b6443a3f45849a84f466" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; eosio::name &gt;</type>
+        <definition>std::vector&lt;eosio::name&gt; hosts::gsponsor_model</definition>
+        <argsstring></argsstring>
+        <name>gsponsor_model</name>
+        <qualifiedname>hosts::gsponsor_model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="100" column="21" bodyfile="include/hosts.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1abb50503adb4981cb11ebe099e9f024c3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hosts::direct_goal_withdraw</definition>
+        <argsstring></argsstring>
+        <name>direct_goal_withdraw</name>
+        <qualifiedname>hosts::direct_goal_withdraw</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="101" column="14" bodyfile="include/hosts.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a93241a9165b6e6d37b12ffc0b56a2a00" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::dac_mode</definition>
+        <argsstring></argsstring>
+        <name>dac_mode</name>
+        <qualifiedname>hosts::dac_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="102" column="18" bodyfile="include/hosts.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1aef8c1f7d03f391631abe95bf86ac1aa5" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::total_dacs_weight</definition>
+        <argsstring></argsstring>
+        <name>total_dacs_weight</name>
+        <qualifiedname>hosts::total_dacs_weight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="103" column="18" bodyfile="include/hosts.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a0afc2e8194f998c280b9a0f7ed373a48" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name hosts::ahost</definition>
+        <argsstring></argsstring>
+        <name>ahost</name>
+        <qualifiedname>hosts::ahost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="105" column="21" bodyfile="include/hosts.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a9f5f508a3aa947262ac5d8891f197bef" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; eosio::name &gt;</type>
+        <definition>std::vector&lt;eosio::name&gt; hosts::chosts</definition>
+        <argsstring></argsstring>
+        <name>chosts</name>
+        <qualifiedname>hosts::chosts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="106" column="21" bodyfile="include/hosts.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1ae1af9662a7c4c35142db2901d72d393f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hosts::sale_is_enabled</definition>
+        <argsstring></argsstring>
+        <name>sale_is_enabled</name>
+        <qualifiedname>hosts::sale_is_enabled</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="108" column="14" bodyfile="include/hosts.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a52683be3d7dd87b020ad2153b66d3579" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name hosts::sale_mode</definition>
+        <argsstring></argsstring>
+        <name>sale_mode</name>
+        <qualifiedname>hosts::sale_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="109" column="21" bodyfile="include/hosts.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a1239eb9e569541798a8f1365ee544b30" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name hosts::sale_token_contract</definition>
+        <argsstring></argsstring>
+        <name>sale_token_contract</name>
+        <qualifiedname>hosts::sale_token_contract</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="110" column="21" bodyfile="include/hosts.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a924bf2601605313ba15140160aa92db3" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset hosts::asset_on_sale</definition>
+        <argsstring></argsstring>
+        <name>asset_on_sale</name>
+        <qualifiedname>hosts::asset_on_sale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="111" column="22" bodyfile="include/hosts.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a1e53403d3c54fe5866eb0ab2b19e5ae1" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::asset_on_sale_precision</definition>
+        <argsstring></argsstring>
+        <name>asset_on_sale_precision</name>
+        <qualifiedname>hosts::asset_on_sale_precision</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="112" column="18" bodyfile="include/hosts.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1ae20109688575a0113d7cd2652e7a2033" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hosts::asset_on_sale_symbol</definition>
+        <argsstring></argsstring>
+        <name>asset_on_sale_symbol</name>
+        <qualifiedname>hosts::asset_on_sale_symbol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="113" column="21" bodyfile="include/hosts.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a1bcbe02e4d50c85815bc03dcf72def70" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t hosts::sale_shift</definition>
+        <argsstring></argsstring>
+        <name>sale_shift</name>
+        <qualifiedname>hosts::sale_shift</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="114" column="17" bodyfile="include/hosts.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a9b7b35e8d7171a2d3ceada9b0fa17483" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hosts::non_active_chost</definition>
+        <argsstring></argsstring>
+        <name>non_active_chost</name>
+        <qualifiedname>hosts::non_active_chost</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="119" column="14" bodyfile="include/hosts.hpp" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a44a395cb6b8f15db069d2a42ae6837f7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hosts::need_switch</definition>
+        <argsstring></argsstring>
+        <name>need_switch</name>
+        <qualifiedname>hosts::need_switch</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="120" column="14" bodyfile="include/hosts.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a438337e891336422d98bd74c97c03d7e" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::fhosts_mode</definition>
+        <argsstring></argsstring>
+        <name>fhosts_mode</name>
+        <qualifiedname>hosts::fhosts_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="122" column="18" bodyfile="include/hosts.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a6aaeaee4e3d5dea6cef4556837dac8cb" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; eosio::name &gt;</type>
+        <definition>std::vector&lt;eosio::name&gt; hosts::fhosts</definition>
+        <argsstring></argsstring>
+        <name>fhosts</name>
+        <qualifiedname>hosts::fhosts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="123" column="21" bodyfile="include/hosts.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a4eb9e6b68db5f7dfa5905b1a3cdb6942" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hosts::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <qualifiedname>hosts::title</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="126" column="21" bodyfile="include/hosts.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a2701d80e484eb9c7618a7bbb7b9aca94" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hosts::purpose</definition>
+        <argsstring></argsstring>
+        <name>purpose</name>
+        <qualifiedname>hosts::purpose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="127" column="21" bodyfile="include/hosts.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a121c2c8a6e032a358c61676ab69416e6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hosts::voting_only_up</definition>
+        <argsstring></argsstring>
+        <name>voting_only_up</name>
+        <qualifiedname>hosts::voting_only_up</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="128" column="14" bodyfile="include/hosts.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a66e3d09a103f8ec55dee179bf152111c" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name hosts::power_market_id</definition>
+        <argsstring></argsstring>
+        <name>power_market_id</name>
+        <qualifiedname>hosts::power_market_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="129" column="21" bodyfile="include/hosts.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1abf00f55f83143e8a5a47bbed2bb85d0a" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::total_shares</definition>
+        <argsstring></argsstring>
+        <name>total_shares</name>
+        <qualifiedname>hosts::total_shares</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="130" column="18" bodyfile="include/hosts.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a063fd199cfd49c8e4bc3a513c991fe1b" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset hosts::quote_amount</definition>
+        <argsstring></argsstring>
+        <name>quote_amount</name>
+        <qualifiedname>hosts::quote_amount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="131" column="22" bodyfile="include/hosts.hpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1ad0543af217c9166111211df7e5ae4d10" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name hosts::quote_token_contract</definition>
+        <argsstring></argsstring>
+        <name>quote_token_contract</name>
+        <qualifiedname>hosts::quote_token_contract</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="132" column="21" bodyfile="include/hosts.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1ac89780b3abc69a5a15bd23e3f0a87636" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hosts::quote_symbol</definition>
+        <argsstring></argsstring>
+        <name>quote_symbol</name>
+        <qualifiedname>hosts::quote_symbol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="133" column="21" bodyfile="include/hosts.hpp" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1ab8357e7bc7d53e0234c7bb8fdd668dd3" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::quote_precision</definition>
+        <argsstring></argsstring>
+        <name>quote_precision</name>
+        <qualifiedname>hosts::quote_precision</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="134" column="18" bodyfile="include/hosts.hpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a68dab42c2847909f51b03a1c97fbb3b6" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name hosts::root_token_contract</definition>
+        <argsstring></argsstring>
+        <name>root_token_contract</name>
+        <qualifiedname>hosts::root_token_contract</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="135" column="21" bodyfile="include/hosts.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1ab25ffbf2b0edcccbc4e0a9cd5f9cd6b5" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset hosts::root_token</definition>
+        <argsstring></argsstring>
+        <name>root_token</name>
+        <qualifiedname>hosts::root_token</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="136" column="22" bodyfile="include/hosts.hpp" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a17c085f318a91d470a0f7b32e8c36dcd" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hosts::symbol</definition>
+        <argsstring></argsstring>
+        <name>symbol</name>
+        <qualifiedname>hosts::symbol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="137" column="21" bodyfile="include/hosts.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1ac235bddf1a3a4ec7b326fdaf0539728f" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::precision</definition>
+        <argsstring></argsstring>
+        <name>precision</name>
+        <qualifiedname>hosts::precision</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="138" column="18" bodyfile="include/hosts.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a4692b62c2bf0a73bfc98fd3b3e20cfb1" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset hosts::to_pay</definition>
+        <argsstring></argsstring>
+        <name>to_pay</name>
+        <qualifiedname>hosts::to_pay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="139" column="22" bodyfile="include/hosts.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a8256089a682ad0c46f9deca1478450e1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hosts::payed</definition>
+        <argsstring></argsstring>
+        <name>payed</name>
+        <qualifiedname>hosts::payed</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="140" column="14" bodyfile="include/hosts.hpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a18b42ecfa193db770fa4226dd6e82b0d" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::cycle_start_id</definition>
+        <argsstring></argsstring>
+        <name>cycle_start_id</name>
+        <qualifiedname>hosts::cycle_start_id</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="142" column="18" bodyfile="include/hosts.hpp" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a2d82a264c4140047d7c1910c5688e433" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::current_pool_id</definition>
+        <argsstring></argsstring>
+        <name>current_pool_id</name>
+        <qualifiedname>hosts::current_pool_id</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="143" column="18" bodyfile="include/hosts.hpp" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a0bffc7f8877a3c5d8e21d9d427ce2cd1" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::current_cycle_num</definition>
+        <argsstring></argsstring>
+        <name>current_cycle_num</name>
+        <qualifiedname>hosts::current_cycle_num</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="144" column="18" bodyfile="include/hosts.hpp" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a703c5a487e62f539ada0d0919c6d4d8a" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::current_pool_num</definition>
+        <argsstring></argsstring>
+        <name>current_pool_num</name>
+        <qualifiedname>hosts::current_pool_num</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="145" column="18" bodyfile="include/hosts.hpp" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a0477b593cb8d61af22ce82412f4fed2b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hosts::parameters_setted</definition>
+        <argsstring></argsstring>
+        <name>parameters_setted</name>
+        <qualifiedname>hosts::parameters_setted</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="146" column="14" bodyfile="include/hosts.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1ab614f55d27e39c67fef74656c9b9ef6d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hosts::activated</definition>
+        <argsstring></argsstring>
+        <name>activated</name>
+        <qualifiedname>hosts::activated</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="147" column="14" bodyfile="include/hosts.hpp" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a9ccdcc8e52f110b73bfe268c2974a4de" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hosts::priority_flag</definition>
+        <argsstring></argsstring>
+        <name>priority_flag</name>
+        <qualifiedname>hosts::priority_flag</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="149" column="14" bodyfile="include/hosts.hpp" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1ad07e72527df764f0f8af057383e70779" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::total_goals</definition>
+        <argsstring></argsstring>
+        <name>total_goals</name>
+        <qualifiedname>hosts::total_goals</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="151" column="18" bodyfile="include/hosts.hpp" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1adbea0c2fde59423cbcca98fe36f560d3" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::achieved_goals</definition>
+        <argsstring></argsstring>
+        <name>achieved_goals</name>
+        <qualifiedname>hosts::achieved_goals</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="152" column="18" bodyfile="include/hosts.hpp" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a6e0bb8abc121c4713d0fed50bc6dde0b" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::total_tasks</definition>
+        <argsstring></argsstring>
+        <name>total_tasks</name>
+        <qualifiedname>hosts::total_tasks</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="153" column="18" bodyfile="include/hosts.hpp" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1ab4622f3ad8104be5680d5241244b0592" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::completed_tasks</definition>
+        <argsstring></argsstring>
+        <name>completed_tasks</name>
+        <qualifiedname>hosts::completed_tasks</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="154" column="18" bodyfile="include/hosts.hpp" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a3aea471591de79d52ef50ff662ee3cab" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::total_reports</definition>
+        <argsstring></argsstring>
+        <name>total_reports</name>
+        <qualifiedname>hosts::total_reports</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="155" column="18" bodyfile="include/hosts.hpp" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1aba324f4fd3d8c36615e66cf74d3b6729" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hosts::approved_reports</definition>
+        <argsstring></argsstring>
+        <name>approved_reports</name>
+        <qualifiedname>hosts::approved_reports</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="156" column="18" bodyfile="include/hosts.hpp" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhosts_1a5c7cc5c65f7e7c4f6eaebf34fbb83c2e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hosts::meta</definition>
+        <argsstring></argsstring>
+        <name>meta</name>
+        <qualifiedname>hosts::meta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="159" column="21" bodyfile="include/hosts.hpp" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structhosts_1a5134c37a37ee240d75cb5f0fa36fb939" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hosts::EOSLIB_SERIALIZE</definition>
+        <argsstring>(hosts,(username)(registered_at)(architect)(hoperator)(type)(chat_mode)(consensus_percent)(referral_percent)(dacs_percent)(cfund_percent)(hfund_percent)(sys_percent)(levels)(gsponsor_model)(direct_goal_withdraw)(dac_mode)(total_dacs_weight)(ahost)(chosts)(sale_is_enabled)(sale_mode)(sale_token_contract)(asset_on_sale)(asset_on_sale_precision)(asset_on_sale_symbol)(sale_shift)(non_active_chost)(need_switch)(fhosts_mode)(fhosts)(title)(purpose)(voting_only_up)(power_market_id)(total_shares)(quote_amount)(quote_token_contract)(quote_symbol)(quote_precision)(root_token_contract)(root_token)(symbol)(precision)(to_pay)(payed)(cycle_start_id)(current_pool_id)(current_cycle_num)(current_pool_num)(parameters_setted)(activated)(priority_flag)(total_goals)(achieved_goals)(total_tasks)(completed_tasks)(total_reports)(approved_reports)(meta)) uint64_t primary_key() const</argsstring>
+        <name>EOSLIB_SERIALIZE</name>
+        <qualifiedname>hosts::EOSLIB_SERIALIZE</qualifiedname>
+        <param>
+          <type><ref refid="structhosts" kindref="compound">hosts</ref></type>
+        </param>
+        <param>
+          <type>(username)(registered_at)(architect)(hoperator)(type)(chat_mode)(consensus_percent)(referral_percent)(dacs_percent)(cfund_percent)(hfund_percent)(sys_percent)(levels)(gsponsor_model)(direct_goal_withdraw)(dac_mode)(total_dacs_weight)(ahost)(chosts)(sale_is_enabled)(sale_mode)(sale_token_contract)(asset_on_sale)(asset_on_sale_precision)(asset_on_sale_symbol)(sale_shift)(non_active_chost)(need_switch)(fhosts_mode)(fhosts)(title)(purpose)(voting_only_up)(power_market_id)(total_shares)(quote_amount)(quote_token_contract)(quote_symbol)(quote_precision)(root_token_contract)(root_token)(symbol)(precision)(to_pay)(payed)(cycle_start_id)(current_pool_id)(current_cycle_num)(current_pool_num)(parameters_setted)(activated)(priority_flag)(total_goals)(achieved_goals)(total_tasks)(completed_tasks)(total_reports)(approved_reports)(meta)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="163" column="9" bodyfile="include/hosts.hpp" bodystart="163" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="structhosts_1aaeac4196f2bcd3a2826acbaea5938e85" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>eosio::name</type>
+        <definition>eosio::name hosts::get_ahost</definition>
+        <argsstring>() const</argsstring>
+        <name>get_ahost</name>
+        <qualifiedname>hosts::get_ahost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="182" column="21" bodyfile="include/hosts.hpp" bodystart="182" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="structhosts_1ad8c619ace703952a8ae1cdbe1217814e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>eosio::symbol</type>
+        <definition>eosio::symbol hosts::get_root_symbol</definition>
+        <argsstring>() const</argsstring>
+        <name>get_root_symbol</name>
+        <qualifiedname>hosts::get_root_symbol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/hosts.hpp" line="189" column="23" bodyfile="include/hosts.hpp" bodystart="189" bodyend="191"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура хоста Двойной Спирали. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>asset</label>
+      </node>
+      <node id="1">
+        <label>hosts</label>
+        <link refid="structhosts"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>asset_on_sale</edgelabel>
+          <edgelabel>quote_amount</edgelabel>
+          <edgelabel>root_token</edgelabel>
+          <edgelabel>to_pay</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>asset_on_sale_symbol</edgelabel>
+          <edgelabel>meta</edgelabel>
+          <edgelabel>purpose</edgelabel>
+          <edgelabel>quote_symbol</edgelabel>
+          <edgelabel>symbol</edgelabel>
+          <edgelabel>title</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/hosts.hpp" line="86" column="5" bodyfile="include/hosts.hpp" bodystart="86" bodyend="204"/>
+    <listofallmembers>
+      <member refid="structhosts_1adbea0c2fde59423cbcca98fe36f560d3" prot="public" virt="non-virtual"><scope>hosts</scope><name>achieved_goals</name></member>
+      <member refid="structhosts_1ab614f55d27e39c67fef74656c9b9ef6d" prot="public" virt="non-virtual"><scope>hosts</scope><name>activated</name></member>
+      <member refid="structhosts_1a0afc2e8194f998c280b9a0f7ed373a48" prot="public" virt="non-virtual"><scope>hosts</scope><name>ahost</name></member>
+      <member refid="structhosts_1aba324f4fd3d8c36615e66cf74d3b6729" prot="public" virt="non-virtual"><scope>hosts</scope><name>approved_reports</name></member>
+      <member refid="structhosts_1a7bbcbedf69f3a70bee5dca8da4f0f299" prot="public" virt="non-virtual"><scope>hosts</scope><name>architect</name></member>
+      <member refid="structhosts_1a924bf2601605313ba15140160aa92db3" prot="public" virt="non-virtual"><scope>hosts</scope><name>asset_on_sale</name></member>
+      <member refid="structhosts_1a1e53403d3c54fe5866eb0ab2b19e5ae1" prot="public" virt="non-virtual"><scope>hosts</scope><name>asset_on_sale_precision</name></member>
+      <member refid="structhosts_1ae20109688575a0113d7cd2652e7a2033" prot="public" virt="non-virtual"><scope>hosts</scope><name>asset_on_sale_symbol</name></member>
+      <member refid="structhosts_1a5b1777c0a1e69811b2eb17830f65d73b" prot="public" virt="non-virtual"><scope>hosts</scope><name>cfund_percent</name></member>
+      <member refid="structhosts_1a7654231d14b15269cf881e0e181b041c" prot="public" virt="non-virtual"><scope>hosts</scope><name>chat_mode</name></member>
+      <member refid="structhosts_1a9f5f508a3aa947262ac5d8891f197bef" prot="public" virt="non-virtual"><scope>hosts</scope><name>chosts</name></member>
+      <member refid="structhosts_1ab4622f3ad8104be5680d5241244b0592" prot="public" virt="non-virtual"><scope>hosts</scope><name>completed_tasks</name></member>
+      <member refid="structhosts_1a6fb16cf97e6aa242fa89eeb4b7c5e70b" prot="public" virt="non-virtual"><scope>hosts</scope><name>consensus_percent</name></member>
+      <member refid="structhosts_1a0bffc7f8877a3c5d8e21d9d427ce2cd1" prot="public" virt="non-virtual"><scope>hosts</scope><name>current_cycle_num</name></member>
+      <member refid="structhosts_1a2d82a264c4140047d7c1910c5688e433" prot="public" virt="non-virtual"><scope>hosts</scope><name>current_pool_id</name></member>
+      <member refid="structhosts_1a703c5a487e62f539ada0d0919c6d4d8a" prot="public" virt="non-virtual"><scope>hosts</scope><name>current_pool_num</name></member>
+      <member refid="structhosts_1a18b42ecfa193db770fa4226dd6e82b0d" prot="public" virt="non-virtual"><scope>hosts</scope><name>cycle_start_id</name></member>
+      <member refid="structhosts_1a93241a9165b6e6d37b12ffc0b56a2a00" prot="public" virt="non-virtual"><scope>hosts</scope><name>dac_mode</name></member>
+      <member refid="structhosts_1a4042ea164fa4913cfb00eeba3f237770" prot="public" virt="non-virtual"><scope>hosts</scope><name>dacs_percent</name></member>
+      <member refid="structhosts_1abb50503adb4981cb11ebe099e9f024c3" prot="public" virt="non-virtual"><scope>hosts</scope><name>direct_goal_withdraw</name></member>
+      <member refid="structhosts_1a5134c37a37ee240d75cb5f0fa36fb939" prot="public" virt="non-virtual"><scope>hosts</scope><name>EOSLIB_SERIALIZE</name></member>
+      <member refid="structhosts_1a6aaeaee4e3d5dea6cef4556837dac8cb" prot="public" virt="non-virtual"><scope>hosts</scope><name>fhosts</name></member>
+      <member refid="structhosts_1a438337e891336422d98bd74c97c03d7e" prot="public" virt="non-virtual"><scope>hosts</scope><name>fhosts_mode</name></member>
+      <member refid="structhosts_1aaeac4196f2bcd3a2826acbaea5938e85" prot="public" virt="non-virtual"><scope>hosts</scope><name>get_ahost</name></member>
+      <member refid="structhosts_1ad8c619ace703952a8ae1cdbe1217814e" prot="public" virt="non-virtual"><scope>hosts</scope><name>get_root_symbol</name></member>
+      <member refid="structhosts_1a254c752856c4b6443a3f45849a84f466" prot="public" virt="non-virtual"><scope>hosts</scope><name>gsponsor_model</name></member>
+      <member refid="structhosts_1adccbeedcff76e76d268dd5309c62d306" prot="public" virt="non-virtual"><scope>hosts</scope><name>hfund_percent</name></member>
+      <member refid="structhosts_1ae597139b6e779b34e63f5c0a78bd2675" prot="public" virt="non-virtual"><scope>hosts</scope><name>hoperator</name></member>
+      <member refid="structhosts_1abdbbf47c6df55db5df5c85a4080bc219" prot="public" virt="non-virtual"><scope>hosts</scope><name>levels</name></member>
+      <member refid="structhosts_1a5c7cc5c65f7e7c4f6eaebf34fbb83c2e" prot="public" virt="non-virtual"><scope>hosts</scope><name>meta</name></member>
+      <member refid="structhosts_1a44a395cb6b8f15db069d2a42ae6837f7" prot="public" virt="non-virtual"><scope>hosts</scope><name>need_switch</name></member>
+      <member refid="structhosts_1a9b7b35e8d7171a2d3ceada9b0fa17483" prot="public" virt="non-virtual"><scope>hosts</scope><name>non_active_chost</name></member>
+      <member refid="structhosts_1a0477b593cb8d61af22ce82412f4fed2b" prot="public" virt="non-virtual"><scope>hosts</scope><name>parameters_setted</name></member>
+      <member refid="structhosts_1a8256089a682ad0c46f9deca1478450e1" prot="public" virt="non-virtual"><scope>hosts</scope><name>payed</name></member>
+      <member refid="structhosts_1a66e3d09a103f8ec55dee179bf152111c" prot="public" virt="non-virtual"><scope>hosts</scope><name>power_market_id</name></member>
+      <member refid="structhosts_1ac235bddf1a3a4ec7b326fdaf0539728f" prot="public" virt="non-virtual"><scope>hosts</scope><name>precision</name></member>
+      <member refid="structhosts_1a9ccdcc8e52f110b73bfe268c2974a4de" prot="public" virt="non-virtual"><scope>hosts</scope><name>priority_flag</name></member>
+      <member refid="structhosts_1a2701d80e484eb9c7618a7bbb7b9aca94" prot="public" virt="non-virtual"><scope>hosts</scope><name>purpose</name></member>
+      <member refid="structhosts_1a063fd199cfd49c8e4bc3a513c991fe1b" prot="public" virt="non-virtual"><scope>hosts</scope><name>quote_amount</name></member>
+      <member refid="structhosts_1ab8357e7bc7d53e0234c7bb8fdd668dd3" prot="public" virt="non-virtual"><scope>hosts</scope><name>quote_precision</name></member>
+      <member refid="structhosts_1ac89780b3abc69a5a15bd23e3f0a87636" prot="public" virt="non-virtual"><scope>hosts</scope><name>quote_symbol</name></member>
+      <member refid="structhosts_1ad0543af217c9166111211df7e5ae4d10" prot="public" virt="non-virtual"><scope>hosts</scope><name>quote_token_contract</name></member>
+      <member refid="structhosts_1a3cd22dae2f7d51f9e30ae3d3d5222c92" prot="public" virt="non-virtual"><scope>hosts</scope><name>referral_percent</name></member>
+      <member refid="structhosts_1acd94c0fd8841fa120966a7ed2ede2e99" prot="public" virt="non-virtual"><scope>hosts</scope><name>registered_at</name></member>
+      <member refid="structhosts_1ab25ffbf2b0edcccbc4e0a9cd5f9cd6b5" prot="public" virt="non-virtual"><scope>hosts</scope><name>root_token</name></member>
+      <member refid="structhosts_1a68dab42c2847909f51b03a1c97fbb3b6" prot="public" virt="non-virtual"><scope>hosts</scope><name>root_token_contract</name></member>
+      <member refid="structhosts_1ae1af9662a7c4c35142db2901d72d393f" prot="public" virt="non-virtual"><scope>hosts</scope><name>sale_is_enabled</name></member>
+      <member refid="structhosts_1a52683be3d7dd87b020ad2153b66d3579" prot="public" virt="non-virtual"><scope>hosts</scope><name>sale_mode</name></member>
+      <member refid="structhosts_1a1bcbe02e4d50c85815bc03dcf72def70" prot="public" virt="non-virtual"><scope>hosts</scope><name>sale_shift</name></member>
+      <member refid="structhosts_1a1239eb9e569541798a8f1365ee544b30" prot="public" virt="non-virtual"><scope>hosts</scope><name>sale_token_contract</name></member>
+      <member refid="structhosts_1a17c085f318a91d470a0f7b32e8c36dcd" prot="public" virt="non-virtual"><scope>hosts</scope><name>symbol</name></member>
+      <member refid="structhosts_1ad10dbf7c3e730b8b2d13045d5068062f" prot="public" virt="non-virtual"><scope>hosts</scope><name>sys_percent</name></member>
+      <member refid="structhosts_1a4eb9e6b68db5f7dfa5905b1a3cdb6942" prot="public" virt="non-virtual"><scope>hosts</scope><name>title</name></member>
+      <member refid="structhosts_1a4692b62c2bf0a73bfc98fd3b3e20cfb1" prot="public" virt="non-virtual"><scope>hosts</scope><name>to_pay</name></member>
+      <member refid="structhosts_1aef8c1f7d03f391631abe95bf86ac1aa5" prot="public" virt="non-virtual"><scope>hosts</scope><name>total_dacs_weight</name></member>
+      <member refid="structhosts_1ad07e72527df764f0f8af057383e70779" prot="public" virt="non-virtual"><scope>hosts</scope><name>total_goals</name></member>
+      <member refid="structhosts_1a3aea471591de79d52ef50ff662ee3cab" prot="public" virt="non-virtual"><scope>hosts</scope><name>total_reports</name></member>
+      <member refid="structhosts_1abf00f55f83143e8a5a47bbed2bb85d0a" prot="public" virt="non-virtual"><scope>hosts</scope><name>total_shares</name></member>
+      <member refid="structhosts_1a6e0bb8abc121c4713d0fed50bc6dde0b" prot="public" virt="non-virtual"><scope>hosts</scope><name>total_tasks</name></member>
+      <member refid="structhosts_1a5d51b449fc6701419c2e06b6045e1c79" prot="public" virt="non-virtual"><scope>hosts</scope><name>type</name></member>
+      <member refid="structhosts_1a20938bba05a37320a8875a506d1d2ad1" prot="public" virt="non-virtual"><scope>hosts</scope><name>username</name></member>
+      <member refid="structhosts_1a121c2c8a6e032a358c61676ab69416e6" prot="public" virt="non-virtual"><scope>hosts</scope><name>voting_only_up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

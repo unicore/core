@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d2/da3/shares_8hpp" kind="file" language="C++">
+    <compoundname>shares.hpp</compoundname>
+    <includedby refid="da/d47/core_8hpp" local="yes">include/core.hpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/core.hpp</label>
+        <link refid="da/d47/core_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>include/shares.hpp</label>
+        <link refid="d2/da3/shares_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d0/d03/structpower" prot="public">power</innerclass>
+    <innerclass refid="d9/d05/structpower2" prot="public">power2</innerclass>
+    <innerclass refid="da/d8c/structpower3" prot="public">power3</innerclass>
+    <innerclass refid="dc/daa/structgoldens" prot="public">goldens</innerclass>
+    <innerclass refid="d6/d5f/structpowerstat" prot="public">powerstat</innerclass>
+    <innerclass refid="d1/d99/structpowerlog" prot="public">powerlog</innerclass>
+    <innerclass refid="dd/d7c/structdlog" prot="public">dlog</innerclass>
+    <innerclass refid="da/d67/structdelegations" prot="public">delegations</innerclass>
+    <innerclass refid="d1/d4b/structvesting" prot="public">vesting</innerclass>
+    <innerclass refid="d9/d07/structcorepartners" prot="public">corepartners</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d2/da3/shares_8hpp_1aaaef6bde2f11b5fa0ae82915daacdd6d" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;power&quot;_n, <ref refid="d0/d03/structpower" kindref="compound">power</ref> &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;power&quot;_n, power&gt; power_index</definition>
+        <argsstring></argsstring>
+        <name>power_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="17" column="28" bodyfile="include/shares.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d2/da3/shares_8hpp_1a5523322504441c71b35b1a9ef999ea9c" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;power2&quot;_n, <ref refid="d9/d05/structpower2" kindref="compound">power2</ref> &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;power2&quot;_n, power2&gt; power2_index</definition>
+        <argsstring></argsstring>
+        <name>power2_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="31" column="30" bodyfile="include/shares.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d2/da3/shares_8hpp_1aca70dec90f5c5e894e0b36969fc0ce81" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;power3&quot;_n, <ref refid="da/d8c/structpower3" kindref="compound">power3</ref>, eosio::indexed_by&lt;&quot;bypower&quot;_n, eosio::const_mem_fun&lt; <ref refid="da/d8c/structpower3" kindref="compound">power3</ref>, uint64_t, &amp;power3::bypower &gt; &gt;, eosio::indexed_by&lt;&quot;bystaked&quot;_n, eosio::const_mem_fun&lt; <ref refid="da/d8c/structpower3" kindref="compound">power3</ref>, uint64_t, &amp;power3::bystaked &gt; &gt;, eosio::indexed_by&lt;&quot;bydelegated&quot;_n, eosio::const_mem_fun&lt; <ref refid="da/d8c/structpower3" kindref="compound">power3</ref>, uint64_t, &amp;power3::bydelegated &gt; &gt;, eosio::indexed_by&lt;&quot;bywbadges&quot;_n, eosio::const_mem_fun&lt; <ref refid="da/d8c/structpower3" kindref="compound">power3</ref>, uint64_t, &amp;power3::bywbadges &gt; &gt;, eosio::indexed_by&lt;&quot;byfrozen&quot;_n, eosio::const_mem_fun&lt; <ref refid="da/d8c/structpower3" kindref="compound">power3</ref>, uint64_t, &amp;power3::byfrozen &gt; &gt; &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;power3&quot;_n, power3, eosio::indexed_by&lt;&quot;bypower&quot;_n, eosio::const_mem_fun&lt;power3, uint64_t, &amp;power3::bypower&gt; &gt;, eosio::indexed_by&lt;&quot;bystaked&quot;_n, eosio::const_mem_fun&lt;power3, uint64_t, &amp;power3::bystaked&gt; &gt;, eosio::indexed_by&lt;&quot;bydelegated&quot;_n, eosio::const_mem_fun&lt;power3, uint64_t, &amp;power3::bydelegated&gt; &gt;, eosio::indexed_by&lt;&quot;bywbadges&quot;_n, eosio::const_mem_fun&lt;power3, uint64_t, &amp;power3::bywbadges&gt; &gt;, eosio::indexed_by&lt;&quot;byfrozen&quot;_n, eosio::const_mem_fun&lt;power3, uint64_t, &amp;power3::byfrozen&gt; &gt; &gt; power3_index</definition>
+        <argsstring></argsstring>
+        <name>power3_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="65" column="2" bodyfile="include/shares.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d2/da3/shares_8hpp_1a2b535b4393a4e08d093daec103ab39c9" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;goldens&quot;_n, <ref refid="dc/daa/structgoldens" kindref="compound">goldens</ref> &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;goldens&quot;_n, goldens&gt; goldens_index</definition>
+        <argsstring></argsstring>
+        <name>goldens_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="82" column="30" bodyfile="include/shares.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d2/da3/shares_8hpp_1aeef8c4c96ce75f4dcca7abfdf664eabf" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;powerstat&quot;_n, <ref refid="d6/d5f/structpowerstat" kindref="compound">powerstat</ref>, eosio::indexed_by&lt;&quot;byopen&quot;_n, eosio::const_mem_fun&lt; <ref refid="d6/d5f/structpowerstat" kindref="compound">powerstat</ref>, uint64_t, &amp;powerstat::byopen &gt; &gt; &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;powerstat&quot;_n, powerstat, eosio::indexed_by&lt;&quot;byopen&quot;_n, eosio::const_mem_fun&lt;powerstat, uint64_t, &amp;powerstat::byopen&gt; &gt; &gt; powerstat_index</definition>
+        <argsstring></argsstring>
+        <name>powerstat_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="112" column="2" bodyfile="include/shares.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d2/da3/shares_8hpp_1a026ae7937a80bb0e011fc5d26b8c25f2" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;powerlog&quot;_n, <ref refid="d1/d99/structpowerlog" kindref="compound">powerlog</ref>, eosio::indexed_by&lt;&quot;userwindowid&quot;_n, eosio::const_mem_fun&lt; <ref refid="d1/d99/structpowerlog" kindref="compound">powerlog</ref>, uint128_t, &amp;powerlog::userwindowid &gt; &gt; &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;powerlog&quot;_n, powerlog, eosio::indexed_by&lt;&quot;userwindowid&quot;_n, eosio::const_mem_fun&lt;powerlog, uint128_t, &amp;powerlog::userwindowid&gt; &gt; &gt; powerlog_index</definition>
+        <argsstring></argsstring>
+        <name>powerlog_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="138" column="2" bodyfile="include/shares.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d2/da3/shares_8hpp_1afe6ec88ede41c20058060ab3c92fab70" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;dlog&quot;_n, <ref refid="dd/d7c/structdlog" kindref="compound">dlog</ref> &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;dlog&quot;_n, dlog&gt; dlog_index</definition>
+        <argsstring></argsstring>
+        <name>dlog_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="158" column="30" bodyfile="include/shares.hpp" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d2/da3/shares_8hpp_1a14934b84afee0a898e068a776b0549a6" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;delegations&quot;_n, <ref refid="da/d67/structdelegations" kindref="compound">delegations</ref> &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;delegations&quot;_n, delegations&gt; delegation_index</definition>
+        <argsstring></argsstring>
+        <name>delegation_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="173" column="28" bodyfile="include/shares.hpp" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d2/da3/shares_8hpp_1a7399ea65b32ede9a71b1bdcf0507fd7e" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;vesting&quot;_n, <ref refid="d1/d4b/structvesting" kindref="compound">vesting</ref> &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;vesting&quot;_n, vesting&gt; vesting_index</definition>
+        <argsstring></argsstring>
+        <name>vesting_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="197" column="30" bodyfile="include/shares.hpp" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d2/da3/shares_8hpp_1a71b5a614045b12607d8bc0eb386730af" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;corepartners&quot;_n, <ref refid="d9/d07/structcorepartners" kindref="compound">corepartners</ref>, eosio::indexed_by&lt;&quot;bygood&quot;_n, eosio::const_mem_fun&lt; <ref refid="d9/d07/structcorepartners" kindref="compound">corepartners</ref>, uint64_t, &amp;corepartners::bygood &gt; &gt;, eosio::indexed_by&lt;&quot;byexpiration&quot;_n, eosio::const_mem_fun&lt; <ref refid="d9/d07/structcorepartners" kindref="compound">corepartners</ref>, uint64_t, &amp;corepartners::byexpiration &gt; &gt; &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;corepartners&quot;_n, corepartners, eosio::indexed_by&lt;&quot;bygood&quot;_n, eosio::const_mem_fun&lt;corepartners, uint64_t, &amp;corepartners::bygood&gt; &gt;, eosio::indexed_by&lt;&quot;byexpiration&quot;_n, eosio::const_mem_fun&lt;corepartners, uint64_t, &amp;corepartners::byexpiration&gt; &gt; &gt; corepartners_index</definition>
+        <argsstring></argsstring>
+        <name>corepartners_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="223" column="2" bodyfile="include/shares.hpp" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="6" refid="d0/d03/structpower" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="de/d91/namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><ref refid="d0/d03/structpower" kindref="compound">power</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>host;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="d0/d03/structpower" kindref="compound">power</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>staked;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>delegated;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>with_badges;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>host.value;}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="d0/d03/structpower" kindref="compound">power</ref>,<sp/>(host)(<ref refid="d0/d03/structpower" kindref="compound">power</ref>)(staked)(delegated)(with_badges))</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index&lt;</highlight><highlight class="stringliteral">&quot;power&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="d0/d03/structpower" kindref="compound">power</ref>&gt;<sp/>power_index;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="d9/d05/structpower2" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="de/d91/namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><ref refid="d9/d05/structpower2" kindref="compound">power2</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::name<sp/>host;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>frozen;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>host.value;}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="d9/d05/structpower2" kindref="compound">power2</ref>,<sp/>(host)(frozen))</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index&lt;</highlight><highlight class="stringliteral">&quot;power2&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="d9/d05/structpower2" kindref="compound">power2</ref>&gt;<sp/>power2_index;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="40" refid="da/d8c/structpower3" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="de/d91/namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><ref refid="da/d8c/structpower3" kindref="compound">power3</ref><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::name<sp/>username;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="d0/d03/structpower" kindref="compound">power</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>staked;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>delegated;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>with_badges;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>frozen;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>username.value;}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>bypower()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d0/d03/structpower" kindref="compound">power</ref>;}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>bystaked()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>staked;}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>bydelegated()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>delegated;}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>bywbadges()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>with_badges;}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>byfrozen()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>frozen;}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="da/d8c/structpower3" kindref="compound">power3</ref>,<sp/>(username)(<ref refid="d0/d03/structpower" kindref="compound">power</ref>)(staked)(delegated)(with_badges)(frozen))</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index&lt;</highlight><highlight class="stringliteral">&quot;power3&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="da/d8c/structpower3" kindref="compound">power3</ref>,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;bypower&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;power3,<sp/>uint64_t,<sp/>&amp;power3::bypower&gt;&gt;,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;bystaked&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;power3,<sp/>uint64_t,<sp/>&amp;power3::bystaked&gt;&gt;,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;bydelegated&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;power3,<sp/>uint64_t,<sp/>&amp;power3::bydelegated&gt;&gt;,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;bywbadges&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;power3,<sp/>uint64_t,<sp/>&amp;power3::bywbadges&gt;&gt;,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;byfrozen&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;power3,<sp/>uint64_t,<sp/>&amp;power3::byfrozen&gt;&gt;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>&gt;<sp/>power3_index;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="dc/daa/structgoldens" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="de/d91/namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><ref refid="dc/daa/structgoldens" kindref="compound">goldens</ref><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::name<sp/>host;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>total_golden;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>host.value;}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="dc/daa/structgoldens" kindref="compound">goldens</ref>,<sp/>(host)(total_golden))</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index&lt;</highlight><highlight class="stringliteral">&quot;goldens&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="dc/daa/structgoldens" kindref="compound">goldens</ref>&gt;<sp/>goldens_index;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="d6/d5f/structpowerstat" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="de/d91/namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><ref refid="d6/d5f/structpowerstat" kindref="compound">powerstat</ref><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>id;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::time_point_sec<sp/>window_open_at;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::time_point_sec<sp/>window_closed_at;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>liquid_power;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::asset<sp/>total_available;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::asset<sp/>total_remain;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::asset<sp/>total_distributed;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::asset<sp/>total_partners_available;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::asset<sp/>total_partners_distributed;<sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>byopen()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>window_open_at.sec_since_epoch();}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="d6/d5f/structpowerstat" kindref="compound">powerstat</ref>,<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)(window_open_at)(window_closed_at)(liquid_power)(total_available)(total_remain)(total_distributed)(total_partners_available)(total_partners_distributed))</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index&lt;</highlight><highlight class="stringliteral">&quot;powerstat&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="d6/d5f/structpowerstat" kindref="compound">powerstat</ref>,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;byopen&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;powerstat,<sp/>uint64_t,<sp/>&amp;powerstat::byopen&gt;&gt;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>&gt;<sp/>powerstat_index;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="d1/d99/structpowerlog" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="de/d91/namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><ref refid="d1/d99/structpowerlog" kindref="compound">powerlog</ref><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>id;<sp/></highlight><highlight class="comment">//auto<sp/>by<sp/>cycle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::name<sp/>host;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::name<sp/>username;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>window_id;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="d0/d03/structpower" kindref="compound">power</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>updated<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::asset<sp/>available;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::asset<sp/>distributed_to_partners;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>uint128_t<sp/>userwindowid()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>combine_ids(username.value,<sp/>window_id);<sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="d1/d99/structpowerlog" kindref="compound">powerlog</ref>,<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)(host)(username)(window_id)(<ref refid="d0/d03/structpower" kindref="compound">power</ref>)(updated)(available)(distributed_to_partners))</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index&lt;</highlight><highlight class="stringliteral">&quot;powerlog&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="d1/d99/structpowerlog" kindref="compound">powerlog</ref>,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;userwindowid&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;powerlog,<sp/>uint128_t,<sp/>&amp;powerlog::userwindowid&gt;&gt;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>&gt;<sp/>powerlog_index;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="dd/d7c/structdlog" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="de/d91/namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><ref refid="dd/d7c/structdlog" kindref="compound">dlog</ref><sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>id;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::name<sp/>host;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>pool_id;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>uint128_t<sp/>segments;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::asset<sp/>amount;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="dd/d7c/structdlog" kindref="compound">dlog</ref>,<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)(host)(pool_id)(segments)(amount))</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index&lt;</highlight><highlight class="stringliteral">&quot;dlog&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="dd/d7c/structdlog" kindref="compound">dlog</ref>&gt;<sp/>dlog_index;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="da/d67/structdelegations" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="de/d91/namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><ref refid="da/d67/structdelegations" kindref="compound">delegations</ref><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>reciever;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>shares;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>reciever.value;}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(<ref refid="da/d67/structdelegations" kindref="compound">delegations</ref>,<sp/>(reciever)(shares))</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index&lt;</highlight><highlight class="stringliteral">&quot;delegations&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="da/d67/structdelegations" kindref="compound">delegations</ref>&gt;<sp/>delegation_index;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="d1/d4b/structvesting" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="de/d91/namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><ref refid="d1/d4b/structvesting" kindref="compound">vesting</ref><sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>id;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::name<sp/>host;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::name<sp/>owner;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::name<sp/>contract;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::name<sp/>type;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::time_point_sec<sp/>startat;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>duration;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::asset<sp/>amount;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::asset<sp/>available;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::asset<sp/>withdrawed;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(<ref refid="d1/d4b/structvesting" kindref="compound">vesting</ref>,<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)(host)(owner)(contract)(type)(startat)(duration)(amount)(available)(withdrawed))</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index&lt;</highlight><highlight class="stringliteral">&quot;vesting&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="d1/d4b/structvesting" kindref="compound">vesting</ref>&gt;<sp/>vesting_index;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="d9/d07/structcorepartners" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/><sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="de/d91/namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><ref refid="d9/d07/structcorepartners" kindref="compound">corepartners</ref><sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>username;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>status;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>total_good;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>sediment;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::time_point_sec<sp/>join_at;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::time_point_sec<sp/>expiration;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>username.value;}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>bygood()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>total_good.amount;}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>byexpiration()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>expiration.sec_since_epoch();}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(<ref refid="d9/d07/structcorepartners" kindref="compound">corepartners</ref>,<sp/>(username)(status)(total_good)(sediment)(join_at)(expiration))</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index&lt;</highlight><highlight class="stringliteral">&quot;corepartners&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="d9/d07/structcorepartners" kindref="compound">corepartners</ref>,</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;bygood&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;corepartners,<sp/>uint64_t,<sp/>&amp;corepartners::bygood&gt;&gt;,</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;byexpiration&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;corepartners,<sp/>uint64_t,<sp/>&amp;corepartners::byexpiration&gt;&gt;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/>corepartners_index;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/shares.hpp"/>
+  </compounddef>
+</doxygen>

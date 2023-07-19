@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>CORE</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">UNICORE<sp/>-<sp/>универсальный<sp/>протокол<sp/>создания<sp/>цифровых<sp/>экономических<sp/>систем.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Протокол<sp/>UNICORE<sp/>предлагает<sp/>инструменты<sp/>создания<sp/>цифровых<sp/>экономических<sp/>систем<sp/>и<sp/>инновационный<sp/>механизм<sp/>перераспределения<sp/>игровых<sp/>жетонов<sp/>в<sp/>них<sp/>на<sp/>основе<sp/>математического<sp/>алгоритма<sp/>точного<sp/>финансового<sp/>планирования<sp/>&quot;Двойная<sp/>Спираль&quot;.</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>Исполняется<sp/>в<sp/>любой<sp/>сетевой<sp/>операционной<sp/>системе<sp/>типа<sp/>EOS.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>Генерирует<sp/>теоретически<sp/>неограниченную<sp/>прибыль<sp/>при<sp/>фиксированных<sp/>рисках<sp/>и<sp/>абсолютном<sp/>финансовом<sp/>балансе<sp/>в<sp/>любой<sp/>момент.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>Предоставляет<sp/>инновационную<sp/>бизнес-модель,<sp/>основанную<sp/>на<sp/>энергии<sp/>внимания<sp/>и<sp/>добровольных<sp/>пожертвованиях<sp/>людей.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Назначение</highlight></codeline>
+<codeline><highlight class="normal">Протокол<sp/>предназначен<sp/>для<sp/>запуска<sp/>и<sp/>обслуживания<sp/>цифровых<sp/>экономических<sp/>систем<sp/>&quot;Двойная<sp/>Спираль&quot;<sp/>во<sp/>множестве<sp/>различных<sp/>конфигураций<sp/>с<sp/>целью<sp/>увеличения<sp/>качества<sp/>жизни<sp/>участников<sp/>и<sp/>реализации<sp/>новых<sp/>глобальных<sp/>проектов.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Компиляция</highlight></codeline>
+<codeline><highlight class="normal">Версия<sp/>eosio_cdt:<sp/>1.7.0</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Заменить<sp/>ABSOLUTE_PATH_TO_CONTRACT<sp/>на<sp/>абсолютный<sp/>путь<sp/>к<sp/>директории<sp/>контракта<sp/>core.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">docker<sp/>run<sp/>--rm<sp/>--name<sp/>eosio.cdt_v1.7.0<sp/>--volume<sp/>/ABSOLUTE_PATH_TO_CONTRACT:/project<sp/>-w<sp/>/project<sp/>eostudio/eosio.cdt:v1.7.0<sp/>/bin/bash<sp/>-c<sp/>&quot;eosio-cpp<sp/>-abigen<sp/>-I<sp/>include<sp/>-R<sp/>include<sp/>-contract<sp/>unicore<sp/>-o<sp/>core.wasm<sp/>main.cpp&quot;<sp/>&amp;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Установка</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">cleos<sp/>set<sp/>contract<sp/>CONTRACT_NAME<sp/>/ABSOLUTE_PATH_TO_CONTRACT/core<sp/>-p<sp/>CONTRACT_NAME</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Инициализация</highlight></codeline>
+<codeline><highlight class="normal">Для<sp/>инициализации<sp/>необходимо<sp/>совершить<sp/>транзакцию<sp/>с<sp/>системным<sp/>процентом,<sp/>изымаемым<sp/>из<sp/>оборота<sp/>всех<sp/>Двойных<sp/>Спиралей.<sp/>(1000000<sp/>=<sp/>100%).<sp/>Максимальный<sp/>процент:<sp/>30%.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">cleos<sp/>push<sp/>action<sp/>CONTRACT_NAME<sp/>init<sp/>[0]<sp/>-p<sp/>CONTRACT_NAME</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Изъятые<sp/>из<sp/>оборота<sp/>средства<sp/>распределяются<sp/>среди<sp/>делегатов<sp/>сети.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Порядок<sp/>создания<sp/>и<sp/>запуска<sp/>хоста</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>Произвести<sp/>апгрейд<sp/>аккаунта<sp/>методом<sp/>upgrade.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Установить<sp/>параметры<sp/>хоста<sp/>методом<sp/>setparams.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Произвести<sp/>оплату<sp/>стоимости<sp/>запуска<sp/>хоста<sp/>методом<sp/>transfer<sp/>с<sp/>кодом<sp/>в<sp/>мемо:<sp/>&quot;110-имя_аккаунта_хоста&quot;<sp/>(операция<sp/>перевода<sp/>принимается<sp/>к<sp/>оплате<sp/>только<sp/>от<sp/>имени<sp/>хоста).</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Вызвать<sp/>метод<sp/>start.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">После<sp/>запуска,<sp/>хост<sp/>готов<sp/>оперировать<sp/>токенами<sp/>согласно<sp/>настройки<sp/>своей<sp/>цифровой<sp/>экономики.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Лицензия</highlight></codeline>
+<codeline><highlight class="normal">MIT</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">UNICORE<sp/>is<sp/>released<sp/>under<sp/>the<sp/>open<sp/>source<sp/>MIT<sp/>license<sp/>and<sp/>is<sp/>offered<sp/>“AS<sp/>IS”<sp/>without<sp/>warranty<sp/>of<sp/>any<sp/>kind,<sp/>express<sp/>or<sp/>implied.<sp/>Any<sp/>security<sp/>provided<sp/>by<sp/>the<sp/>UNICORE<sp/>software<sp/>depends<sp/>in<sp/>part<sp/>on<sp/>how<sp/>it<sp/>is<sp/>used,<sp/>configured,<sp/>and<sp/>deployed.<sp/>UNICORE<sp/>is<sp/>built<sp/>upon<sp/>many<sp/>third-party<sp/>libraries<sp/>such<sp/>as<sp/>EOSIO<sp/>(MIT<sp/>Licence),<sp/>WABT<sp/>(Apache<sp/>License)<sp/>and<sp/>WAVM<sp/>(BSD<sp/>3-clause)<sp/>which<sp/>are<sp/>also<sp/>provided<sp/>“AS<sp/>IS”<sp/>without<sp/>warranty<sp/>of<sp/>any<sp/>kind.<sp/>Without<sp/>limiting<sp/>the<sp/>generality<sp/>of<sp/>the<sp/>foregoing,<sp/>UNICODE<sp/>makes<sp/>no<sp/>representation<sp/>or<sp/>guarantee<sp/>that<sp/>UNICORE<sp/>or<sp/>any<sp/>third-party<sp/>libraries<sp/>will<sp/>perform<sp/>as<sp/>intended<sp/>or<sp/>will<sp/>be<sp/>free<sp/>of<sp/>errors,<sp/>bugs<sp/>or<sp/>faulty<sp/>code.<sp/>Both<sp/>may<sp/>fail<sp/>in<sp/>large<sp/>or<sp/>small<sp/>ways<sp/>that<sp/>could<sp/>completely<sp/>or<sp/>partially<sp/>limit<sp/>functionality<sp/>or<sp/>compromise<sp/>computer<sp/>systems.<sp/>If<sp/>you<sp/>use<sp/>or<sp/>implement<sp/>UNICORE,<sp/>you<sp/>do<sp/>so<sp/>at<sp/>your<sp/>own<sp/>risk.<sp/>In<sp/>no<sp/>event<sp/>will<sp/>UNICODE<sp/>be<sp/>liable<sp/>to<sp/>any<sp/>party<sp/>for<sp/>any<sp/>damages<sp/>whatsoever,<sp/>even<sp/>if<sp/>it<sp/>had<sp/>been<sp/>advised<sp/>of<sp/>the<sp/>possibility<sp/>of<sp/>damage.</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d2/d8a/structpartners2" kind="struct" language="C++" prot="public">
+    <compoundname>partners2</compoundname>
+    <includes refid="d5/d07/ref_8hpp" local="no">ref.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d2/d8a/structpartners2_1a7b279bce1d671ae29aa0d9b14936204b" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name partners2::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <qualifiedname>partners2::username</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="6" column="21" bodyfile="include/ref.hpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d8a/structpartners2_1a6198ca816832f4fcb8b6211c9e88f7b1" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name partners2::referer</definition>
+        <argsstring></argsstring>
+        <name>referer</name>
+        <qualifiedname>partners2::referer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="7" column="21" bodyfile="include/ref.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d8a/structpartners2_1adb751d90a64a4b19f0aab7e61f792f25" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string partners2::nickname</definition>
+        <argsstring></argsstring>
+        <name>nickname</name>
+        <qualifiedname>partners2::nickname</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="8" column="21" bodyfile="include/ref.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d8a/structpartners2_1aadb1fde1e890fa68678cba34acb50b82" prot="public" static="no" mutable="no">
+        <type>eosio::checksum256</type>
+        <definition>eosio::checksum256 partners2::nickhash</definition>
+        <argsstring></argsstring>
+        <name>nickhash</name>
+        <qualifiedname>partners2::nickhash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="9" column="28" bodyfile="include/ref.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d8a/structpartners2_1a8902d55d8abeecef589daabb3c0e85e5" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t partners2::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>partners2::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="11" column="18" bodyfile="include/ref.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d8a/structpartners2_1af916875cf91b9cd8534f0cbe84317a6c" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t partners2::cashback</definition>
+        <argsstring></argsstring>
+        <name>cashback</name>
+        <qualifiedname>partners2::cashback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="12" column="18" bodyfile="include/ref.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d8a/structpartners2_1aa9d5cb6acaacac876169c5f3efddcf1e" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name partners2::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <qualifiedname>partners2::status</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="14" column="21" bodyfile="include/ref.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d8a/structpartners2_1a8189bf00e09ffc820b76f99acd7b337a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string partners2::meta</definition>
+        <argsstring></argsstring>
+        <name>meta</name>
+        <qualifiedname>partners2::meta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="16" column="21" bodyfile="include/ref.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d8a/structpartners2_1a37a7250a0195969762903785a65b1b8b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t partners2::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>partners2::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="18" column="18" bodyfile="include/ref.hpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d8a/structpartners2_1a208a5ac23d7db6fa02449eea1f6322d2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t partners2::byreferer</definition>
+        <argsstring>() const</argsstring>
+        <name>byreferer</name>
+        <qualifiedname>partners2::byreferer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="19" column="18" bodyfile="include/ref.hpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d8a/structpartners2_1a92d13db109533760e4bc935062e62b56" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t partners2::byid</definition>
+        <argsstring>() const</argsstring>
+        <name>byid</name>
+        <qualifiedname>partners2::byid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="20" column="18" bodyfile="include/ref.hpp" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d8a/structpartners2_1a379e47f8474351bfafe91231cb471826" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t partners2::bystatus</definition>
+        <argsstring>() const</argsstring>
+        <name>bystatus</name>
+        <qualifiedname>partners2::bystatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="21" column="18" bodyfile="include/ref.hpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d8a/structpartners2_1afa8611fed050f191719f0e4fbaf713a8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>eosio::checksum256</type>
+        <definition>eosio::checksum256 partners2::bynickhash</definition>
+        <argsstring>() const</argsstring>
+        <name>bynickhash</name>
+        <qualifiedname>partners2::bynickhash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="23" column="28" bodyfile="include/ref.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура партнёров и их партнёров. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>partners2</label>
+        <link refid="d2/d8a/structpartners2"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>meta</edgelabel>
+          <edgelabel>nickname</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/ref.hpp" line="5" column="5" bodyfile="include/ref.hpp" bodystart="5" bodyend="28"/>
+    <listofallmembers>
+      <member refid="d2/d8a/structpartners2_1a92d13db109533760e4bc935062e62b56" prot="public" virt="non-virtual"><scope>partners2</scope><name>byid</name></member>
+      <member refid="d2/d8a/structpartners2_1afa8611fed050f191719f0e4fbaf713a8" prot="public" virt="non-virtual"><scope>partners2</scope><name>bynickhash</name></member>
+      <member refid="d2/d8a/structpartners2_1a208a5ac23d7db6fa02449eea1f6322d2" prot="public" virt="non-virtual"><scope>partners2</scope><name>byreferer</name></member>
+      <member refid="d2/d8a/structpartners2_1a379e47f8474351bfafe91231cb471826" prot="public" virt="non-virtual"><scope>partners2</scope><name>bystatus</name></member>
+      <member refid="d2/d8a/structpartners2_1af916875cf91b9cd8534f0cbe84317a6c" prot="public" virt="non-virtual"><scope>partners2</scope><name>cashback</name></member>
+      <member refid="d2/d8a/structpartners2_1a8902d55d8abeecef589daabb3c0e85e5" prot="public" virt="non-virtual"><scope>partners2</scope><name>id</name></member>
+      <member refid="d2/d8a/structpartners2_1a8189bf00e09ffc820b76f99acd7b337a" prot="public" virt="non-virtual"><scope>partners2</scope><name>meta</name></member>
+      <member refid="d2/d8a/structpartners2_1aadb1fde1e890fa68678cba34acb50b82" prot="public" virt="non-virtual"><scope>partners2</scope><name>nickhash</name></member>
+      <member refid="d2/d8a/structpartners2_1adb751d90a64a4b19f0aab7e61f792f25" prot="public" virt="non-virtual"><scope>partners2</scope><name>nickname</name></member>
+      <member refid="d2/d8a/structpartners2_1a37a7250a0195969762903785a65b1b8b" prot="public" virt="non-virtual"><scope>partners2</scope><name>primary_key</name></member>
+      <member refid="d2/d8a/structpartners2_1a6198ca816832f4fcb8b6211c9e88f7b1" prot="public" virt="non-virtual"><scope>partners2</scope><name>referer</name></member>
+      <member refid="d2/d8a/structpartners2_1aa9d5cb6acaacac876169c5f3efddcf1e" prot="public" virt="non-virtual"><scope>partners2</scope><name>status</name></member>
+      <member refid="d2/d8a/structpartners2_1a7b279bce1d671ae29aa0d9b14936204b" prot="public" virt="non-virtual"><scope>partners2</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

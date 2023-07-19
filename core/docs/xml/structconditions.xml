@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structconditions" kind="struct" language="C++" prot="public">
+    <compoundname>conditions</compoundname>
+    <includes refid="conditions_8hpp" local="no">conditions.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structconditions_1a50f42a1945a457079ae63b6e18bfca4a" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t conditions::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>conditions::key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/conditions.hpp" line="5" column="18" bodyfile="include/conditions.hpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconditions_1a1b699fa747d89b818d097018b6fb4d89" prot="public" static="no" mutable="no">
+        <type>eosio::string</type>
+        <definition>eosio::string conditions::key_string</definition>
+        <argsstring></argsstring>
+        <name>key_string</name>
+        <qualifiedname>conditions::key_string</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/conditions.hpp" line="6" column="23" bodyfile="include/conditions.hpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconditions_1af109613af52693bfd8c089c203e12a9f" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t conditions::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>conditions::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/conditions.hpp" line="7" column="18" bodyfile="include/conditions.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structconditions_1a234a5327f24d23fc88b500cd2309b57a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t conditions::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>conditions::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/conditions.hpp" line="9" column="18" bodyfile="include/conditions.hpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура хранилища универсального набора условий, относящихся к хосту, платформе или протоколу. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>conditions</label>
+        <link refid="structconditions"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>key_string</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/conditions.hpp" line="4" column="5" bodyfile="include/conditions.hpp" bodystart="4" bodyend="11"/>
+    <listofallmembers>
+      <member refid="structconditions_1a50f42a1945a457079ae63b6e18bfca4a" prot="public" virt="non-virtual"><scope>conditions</scope><name>key</name></member>
+      <member refid="structconditions_1a1b699fa747d89b818d097018b6fb4d89" prot="public" virt="non-virtual"><scope>conditions</scope><name>key_string</name></member>
+      <member refid="structconditions_1a234a5327f24d23fc88b500cd2309b57a" prot="public" virt="non-virtual"><scope>conditions</scope><name>primary_key</name></member>
+      <member refid="structconditions_1af109613af52693bfd8c089c203e12a9f" prot="public" virt="non-virtual"><scope>conditions</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

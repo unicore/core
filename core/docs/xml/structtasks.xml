@@ -1,0 +1,890 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structtasks" kind="struct" language="C++" prot="public">
+    <compoundname>tasks</compoundname>
+    <includes refid="tasks_8hpp" local="no">tasks.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtasks_1ae1f502adf1c993c3f1d3c260fa0bab20" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>tasks::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="5" column="10" bodyfile="include/tasks.hpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1aa6febf74a54db420121039ceae0db49f" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::parent_id</definition>
+        <argsstring></argsstring>
+        <name>parent_id</name>
+        <qualifiedname>tasks::parent_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="6" column="18" bodyfile="include/tasks.hpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1aa4501a330653e176762f809b7d84647d" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::goal_id</definition>
+        <argsstring></argsstring>
+        <name>goal_id</name>
+        <qualifiedname>tasks::goal_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="8" column="10" bodyfile="include/tasks.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a9adf310986b0b821249916c5d44e97b9" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name tasks::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <qualifiedname>tasks::host</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="9" column="21" bodyfile="include/tasks.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a9c551795c1cdbde451c03705f9f2174b" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name tasks::creator</definition>
+        <argsstring></argsstring>
+        <name>creator</name>
+        <qualifiedname>tasks::creator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="10" column="21" bodyfile="include/tasks.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a477ff31c38b808eb18496ca7ae6370a6" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name tasks::benefactor</definition>
+        <argsstring></argsstring>
+        <name>benefactor</name>
+        <qualifiedname>tasks::benefactor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="11" column="21" bodyfile="include/tasks.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a9febb6a0d6b990f4773496a203d1a9e2" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name tasks::suggester</definition>
+        <argsstring></argsstring>
+        <name>suggester</name>
+        <qualifiedname>tasks::suggester</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="12" column="21" bodyfile="include/tasks.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a065f2d917e382346cd89e2f77e95472d" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tasks::permlink</definition>
+        <argsstring></argsstring>
+        <name>permlink</name>
+        <qualifiedname>tasks::permlink</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="13" column="21" bodyfile="include/tasks.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a631f3185010ccc1fc833173335274a03" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name tasks::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>tasks::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="14" column="21" bodyfile="include/tasks.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1acaadd6e375352b79fae8b9e223aee032" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name tasks::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <qualifiedname>tasks::status</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="15" column="21" bodyfile="include/tasks.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a5d233f233b15ab37116b60b28d19a189" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::priority</definition>
+        <argsstring></argsstring>
+        <name>priority</name>
+        <qualifiedname>tasks::priority</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="16" column="10" bodyfile="include/tasks.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1adf6c1425eb08beeea49d57f209ce7e85" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tasks::is_regular</definition>
+        <argsstring></argsstring>
+        <name>is_regular</name>
+        <qualifiedname>tasks::is_regular</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="17" column="6" bodyfile="include/tasks.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a830005fe1a99e6c57bf8a1205868fdcf" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; uint64_t &gt;</type>
+        <definition>std::vector&lt;uint64_t&gt; tasks::calendar</definition>
+        <argsstring></argsstring>
+        <name>calendar</name>
+        <qualifiedname>tasks::calendar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="18" column="21" bodyfile="include/tasks.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1ab67682b429b14eb0102cbabf586f2542" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tasks::is_public</definition>
+        <argsstring></argsstring>
+        <name>is_public</name>
+        <qualifiedname>tasks::is_public</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="19" column="6" bodyfile="include/tasks.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a121059b007ee63fa8a842c150bf60251" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name tasks::doer</definition>
+        <argsstring></argsstring>
+        <name>doer</name>
+        <qualifiedname>tasks::doer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="20" column="21" bodyfile="include/tasks.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1aabceb8533e216dc89e10f9e39acabb1a" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name tasks::role</definition>
+        <argsstring></argsstring>
+        <name>role</name>
+        <qualifiedname>tasks::role</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="21" column="13" bodyfile="include/tasks.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1ad2511db83c6b290650c578a77090ed17" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <qualifiedname>tasks::level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="22" column="18" bodyfile="include/tasks.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a257a4c8ae9272a001f91c51e62a1953a" prot="public" static="no" mutable="no">
+        <type>eosio::string</type>
+        <definition>eosio::string tasks::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <qualifiedname>tasks::title</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="23" column="23" bodyfile="include/tasks.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a4e816d6457e29a0623a3f5bcfab21e4c" prot="public" static="no" mutable="no">
+        <type>eosio::string</type>
+        <definition>eosio::string tasks::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>tasks::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="24" column="15" bodyfile="include/tasks.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a370f9d2c835740238fd90bf40d647574" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset tasks::requested</definition>
+        <argsstring></argsstring>
+        <name>requested</name>
+        <qualifiedname>tasks::requested</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="25" column="14" bodyfile="include/tasks.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1acb852d91b0fc4f5d1bbef0fdf2d0222c" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset tasks::funded</definition>
+        <argsstring></argsstring>
+        <name>funded</name>
+        <qualifiedname>tasks::funded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="26" column="14" bodyfile="include/tasks.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a367e96715a0e358b43c44350d258e5b1" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset tasks::remain</definition>
+        <argsstring></argsstring>
+        <name>remain</name>
+        <qualifiedname>tasks::remain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="27" column="14" bodyfile="include/tasks.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a92fa22fac621633ab15e080641dc840d" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset tasks::for_each</definition>
+        <argsstring></argsstring>
+        <name>for_each</name>
+        <qualifiedname>tasks::for_each</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="28" column="14" bodyfile="include/tasks.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1adf167668b34739293125f4d95b5c6d4e" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name tasks::curator</definition>
+        <argsstring></argsstring>
+        <name>curator</name>
+        <qualifiedname>tasks::curator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="29" column="13" bodyfile="include/tasks.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1af9fad58b74a1abaf62159f207886d132" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tasks::with_badge</definition>
+        <argsstring></argsstring>
+        <name>with_badge</name>
+        <qualifiedname>tasks::with_badge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="31" column="14" bodyfile="include/tasks.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a6f2215e4279786acdf18c2b55c5cd840" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::badge_id</definition>
+        <argsstring></argsstring>
+        <name>badge_id</name>
+        <qualifiedname>tasks::badge_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="32" column="10" bodyfile="include/tasks.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1afe5af40a582c8449c3077190c9cd0a78" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tasks::validated</definition>
+        <argsstring></argsstring>
+        <name>validated</name>
+        <qualifiedname>tasks::validated</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="33" column="14" bodyfile="include/tasks.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a83e06aea80c059d8c7fac27ec33d65a7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tasks::completed</definition>
+        <argsstring></argsstring>
+        <name>completed</name>
+        <qualifiedname>tasks::completed</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="34" column="6" bodyfile="include/tasks.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a0fc8631b0327820af735ded60237a177" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tasks::active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <qualifiedname>tasks::active</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="35" column="6" bodyfile="include/tasks.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1ae74d43862baa65c4849a9508dca9fb7e" prot="public" static="no" mutable="no">
+        <type>eosio::time_point_sec</type>
+        <definition>eosio::time_point_sec tasks::created_at</definition>
+        <argsstring></argsstring>
+        <name>created_at</name>
+        <qualifiedname>tasks::created_at</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="36" column="31" bodyfile="include/tasks.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a5a306bc121712422d8daf5e9b6002e63" prot="public" static="no" mutable="no">
+        <type>eosio::time_point_sec</type>
+        <definition>eosio::time_point_sec tasks::start_at</definition>
+        <argsstring></argsstring>
+        <name>start_at</name>
+        <qualifiedname>tasks::start_at</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="37" column="31" bodyfile="include/tasks.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a3f18f667e301d7d22147dd837b8301ac" prot="public" static="no" mutable="no">
+        <type>eosio::time_point_sec</type>
+        <definition>eosio::time_point_sec tasks::expired_at</definition>
+        <argsstring></argsstring>
+        <name>expired_at</name>
+        <qualifiedname>tasks::expired_at</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="38" column="23" bodyfile="include/tasks.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a95f88b37716d025c81cfcf9091b7b1e9" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <qualifiedname>tasks::duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="40" column="18" bodyfile="include/tasks.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a054b40e6f71e3a6e8ee5b060f110980f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tasks::is_encrypted</definition>
+        <argsstring></argsstring>
+        <name>is_encrypted</name>
+        <qualifiedname>tasks::is_encrypted</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="41" column="14" bodyfile="include/tasks.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a0fd14a56e1f0f01da069aed7a67fff26" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tasks::public_key</definition>
+        <argsstring></argsstring>
+        <name>public_key</name>
+        <qualifiedname>tasks::public_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="42" column="21" bodyfile="include/tasks.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a2e9d87989117ac83c889d3d107701548" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::positive_votes</definition>
+        <argsstring></argsstring>
+        <name>positive_votes</name>
+        <qualifiedname>tasks::positive_votes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="43" column="18" bodyfile="include/tasks.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a05233fcc6747c64a35455a9cbb93cdac" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::negative_votes</definition>
+        <argsstring></argsstring>
+        <name>negative_votes</name>
+        <qualifiedname>tasks::negative_votes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="44" column="18" bodyfile="include/tasks.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a16b3de55e07255e8252fd85e26688dd3" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; eosio::name &gt;</type>
+        <definition>std::vector&lt;eosio::name&gt; tasks::voters</definition>
+        <argsstring></argsstring>
+        <name>voters</name>
+        <qualifiedname>tasks::voters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="45" column="21" bodyfile="include/tasks.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtasks_1a5f7ccf26e6ac1b678d8cd6807631a19e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tasks::meta</definition>
+        <argsstring></argsstring>
+        <name>meta</name>
+        <qualifiedname>tasks::meta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="47" column="21" bodyfile="include/tasks.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtasks_1aeaa5ac6f325d5b6935371bcf755cfa86" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>tasks::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="50" column="10" bodyfile="include/tasks.hpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1ad22f7c4144514d643e926903ef620ddd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::bycreator</definition>
+        <argsstring>() const</argsstring>
+        <name>bycreator</name>
+        <qualifiedname>tasks::bycreator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="52" column="18" bodyfile="include/tasks.hpp" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1a7890689f0ecd517df7bb7af23319a8e3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::bycurator</definition>
+        <argsstring>() const</argsstring>
+        <name>bycurator</name>
+        <qualifiedname>tasks::bycurator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="53" column="18" bodyfile="include/tasks.hpp" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1a0125dc5f9292e640868c22656dc3d223" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::bydoer</definition>
+        <argsstring>() const</argsstring>
+        <name>bydoer</name>
+        <qualifiedname>tasks::bydoer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="54" column="18" bodyfile="include/tasks.hpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1a69b20ca043c8647069901e3502663e09" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::bybenefactor</definition>
+        <argsstring>() const</argsstring>
+        <name>bybenefactor</name>
+        <qualifiedname>tasks::bybenefactor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="55" column="18" bodyfile="include/tasks.hpp" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1a8e8f40da24535f25d0de8c3f7b99f5a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::bygoal</definition>
+        <argsstring>() const</argsstring>
+        <name>bygoal</name>
+        <qualifiedname>tasks::bygoal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="56" column="18" bodyfile="include/tasks.hpp" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1a19e89234fbbec30d0358446e8e5c7360" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint128_t</type>
+        <definition>uint128_t tasks::goalandtask</definition>
+        <argsstring>() const</argsstring>
+        <name>goalandtask</name>
+        <qualifiedname>tasks::goalandtask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="57" column="19" bodyfile="include/tasks.hpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1a40ece529ad989cfbc7c8930a102e37e6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::byhost</definition>
+        <argsstring>() const</argsstring>
+        <name>byhost</name>
+        <qualifiedname>tasks::byhost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="58" column="18" bodyfile="include/tasks.hpp" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1aa51c0c51b966fa5274a4249246573650" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::bytype</definition>
+        <argsstring>() const</argsstring>
+        <name>bytype</name>
+        <qualifiedname>tasks::bytype</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="59" column="18" bodyfile="include/tasks.hpp" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1a7682fe8e8e3a3579713420f9523c0f72" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::bystatus</definition>
+        <argsstring>() const</argsstring>
+        <name>bystatus</name>
+        <qualifiedname>tasks::bystatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="60" column="18" bodyfile="include/tasks.hpp" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1ad184b97d2cff31b025d05e1253044e4d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::bypriority</definition>
+        <argsstring>() const</argsstring>
+        <name>bypriority</name>
+        <qualifiedname>tasks::bypriority</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="61" column="18" bodyfile="include/tasks.hpp" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1a4080c38086acdc1344695a7b2dad9b7f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::byhasbadge</definition>
+        <argsstring>() const</argsstring>
+        <name>byhasbadge</name>
+        <qualifiedname>tasks::byhasbadge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="62" column="18" bodyfile="include/tasks.hpp" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1a5499f03e65de7a2ec9c1deb1519707e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::bybadge</definition>
+        <argsstring>() const</argsstring>
+        <name>bybadge</name>
+        <qualifiedname>tasks::bybadge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="63" column="18" bodyfile="include/tasks.hpp" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1a1f55fdf7e836de26bfe3aef858d7c0c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint128_t</type>
+        <definition>uint128_t tasks::crewithtask</definition>
+        <argsstring>() const</argsstring>
+        <name>crewithtask</name>
+        <qualifiedname>tasks::crewithtask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="64" column="19" bodyfile="include/tasks.hpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1ad7496f1eb5691830783342adcf4a1c2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint128_t</type>
+        <definition>uint128_t tasks::crewithgoal</definition>
+        <argsstring>() const</argsstring>
+        <name>crewithgoal</name>
+        <qualifiedname>tasks::crewithgoal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="65" column="19" bodyfile="include/tasks.hpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1a646b95d147cb5ae5701c24f729491241" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::byvotes</definition>
+        <argsstring>() const</argsstring>
+        <name>byvotes</name>
+        <qualifiedname>tasks::byvotes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="67" column="18" bodyfile="include/tasks.hpp" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="structtasks_1aa29b941471db1fa239099915048cad94" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tasks::bynvotes</definition>
+        <argsstring>() const</argsstring>
+        <name>bynvotes</name>
+        <qualifiedname>tasks::bynvotes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tasks.hpp" line="70" column="18" bodyfile="include/tasks.hpp" bodystart="70" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура задач хоста Двойной Спирали. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>asset</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>tasks</label>
+        <link refid="structtasks"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>data</edgelabel>
+          <edgelabel>meta</edgelabel>
+          <edgelabel>permlink</edgelabel>
+          <edgelabel>public_key</edgelabel>
+          <edgelabel>title</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>for_each</edgelabel>
+          <edgelabel>funded</edgelabel>
+          <edgelabel>remain</edgelabel>
+          <edgelabel>requested</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tasks.hpp" line="4" column="1" bodyfile="include/tasks.hpp" bodystart="4" bodyend="75"/>
+    <listofallmembers>
+      <member refid="structtasks_1a0fc8631b0327820af735ded60237a177" prot="public" virt="non-virtual"><scope>tasks</scope><name>active</name></member>
+      <member refid="structtasks_1a6f2215e4279786acdf18c2b55c5cd840" prot="public" virt="non-virtual"><scope>tasks</scope><name>badge_id</name></member>
+      <member refid="structtasks_1a477ff31c38b808eb18496ca7ae6370a6" prot="public" virt="non-virtual"><scope>tasks</scope><name>benefactor</name></member>
+      <member refid="structtasks_1a5499f03e65de7a2ec9c1deb1519707e4" prot="public" virt="non-virtual"><scope>tasks</scope><name>bybadge</name></member>
+      <member refid="structtasks_1a69b20ca043c8647069901e3502663e09" prot="public" virt="non-virtual"><scope>tasks</scope><name>bybenefactor</name></member>
+      <member refid="structtasks_1ad22f7c4144514d643e926903ef620ddd" prot="public" virt="non-virtual"><scope>tasks</scope><name>bycreator</name></member>
+      <member refid="structtasks_1a7890689f0ecd517df7bb7af23319a8e3" prot="public" virt="non-virtual"><scope>tasks</scope><name>bycurator</name></member>
+      <member refid="structtasks_1a0125dc5f9292e640868c22656dc3d223" prot="public" virt="non-virtual"><scope>tasks</scope><name>bydoer</name></member>
+      <member refid="structtasks_1a8e8f40da24535f25d0de8c3f7b99f5a7" prot="public" virt="non-virtual"><scope>tasks</scope><name>bygoal</name></member>
+      <member refid="structtasks_1a4080c38086acdc1344695a7b2dad9b7f" prot="public" virt="non-virtual"><scope>tasks</scope><name>byhasbadge</name></member>
+      <member refid="structtasks_1a40ece529ad989cfbc7c8930a102e37e6" prot="public" virt="non-virtual"><scope>tasks</scope><name>byhost</name></member>
+      <member refid="structtasks_1aa29b941471db1fa239099915048cad94" prot="public" virt="non-virtual"><scope>tasks</scope><name>bynvotes</name></member>
+      <member refid="structtasks_1ad184b97d2cff31b025d05e1253044e4d" prot="public" virt="non-virtual"><scope>tasks</scope><name>bypriority</name></member>
+      <member refid="structtasks_1a7682fe8e8e3a3579713420f9523c0f72" prot="public" virt="non-virtual"><scope>tasks</scope><name>bystatus</name></member>
+      <member refid="structtasks_1aa51c0c51b966fa5274a4249246573650" prot="public" virt="non-virtual"><scope>tasks</scope><name>bytype</name></member>
+      <member refid="structtasks_1a646b95d147cb5ae5701c24f729491241" prot="public" virt="non-virtual"><scope>tasks</scope><name>byvotes</name></member>
+      <member refid="structtasks_1a830005fe1a99e6c57bf8a1205868fdcf" prot="public" virt="non-virtual"><scope>tasks</scope><name>calendar</name></member>
+      <member refid="structtasks_1a83e06aea80c059d8c7fac27ec33d65a7" prot="public" virt="non-virtual"><scope>tasks</scope><name>completed</name></member>
+      <member refid="structtasks_1ae74d43862baa65c4849a9508dca9fb7e" prot="public" virt="non-virtual"><scope>tasks</scope><name>created_at</name></member>
+      <member refid="structtasks_1a9c551795c1cdbde451c03705f9f2174b" prot="public" virt="non-virtual"><scope>tasks</scope><name>creator</name></member>
+      <member refid="structtasks_1ad7496f1eb5691830783342adcf4a1c2a" prot="public" virt="non-virtual"><scope>tasks</scope><name>crewithgoal</name></member>
+      <member refid="structtasks_1a1f55fdf7e836de26bfe3aef858d7c0c2" prot="public" virt="non-virtual"><scope>tasks</scope><name>crewithtask</name></member>
+      <member refid="structtasks_1adf167668b34739293125f4d95b5c6d4e" prot="public" virt="non-virtual"><scope>tasks</scope><name>curator</name></member>
+      <member refid="structtasks_1a4e816d6457e29a0623a3f5bcfab21e4c" prot="public" virt="non-virtual"><scope>tasks</scope><name>data</name></member>
+      <member refid="structtasks_1a121059b007ee63fa8a842c150bf60251" prot="public" virt="non-virtual"><scope>tasks</scope><name>doer</name></member>
+      <member refid="structtasks_1a95f88b37716d025c81cfcf9091b7b1e9" prot="public" virt="non-virtual"><scope>tasks</scope><name>duration</name></member>
+      <member refid="structtasks_1a3f18f667e301d7d22147dd837b8301ac" prot="public" virt="non-virtual"><scope>tasks</scope><name>expired_at</name></member>
+      <member refid="structtasks_1a92fa22fac621633ab15e080641dc840d" prot="public" virt="non-virtual"><scope>tasks</scope><name>for_each</name></member>
+      <member refid="structtasks_1acb852d91b0fc4f5d1bbef0fdf2d0222c" prot="public" virt="non-virtual"><scope>tasks</scope><name>funded</name></member>
+      <member refid="structtasks_1aa4501a330653e176762f809b7d84647d" prot="public" virt="non-virtual"><scope>tasks</scope><name>goal_id</name></member>
+      <member refid="structtasks_1a19e89234fbbec30d0358446e8e5c7360" prot="public" virt="non-virtual"><scope>tasks</scope><name>goalandtask</name></member>
+      <member refid="structtasks_1a9adf310986b0b821249916c5d44e97b9" prot="public" virt="non-virtual"><scope>tasks</scope><name>host</name></member>
+      <member refid="structtasks_1ae1f502adf1c993c3f1d3c260fa0bab20" prot="public" virt="non-virtual"><scope>tasks</scope><name>id</name></member>
+      <member refid="structtasks_1a054b40e6f71e3a6e8ee5b060f110980f" prot="public" virt="non-virtual"><scope>tasks</scope><name>is_encrypted</name></member>
+      <member refid="structtasks_1ab67682b429b14eb0102cbabf586f2542" prot="public" virt="non-virtual"><scope>tasks</scope><name>is_public</name></member>
+      <member refid="structtasks_1adf6c1425eb08beeea49d57f209ce7e85" prot="public" virt="non-virtual"><scope>tasks</scope><name>is_regular</name></member>
+      <member refid="structtasks_1ad2511db83c6b290650c578a77090ed17" prot="public" virt="non-virtual"><scope>tasks</scope><name>level</name></member>
+      <member refid="structtasks_1a5f7ccf26e6ac1b678d8cd6807631a19e" prot="public" virt="non-virtual"><scope>tasks</scope><name>meta</name></member>
+      <member refid="structtasks_1a05233fcc6747c64a35455a9cbb93cdac" prot="public" virt="non-virtual"><scope>tasks</scope><name>negative_votes</name></member>
+      <member refid="structtasks_1aa6febf74a54db420121039ceae0db49f" prot="public" virt="non-virtual"><scope>tasks</scope><name>parent_id</name></member>
+      <member refid="structtasks_1a065f2d917e382346cd89e2f77e95472d" prot="public" virt="non-virtual"><scope>tasks</scope><name>permlink</name></member>
+      <member refid="structtasks_1a2e9d87989117ac83c889d3d107701548" prot="public" virt="non-virtual"><scope>tasks</scope><name>positive_votes</name></member>
+      <member refid="structtasks_1aeaa5ac6f325d5b6935371bcf755cfa86" prot="public" virt="non-virtual"><scope>tasks</scope><name>primary_key</name></member>
+      <member refid="structtasks_1a5d233f233b15ab37116b60b28d19a189" prot="public" virt="non-virtual"><scope>tasks</scope><name>priority</name></member>
+      <member refid="structtasks_1a0fd14a56e1f0f01da069aed7a67fff26" prot="public" virt="non-virtual"><scope>tasks</scope><name>public_key</name></member>
+      <member refid="structtasks_1a367e96715a0e358b43c44350d258e5b1" prot="public" virt="non-virtual"><scope>tasks</scope><name>remain</name></member>
+      <member refid="structtasks_1a370f9d2c835740238fd90bf40d647574" prot="public" virt="non-virtual"><scope>tasks</scope><name>requested</name></member>
+      <member refid="structtasks_1aabceb8533e216dc89e10f9e39acabb1a" prot="public" virt="non-virtual"><scope>tasks</scope><name>role</name></member>
+      <member refid="structtasks_1a5a306bc121712422d8daf5e9b6002e63" prot="public" virt="non-virtual"><scope>tasks</scope><name>start_at</name></member>
+      <member refid="structtasks_1acaadd6e375352b79fae8b9e223aee032" prot="public" virt="non-virtual"><scope>tasks</scope><name>status</name></member>
+      <member refid="structtasks_1a9febb6a0d6b990f4773496a203d1a9e2" prot="public" virt="non-virtual"><scope>tasks</scope><name>suggester</name></member>
+      <member refid="structtasks_1a257a4c8ae9272a001f91c51e62a1953a" prot="public" virt="non-virtual"><scope>tasks</scope><name>title</name></member>
+      <member refid="structtasks_1a631f3185010ccc1fc833173335274a03" prot="public" virt="non-virtual"><scope>tasks</scope><name>type</name></member>
+      <member refid="structtasks_1afe5af40a582c8449c3077190c9cd0a78" prot="public" virt="non-virtual"><scope>tasks</scope><name>validated</name></member>
+      <member refid="structtasks_1a16b3de55e07255e8252fd85e26688dd3" prot="public" virt="non-virtual"><scope>tasks</scope><name>voters</name></member>
+      <member refid="structtasks_1af9fad58b74a1abaf62159f207886d132" prot="public" virt="non-virtual"><scope>tasks</scope><name>with_badge</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

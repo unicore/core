@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structuserscount" kind="struct" language="C++" prot="public">
+    <compoundname>userscount</compoundname>
+    <includes refid="core_8hpp" local="no">core.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structuserscount_1ab26b8b359291bf8d9a27244559fb997f" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t userscount::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>userscount::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="968" column="19" bodyfile="include/core.hpp" bodystart="968" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuserscount_1a01c9875465eb8610009cc7030062ebd5" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t userscount::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>userscount::count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="969" column="19" bodyfile="include/core.hpp" bodystart="969" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuserscount_1a54f7d250180247c6e8e48c70eb3b9515" prot="public" static="no" mutable="no">
+        <type>eosio::string</type>
+        <definition>eosio::string userscount::subject</definition>
+        <argsstring></argsstring>
+        <name>subject</name>
+        <qualifiedname>userscount::subject</qualifiedname>
+        <initializer>= &quot;registered&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="970" column="24" bodyfile="include/core.hpp" bodystart="970" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structuserscount_1ac14da811dfb4568a8b19fea2deb037ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t userscount::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>userscount::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="971" column="19" bodyfile="include/core.hpp" bodystart="971" bodyend="971"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура статистики количества зарегистрированных пользователей </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>userscount</label>
+        <link refid="structuserscount"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>subject</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/core.hpp" line="966" column="5" bodyfile="include/core.hpp" bodystart="967" bodyend="974"/>
+    <listofallmembers>
+      <member refid="structuserscount_1a01c9875465eb8610009cc7030062ebd5" prot="public" virt="non-virtual"><scope>userscount</scope><name>count</name></member>
+      <member refid="structuserscount_1ab26b8b359291bf8d9a27244559fb997f" prot="public" virt="non-virtual"><scope>userscount</scope><name>id</name></member>
+      <member refid="structuserscount_1ac14da811dfb4568a8b19fea2deb037ae" prot="public" virt="non-virtual"><scope>userscount</scope><name>primary_key</name></member>
+      <member refid="structuserscount_1a54f7d250180247c6e8e48c70eb3b9515" prot="public" virt="non-virtual"><scope>userscount</scope><name>subject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

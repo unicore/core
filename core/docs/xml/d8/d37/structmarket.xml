@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d8/d37/structmarket" kind="struct" language="C++" prot="public">
+    <compoundname>market</compoundname>
+    <includes refid="df/d43/exchange__state_8hpp" local="no">exchange_state.hpp</includes>
+    <innerclass refid="d9/d23/structmarket_1_1connector" prot="public">market::connector</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d8/d37/structmarket_1a2440d86c69a754174280d93f649b5915" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name market::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>market::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="23" column="19" bodyfile="include/exchange_state.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d37/structmarket_1a14276e13986dd8f9467e4f46cbe36f74" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t market::vesting_seconds</definition>
+        <argsstring></argsstring>
+        <name>vesting_seconds</name>
+        <qualifiedname>market::vesting_seconds</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="25" column="16" bodyfile="include/exchange_state.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d37/structmarket_1a43fd06e1fccaf87a936e0cbf98e4d6a6" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset market::supply</definition>
+        <argsstring></argsstring>
+        <name>supply</name>
+        <qualifiedname>market::supply</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="26" column="23" bodyfile="include/exchange_state.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d37/structmarket_1a2c729f8f225ad991298224c1b5b8afee" prot="public" static="no" mutable="no">
+        <type><ref refid="d9/d23/structmarket_1_1connector" kindref="compound">connector</ref></type>
+        <definition>connector market::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <qualifiedname>market::base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="39" column="17" bodyfile="include/exchange_state.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d37/structmarket_1a7328f8895180f466a1354c2e3110a54b" prot="public" static="no" mutable="no">
+        <type><ref refid="d9/d23/structmarket_1_1connector" kindref="compound">connector</ref></type>
+        <definition>connector market::quote</definition>
+        <argsstring></argsstring>
+        <name>quote</name>
+        <qualifiedname>market::quote</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="40" column="17" bodyfile="include/exchange_state.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/d37/structmarket_1a927be547fb7499a82fc5a717e133a7b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t market::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>market::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="42" column="16" bodyfile="include/exchange_state.hpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d37/structmarket_1a0f2926879c20545177fe18c177420bdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>asset</type>
+        <definition>asset market::convert_to_exchange</definition>
+        <argsstring>(connector &amp;reserve, const asset &amp;payment)</argsstring>
+        <name>convert_to_exchange</name>
+        <qualifiedname>market::convert_to_exchange</qualifiedname>
+        <param>
+          <type><ref refid="d9/d23/structmarket_1_1connector" kindref="compound">connector</ref> &amp;</type>
+          <declname>reserve</declname>
+        </param>
+        <param>
+          <type>const asset &amp;</type>
+          <declname>payment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="44" column="13" bodyfile="src/exchange_state.cpp" bodystart="4" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d37/structmarket_1a868ca81f6e115b7c6d3f3894cc6bc971" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>asset</type>
+        <definition>asset market::convert_from_exchange</definition>
+        <argsstring>(connector &amp;reserve, const asset &amp;tokens)</argsstring>
+        <name>convert_from_exchange</name>
+        <qualifiedname>market::convert_from_exchange</qualifiedname>
+        <param>
+          <type><ref refid="d9/d23/structmarket_1_1connector" kindref="compound">connector</ref> &amp;</type>
+          <declname>reserve</declname>
+        </param>
+        <param>
+          <type>const asset &amp;</type>
+          <declname>tokens</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="45" column="13" bodyfile="src/exchange_state.cpp" bodystart="18" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d37/structmarket_1ab329c1ef0f3b4569b0d1786736cc3794" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>asset</type>
+        <definition>asset market::convert</definition>
+        <argsstring>(const asset &amp;from, const symbol &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>market::convert</qualifiedname>
+        <param>
+          <type>const asset &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const symbol &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="46" column="13" bodyfile="src/exchange_state.cpp" bodystart="32" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d37/structmarket_1a5d5041e0aaf2cb29bad70644d264d579" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>asset</type>
+        <definition>asset market::direct_convert</definition>
+        <argsstring>(const asset &amp;from, const symbol &amp;to)</argsstring>
+        <name>direct_convert</name>
+        <qualifiedname>market::direct_convert</qualifiedname>
+        <param>
+          <type>const asset &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const symbol &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="48" column="13" bodyfile="src/exchange_state.cpp" bodystart="52" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d8/d37/structmarket_1a57e03026f8a9da98b890121865ce38c2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t market::get_bancor_output</definition>
+        <argsstring>(int64_t inp_reserve, int64_t out_reserve, int64_t inp)</argsstring>
+        <name>get_bancor_output</name>
+        <qualifiedname>market::get_bancor_output</qualifiedname>
+        <param>
+          <type>int64_t</type>
+          <declname>inp_reserve</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>out_reserve</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>inp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="50" column="22" bodyfile="src/exchange_state.cpp" bodystart="74" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d37/structmarket_1a531f0fd74c1d598da86ac45c50c9f800" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t market::get_bancor_input</definition>
+        <argsstring>(int64_t out_reserve, int64_t inp_reserve, int64_t out)</argsstring>
+        <name>get_bancor_input</name>
+        <qualifiedname>market::get_bancor_input</qualifiedname>
+        <param>
+          <type>int64_t</type>
+          <declname>out_reserve</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>inp_reserve</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="53" column="22" bodyfile="src/exchange_state.cpp" bodystart="89" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура взамодействия с рынками торгового робота Bancor. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Uses Bancor math to create a 50/50 relay between two asset types. The state of the bancor exchange is entirely contained within this struct. There are no external side effects associated with using this API. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>asset</label>
+      </node>
+      <node id="1">
+        <label>market</label>
+        <link refid="d8/d37/structmarket"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>supply</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>base</edgelabel>
+          <edgelabel>quote</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>market::connector</label>
+        <link refid="d9/d23/structmarket_1_1connector"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>balance</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/exchange_state.hpp" line="22" column="4" bodyfile="include/exchange_state.hpp" bodystart="22" bodyend="58"/>
+    <listofallmembers>
+      <member refid="d8/d37/structmarket_1a2c729f8f225ad991298224c1b5b8afee" prot="public" virt="non-virtual"><scope>market</scope><name>base</name></member>
+      <member refid="d8/d37/structmarket_1ab329c1ef0f3b4569b0d1786736cc3794" prot="public" virt="non-virtual"><scope>market</scope><name>convert</name></member>
+      <member refid="d8/d37/structmarket_1a868ca81f6e115b7c6d3f3894cc6bc971" prot="public" virt="non-virtual"><scope>market</scope><name>convert_from_exchange</name></member>
+      <member refid="d8/d37/structmarket_1a0f2926879c20545177fe18c177420bdb" prot="public" virt="non-virtual"><scope>market</scope><name>convert_to_exchange</name></member>
+      <member refid="d8/d37/structmarket_1a5d5041e0aaf2cb29bad70644d264d579" prot="public" virt="non-virtual"><scope>market</scope><name>direct_convert</name></member>
+      <member refid="d8/d37/structmarket_1a531f0fd74c1d598da86ac45c50c9f800" prot="public" virt="non-virtual"><scope>market</scope><name>get_bancor_input</name></member>
+      <member refid="d8/d37/structmarket_1a57e03026f8a9da98b890121865ce38c2" prot="public" virt="non-virtual"><scope>market</scope><name>get_bancor_output</name></member>
+      <member refid="d8/d37/structmarket_1a2440d86c69a754174280d93f649b5915" prot="public" virt="non-virtual"><scope>market</scope><name>name</name></member>
+      <member refid="d8/d37/structmarket_1a927be547fb7499a82fc5a717e133a7b4" prot="public" virt="non-virtual"><scope>market</scope><name>primary_key</name></member>
+      <member refid="d8/d37/structmarket_1a7328f8895180f466a1354c2e3110a54b" prot="public" virt="non-virtual"><scope>market</scope><name>quote</name></member>
+      <member refid="d8/d37/structmarket_1a43fd06e1fccaf87a936e0cbf98e4d6a6" prot="public" virt="non-virtual"><scope>market</scope><name>supply</name></member>
+      <member refid="d8/d37/structmarket_1a14276e13986dd8f9467e4f46cbe36f74" prot="public" virt="non-virtual"><scope>market</scope><name>vesting_seconds</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

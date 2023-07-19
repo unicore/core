@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structusdtwithdraw" kind="struct" language="C++" prot="public">
+    <compoundname>usdtwithdraw</compoundname>
+    <includes refid="ref_8hpp" local="no">ref.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structusdtwithdraw_1a43537dd94038bab938a6330496c185dc" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t usdtwithdraw::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>usdtwithdraw::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="87" column="18" bodyfile="include/ref.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusdtwithdraw_1abd541cb6df73c5ebf1e51cb9e9b4b6ff" prot="public" static="no" mutable="no">
+        <type>eosio::time_point_sec</type>
+        <definition>eosio::time_point_sec usdtwithdraw::created_at</definition>
+        <argsstring></argsstring>
+        <name>created_at</name>
+        <qualifiedname>usdtwithdraw::created_at</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="88" column="31" bodyfile="include/ref.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusdtwithdraw_1ab2ae3a0f3f86d60f643c1a64054f5095" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name usdtwithdraw::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <qualifiedname>usdtwithdraw::host</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="89" column="21" bodyfile="include/ref.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusdtwithdraw_1a6ca6ebd36c0ee73d5ecf03e7c6b7165a" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name usdtwithdraw::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <qualifiedname>usdtwithdraw::username</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="90" column="21" bodyfile="include/ref.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusdtwithdraw_1aeb11f204e8847a38db4b40f6b86216f7" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name usdtwithdraw::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <qualifiedname>usdtwithdraw::status</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="91" column="21" bodyfile="include/ref.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusdtwithdraw_1ad8011c3ed49a28449d10e2a6d9adcf98" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset usdtwithdraw::to_withdraw</definition>
+        <argsstring></argsstring>
+        <name>to_withdraw</name>
+        <qualifiedname>usdtwithdraw::to_withdraw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="92" column="22" bodyfile="include/ref.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusdtwithdraw_1adcfc8637cf140f6dce17e231c454afb2" prot="public" static="no" mutable="no">
+        <type>eosio::string</type>
+        <definition>eosio::string usdtwithdraw::wallet</definition>
+        <argsstring></argsstring>
+        <name>wallet</name>
+        <qualifiedname>usdtwithdraw::wallet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="93" column="23" bodyfile="include/ref.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusdtwithdraw_1a995c22f7ebce0b229e7a5e252fb089e3" prot="public" static="no" mutable="no">
+        <type>eosio::string</type>
+        <definition>eosio::string usdtwithdraw::comment</definition>
+        <argsstring></argsstring>
+        <name>comment</name>
+        <qualifiedname>usdtwithdraw::comment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="94" column="23" bodyfile="include/ref.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structusdtwithdraw_1ab0ad0504d2be283d9bf6ebdba54f305b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t usdtwithdraw::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>usdtwithdraw::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="96" column="18" bodyfile="include/ref.hpp" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="structusdtwithdraw_1a973aa0af7bb9c3a645256ed1930544c6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t usdtwithdraw::byusername</definition>
+        <argsstring>() const</argsstring>
+        <name>byusername</name>
+        <qualifiedname>usdtwithdraw::byusername</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="97" column="18" bodyfile="include/ref.hpp" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="structusdtwithdraw_1aa8d38f801efd5e91327b92f5c6f38435" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t usdtwithdraw::byhost</definition>
+        <argsstring>() const</argsstring>
+        <name>byhost</name>
+        <qualifiedname>usdtwithdraw::byhost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="98" column="18" bodyfile="include/ref.hpp" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="structusdtwithdraw_1a1adacc0d5079ee28eb20b244512dd19c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t usdtwithdraw::bystatus</definition>
+        <argsstring>() const</argsstring>
+        <name>bystatus</name>
+        <qualifiedname>usdtwithdraw::bystatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="99" column="18" bodyfile="include/ref.hpp" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="structusdtwithdraw_1a256359dd91b7f4ea9cf89dafe0947ae6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t usdtwithdraw::bycreated</definition>
+        <argsstring>() const</argsstring>
+        <name>bycreated</name>
+        <qualifiedname>usdtwithdraw::bycreated</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="100" column="18" bodyfile="include/ref.hpp" bodystart="100" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура кошелька реферальных балансов для выплат в USDT. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>asset</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>usdtwithdraw</label>
+        <link refid="structusdtwithdraw"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>to_withdraw</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>comment</edgelabel>
+          <edgelabel>wallet</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/ref.hpp" line="86" column="5" bodyfile="include/ref.hpp" bodystart="86" bodyend="104"/>
+    <listofallmembers>
+      <member refid="structusdtwithdraw_1a256359dd91b7f4ea9cf89dafe0947ae6" prot="public" virt="non-virtual"><scope>usdtwithdraw</scope><name>bycreated</name></member>
+      <member refid="structusdtwithdraw_1aa8d38f801efd5e91327b92f5c6f38435" prot="public" virt="non-virtual"><scope>usdtwithdraw</scope><name>byhost</name></member>
+      <member refid="structusdtwithdraw_1a1adacc0d5079ee28eb20b244512dd19c" prot="public" virt="non-virtual"><scope>usdtwithdraw</scope><name>bystatus</name></member>
+      <member refid="structusdtwithdraw_1a973aa0af7bb9c3a645256ed1930544c6" prot="public" virt="non-virtual"><scope>usdtwithdraw</scope><name>byusername</name></member>
+      <member refid="structusdtwithdraw_1a995c22f7ebce0b229e7a5e252fb089e3" prot="public" virt="non-virtual"><scope>usdtwithdraw</scope><name>comment</name></member>
+      <member refid="structusdtwithdraw_1abd541cb6df73c5ebf1e51cb9e9b4b6ff" prot="public" virt="non-virtual"><scope>usdtwithdraw</scope><name>created_at</name></member>
+      <member refid="structusdtwithdraw_1ab2ae3a0f3f86d60f643c1a64054f5095" prot="public" virt="non-virtual"><scope>usdtwithdraw</scope><name>host</name></member>
+      <member refid="structusdtwithdraw_1a43537dd94038bab938a6330496c185dc" prot="public" virt="non-virtual"><scope>usdtwithdraw</scope><name>id</name></member>
+      <member refid="structusdtwithdraw_1ab0ad0504d2be283d9bf6ebdba54f305b" prot="public" virt="non-virtual"><scope>usdtwithdraw</scope><name>primary_key</name></member>
+      <member refid="structusdtwithdraw_1aeb11f204e8847a38db4b40f6b86216f7" prot="public" virt="non-virtual"><scope>usdtwithdraw</scope><name>status</name></member>
+      <member refid="structusdtwithdraw_1ad8011c3ed49a28449d10e2a6d9adcf98" prot="public" virt="non-virtual"><scope>usdtwithdraw</scope><name>to_withdraw</name></member>
+      <member refid="structusdtwithdraw_1a6ca6ebd36c0ee73d5ecf03e7c6b7165a" prot="public" virt="non-virtual"><scope>usdtwithdraw</scope><name>username</name></member>
+      <member refid="structusdtwithdraw_1adcfc8637cf140f6dce17e231c454afb2" prot="public" virt="non-virtual"><scope>usdtwithdraw</scope><name>wallet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

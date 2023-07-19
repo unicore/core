@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structbadges" kind="struct" language="C++" prot="public">
+    <compoundname>badges</compoundname>
+    <includes refid="badges_8hpp" local="no">badges.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbadges_1a6e9efcdda7d0682d696df63d4a87ff75" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t badges::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>badges::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/badges.hpp" line="5" column="10" bodyfile="include/badges.hpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbadges_1adea9b101a049b24e47cc0f7cca5d2cfa" prot="public" static="no" mutable="no">
+        <type>eosio::string</type>
+        <definition>eosio::string badges::caption</definition>
+        <argsstring></argsstring>
+        <name>caption</name>
+        <qualifiedname>badges::caption</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/badges.hpp" line="6" column="15" bodyfile="include/badges.hpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbadges_1a7d0b142c33dbe087f16b5929469b2cdf" prot="public" static="no" mutable="no">
+        <type>eosio::string</type>
+        <definition>eosio::string badges::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <qualifiedname>badges::description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/badges.hpp" line="7" column="15" bodyfile="include/badges.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbadges_1aa69f1551abedad7b3c31ac69b8511f85" prot="public" static="no" mutable="no">
+        <type>eosio::string</type>
+        <definition>eosio::string badges::iurl</definition>
+        <argsstring></argsstring>
+        <name>iurl</name>
+        <qualifiedname>badges::iurl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/badges.hpp" line="8" column="15" bodyfile="include/badges.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbadges_1ab7d2eee512677af135bb8ebd494e714a" prot="public" static="no" mutable="no">
+        <type>eosio::string</type>
+        <definition>eosio::string badges::pic</definition>
+        <argsstring></argsstring>
+        <name>pic</name>
+        <qualifiedname>badges::pic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/badges.hpp" line="9" column="15" bodyfile="include/badges.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbadges_1a9af45ded7aa632b668f736f8a05ca706" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t badges::total</definition>
+        <argsstring></argsstring>
+        <name>total</name>
+        <qualifiedname>badges::total</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/badges.hpp" line="10" column="10" bodyfile="include/badges.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbadges_1a7e4c05e6bb2a93929898b1d0d843b497" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t badges::remain</definition>
+        <argsstring></argsstring>
+        <name>remain</name>
+        <qualifiedname>badges::remain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/badges.hpp" line="11" column="10" bodyfile="include/badges.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbadges_1a669d9b961f82256c54236018eaf2e4cf" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t badges::power</definition>
+        <argsstring></argsstring>
+        <name>power</name>
+        <qualifiedname>badges::power</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/badges.hpp" line="12" column="10" bodyfile="include/badges.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structbadges_1a39faf3dd577d5b5984a905ae56b74a4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t badges::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>badges::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/badges.hpp" line="14" column="10" bodyfile="include/badges.hpp" bodystart="14" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура наградных значков хоста Двойной Спирали, их изображений, пиктограмм и предоставляемой силы. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>badges</label>
+        <link refid="structbadges"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>caption</edgelabel>
+          <edgelabel>description</edgelabel>
+          <edgelabel>iurl</edgelabel>
+          <edgelabel>pic</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/badges.hpp" line="4" column="1" bodyfile="include/badges.hpp" bodystart="4" bodyend="17"/>
+    <listofallmembers>
+      <member refid="structbadges_1adea9b101a049b24e47cc0f7cca5d2cfa" prot="public" virt="non-virtual"><scope>badges</scope><name>caption</name></member>
+      <member refid="structbadges_1a7d0b142c33dbe087f16b5929469b2cdf" prot="public" virt="non-virtual"><scope>badges</scope><name>description</name></member>
+      <member refid="structbadges_1a6e9efcdda7d0682d696df63d4a87ff75" prot="public" virt="non-virtual"><scope>badges</scope><name>id</name></member>
+      <member refid="structbadges_1aa69f1551abedad7b3c31ac69b8511f85" prot="public" virt="non-virtual"><scope>badges</scope><name>iurl</name></member>
+      <member refid="structbadges_1ab7d2eee512677af135bb8ebd494e714a" prot="public" virt="non-virtual"><scope>badges</scope><name>pic</name></member>
+      <member refid="structbadges_1a669d9b961f82256c54236018eaf2e4cf" prot="public" virt="non-virtual"><scope>badges</scope><name>power</name></member>
+      <member refid="structbadges_1a39faf3dd577d5b5984a905ae56b74a4c" prot="public" virt="non-virtual"><scope>badges</scope><name>primary_key</name></member>
+      <member refid="structbadges_1a7e4c05e6bb2a93929898b1d0d843b497" prot="public" virt="non-virtual"><scope>badges</scope><name>remain</name></member>
+      <member refid="structbadges_1a9af45ded7aa632b668f736f8a05ca706" prot="public" virt="non-virtual"><scope>badges</scope><name>total</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

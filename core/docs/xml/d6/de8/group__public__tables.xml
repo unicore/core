@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d6/de8/group__public__tables" kind="group">
+    <compoundname>public_tables</compoundname>
+    <title>TABLES</title>
+    <innerclass refid="d2/d4e/structubalance" prot="public">ubalance</innerclass>
+    <innerclass refid="d8/d42/structcounts" prot="public">counts</innerclass>
+    <innerclass refid="d2/dbf/structusdrates" prot="public">usdrates</innerclass>
+    <briefdescription>
+<para>Структуры таблиц контракта </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structcorestat" kind="struct" language="C++" prot="public">
+    <compoundname>corestat</compoundname>
+    <includes refid="core_8hpp" local="no">core.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcorestat_1a8940167b4e77029b251051b4d3ac6632" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name corestat::hostname</definition>
+        <argsstring></argsstring>
+        <name>hostname</name>
+        <qualifiedname>corestat::hostname</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="672" column="17" bodyfile="include/core.hpp" bodystart="672" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcorestat_1a9a74eb094762c4a4961d1074d1f290cb" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset corestat::volume</definition>
+        <argsstring></argsstring>
+        <name>volume</name>
+        <qualifiedname>corestat::volume</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="673" column="18" bodyfile="include/core.hpp" bodystart="673" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcorestat_1a458d6b3f141a33f36085047e62704d67" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t corestat::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>corestat::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="675" column="14" bodyfile="include/core.hpp" bodystart="675" bodyend="675"/>
+      </memberdef>
+      <memberdef kind="function" id="structcorestat_1ac152815f17166b905ad631db61970209" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t corestat::byvolume</definition>
+        <argsstring>() const</argsstring>
+        <name>byvolume</name>
+        <qualifiedname>corestat::byvolume</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="677" column="14" bodyfile="include/core.hpp" bodystart="677" bodyend="677"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура статистики балансов пользователя у одного хоста Двойной Спирали </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>corestat</label>
+        <link refid="structcorestat"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>volume</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>asset</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/core.hpp" line="671" column="1" bodyfile="include/core.hpp" bodystart="671" bodyend="682"/>
+    <listofallmembers>
+      <member refid="structcorestat_1ac152815f17166b905ad631db61970209" prot="public" virt="non-virtual"><scope>corestat</scope><name>byvolume</name></member>
+      <member refid="structcorestat_1a8940167b4e77029b251051b4d3ac6632" prot="public" virt="non-virtual"><scope>corestat</scope><name>hostname</name></member>
+      <member refid="structcorestat_1a458d6b3f141a33f36085047e62704d67" prot="public" virt="non-virtual"><scope>corestat</scope><name>primary_key</name></member>
+      <member refid="structcorestat_1a9a74eb094762c4a4961d1074d1f290cb" prot="public" virt="non-virtual"><scope>corestat</scope><name>volume</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

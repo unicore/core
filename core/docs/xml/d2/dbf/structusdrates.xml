@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d2/dbf/structusdrates" kind="struct" language="C++" prot="public">
+    <compoundname>usdrates</compoundname>
+    <includes refid="da/d47/core_8hpp" local="no">core.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d2/dbf/structusdrates_1af2803c552a26f0998dcf3d65b2c1d549" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t usdrates::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>usdrates::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>идентификатор курса </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="1099" column="18" bodyfile="include/core.hpp" bodystart="1099" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbf/structusdrates_1a985d395466d99d386a229bfad953895d" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name usdrates::out_contract</definition>
+        <argsstring></argsstring>
+        <name>out_contract</name>
+        <qualifiedname>usdrates::out_contract</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>контракт выхода; если в конвертации используется внешняя валюта (например, фиатный RUB), контракт не устанавливается. Во внутренних конвертациях используется только при указании курса жетона ядра системы к доллару. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="1100" column="21" bodyfile="include/core.hpp" bodystart="1100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbf/structusdrates_1a3968544460d1c2d299843f4a1e099ac6" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset usdrates::out_asset</definition>
+        <argsstring></argsstring>
+        <name>out_asset</name>
+        <qualifiedname>usdrates::out_asset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>токен выхода </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="1101" column="22" bodyfile="include/core.hpp" bodystart="1101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbf/structusdrates_1abe28fc918f24f00a3d8110ed568e7fc4" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double usdrates::rate</definition>
+        <argsstring></argsstring>
+        <name>rate</name>
+        <qualifiedname>usdrates::rate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>курс токена выхода к доллару </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="1102" column="16" bodyfile="include/core.hpp" bodystart="1102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dbf/structusdrates_1af82e49d477e3678a88111dd76ee25ebd" prot="public" static="no" mutable="no">
+        <type>eosio::time_point_sec</type>
+        <definition>eosio::time_point_sec usdrates::updated_at</definition>
+        <argsstring></argsstring>
+        <name>updated_at</name>
+        <qualifiedname>usdrates::updated_at</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>дата последнего обновления курса </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="1103" column="31" bodyfile="include/core.hpp" bodystart="1103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/dbf/structusdrates_1a39384b70d6f804e72100d4f531d981d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t usdrates::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>usdrates::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return id - primary_key </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="1105" column="18" bodyfile="include/core.hpp" bodystart="1105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbf/structusdrates_1a269eb39bbee27ee11f66312904d65a02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint128_t</type>
+        <definition>uint128_t usdrates::byconsym</definition>
+        <argsstring>() const</argsstring>
+        <name>byconsym</name>
+        <qualifiedname>usdrates::byconsym</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(out_contract, out_asset.symbol) - комбинированный secondary_key для получения курса по имени выходного контракта и символу </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="1106" column="19" bodyfile="include/core.hpp" bodystart="1106" bodyend="1105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Таблица содержит курсы конвертации к доллару. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Table: usdrates</title><para></para>
+</simplesect>
+<simplesect kind="par"><title>Contract: _me</title><para></para>
+</simplesect>
+<simplesect kind="par"><title>Scope: _me</title><para></para>
+</simplesect>
+Курсы обновляются аккаунтом rater методом setrate или системным контрактом eosio методом uprate. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>asset</label>
+      </node>
+      <node id="1">
+        <label>usdrates</label>
+        <link refid="d2/dbf/structusdrates"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>out_asset</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/core.hpp" line="1098" column="5" bodyfile="include/core.hpp" bodystart="1098" bodyend="1108"/>
+    <listofallmembers>
+      <member refid="d2/dbf/structusdrates_1a269eb39bbee27ee11f66312904d65a02" prot="public" virt="non-virtual"><scope>usdrates</scope><name>byconsym</name></member>
+      <member refid="d2/dbf/structusdrates_1af2803c552a26f0998dcf3d65b2c1d549" prot="public" virt="non-virtual"><scope>usdrates</scope><name>id</name></member>
+      <member refid="d2/dbf/structusdrates_1a3968544460d1c2d299843f4a1e099ac6" prot="public" virt="non-virtual"><scope>usdrates</scope><name>out_asset</name></member>
+      <member refid="d2/dbf/structusdrates_1a985d395466d99d386a229bfad953895d" prot="public" virt="non-virtual"><scope>usdrates</scope><name>out_contract</name></member>
+      <member refid="d2/dbf/structusdrates_1a39384b70d6f804e72100d4f531d981d3" prot="public" virt="non-virtual"><scope>usdrates</scope><name>primary_key</name></member>
+      <member refid="d2/dbf/structusdrates_1abe28fc918f24f00a3d8110ed568e7fc4" prot="public" virt="non-virtual"><scope>usdrates</scope><name>rate</name></member>
+      <member refid="d2/dbf/structusdrates_1af82e49d477e3678a88111dd76ee25ebd" prot="public" virt="non-virtual"><scope>usdrates</scope><name>updated_at</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

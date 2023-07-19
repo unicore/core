@@ -1,0 +1,815 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structgoals" kind="struct" language="C++" prot="public">
+    <compoundname>goals</compoundname>
+    <includes refid="goals_8hpp" local="no">goals.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgoals_1a8eba3dc0dab674064061651c6eb71779" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>goals::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="7" column="18" bodyfile="include/goals.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a2140de541b014cae48b3ac810f4ebb05" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::parent_id</definition>
+        <argsstring></argsstring>
+        <name>parent_id</name>
+        <qualifiedname>goals::parent_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="8" column="18" bodyfile="include/goals.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a041e781eb67475545e0bdf8f52df94dc" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name goals::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>goals::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="9" column="21" bodyfile="include/goals.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a29e945bda7a528dc7bd80f90395708c8" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name goals::creator</definition>
+        <argsstring></argsstring>
+        <name>creator</name>
+        <qualifiedname>goals::creator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="10" column="21" bodyfile="include/goals.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a7dc6a3016c29afd4c500f176063b5d05" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name goals::benefactor</definition>
+        <argsstring></argsstring>
+        <name>benefactor</name>
+        <qualifiedname>goals::benefactor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="12" column="21" bodyfile="include/goals.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a94172280727369516f5570c3dca488a6" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name goals::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <qualifiedname>goals::host</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="13" column="21" bodyfile="include/goals.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1ab3105f1413e48499857aaf65829566a6" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name goals::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <qualifiedname>goals::status</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="15" column="21" bodyfile="include/goals.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a26f12e3cf4bd9b71bcc23835b0218f13" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name goals::who_can_create_tasks</definition>
+        <argsstring></argsstring>
+        <name>who_can_create_tasks</name>
+        <qualifiedname>goals::who_can_create_tasks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="16" column="21" bodyfile="include/goals.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a328ac2d2c21b5b926d97b315ab274faa" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::benefactors_weight</definition>
+        <argsstring></argsstring>
+        <name>benefactors_weight</name>
+        <qualifiedname>goals::benefactors_weight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="18" column="18" bodyfile="include/goals.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a2e0dc500739ead42a7cfdbfd40145974" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <qualifiedname>goals::duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="20" column="18" bodyfile="include/goals.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a08c4cae575347e4a488c2faa683675e8" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::priority</definition>
+        <argsstring></argsstring>
+        <name>priority</name>
+        <qualifiedname>goals::priority</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="21" column="18" bodyfile="include/goals.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a11180e768d20241137069484b9c9cb65" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string goals::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <qualifiedname>goals::title</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="23" column="21" bodyfile="include/goals.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a8a42593c3da900821bbd980f85c8fb51" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string goals::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <qualifiedname>goals::description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="24" column="21" bodyfile="include/goals.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a0a521876420d2c69fe308854d5c48fa1" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset goals::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <qualifiedname>goals::target</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="26" column="22" bodyfile="include/goals.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1aa60c4415980afa5747628a8487bf57db" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset goals::target1</definition>
+        <argsstring></argsstring>
+        <name>target1</name>
+        <qualifiedname>goals::target1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="28" column="22" bodyfile="include/goals.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a0d8f605a8ef5b750312a4ef25447e8c5" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset goals::target2</definition>
+        <argsstring></argsstring>
+        <name>target2</name>
+        <qualifiedname>goals::target2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="29" column="22" bodyfile="include/goals.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a833e3922b9ed3788cdac61c3762d15ce" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset goals::available</definition>
+        <argsstring></argsstring>
+        <name>available</name>
+        <qualifiedname>goals::available</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="32" column="22" bodyfile="include/goals.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a7be33b74b9775c4a81eccc70c88287af" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset goals::withdrawed</definition>
+        <argsstring></argsstring>
+        <name>withdrawed</name>
+        <qualifiedname>goals::withdrawed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="33" column="22" bodyfile="include/goals.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1af44690442247cc7759c9c5e14b9b8146" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::debt_count</definition>
+        <argsstring></argsstring>
+        <name>debt_count</name>
+        <qualifiedname>goals::debt_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="35" column="18" bodyfile="include/goals.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a50c7f7557639a42246ae4a75c986b881" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset goals::debt_amount</definition>
+        <argsstring></argsstring>
+        <name>debt_amount</name>
+        <qualifiedname>goals::debt_amount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="36" column="22" bodyfile="include/goals.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a3a51dcaf96d6b6e502669ca023cd9cbb" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::positive_votes</definition>
+        <argsstring></argsstring>
+        <name>positive_votes</name>
+        <qualifiedname>goals::positive_votes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="38" column="18" bodyfile="include/goals.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a7ed623f14010e7e4dea16cbcfa6acb4e" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::negative_votes</definition>
+        <argsstring></argsstring>
+        <name>negative_votes</name>
+        <qualifiedname>goals::negative_votes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="39" column="18" bodyfile="include/goals.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a611820a224bb806661c5e45130f82a37" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::filled_votes</definition>
+        <argsstring></argsstring>
+        <name>filled_votes</name>
+        <qualifiedname>goals::filled_votes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="40" column="18" bodyfile="include/goals.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a5557be4e2582c641a4d8971eed91dd81" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::total_tasks</definition>
+        <argsstring></argsstring>
+        <name>total_tasks</name>
+        <qualifiedname>goals::total_tasks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="41" column="18" bodyfile="include/goals.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a95c8e523acd310174e2809342ea4c862" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::total_reports</definition>
+        <argsstring></argsstring>
+        <name>total_reports</name>
+        <qualifiedname>goals::total_reports</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="42" column="18" bodyfile="include/goals.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1ae745f15ffce3b1963c1082a392b74137" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::approved_reports</definition>
+        <argsstring></argsstring>
+        <name>approved_reports</name>
+        <qualifiedname>goals::approved_reports</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="43" column="18" bodyfile="include/goals.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a50495b51590f77692594d4e9cffc8ab9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool goals::is_encrypted</definition>
+        <argsstring></argsstring>
+        <name>is_encrypted</name>
+        <qualifiedname>goals::is_encrypted</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="45" column="14" bodyfile="include/goals.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a3fb010568bcb02eb1f3bee688471fb82" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string goals::public_key</definition>
+        <argsstring></argsstring>
+        <name>public_key</name>
+        <qualifiedname>goals::public_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="46" column="21" bodyfile="include/goals.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a0ecedf561b672247e629495d0d766b9e" prot="public" static="no" mutable="no">
+        <type>eosio::time_point_sec</type>
+        <definition>eosio::time_point_sec goals::created</definition>
+        <argsstring></argsstring>
+        <name>created</name>
+        <qualifiedname>goals::created</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="48" column="31" bodyfile="include/goals.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a5f1d91c6770c6a5e6c8a1d299dabae6b" prot="public" static="no" mutable="no">
+        <type>eosio::time_point_sec</type>
+        <definition>eosio::time_point_sec goals::start_at</definition>
+        <argsstring></argsstring>
+        <name>start_at</name>
+        <qualifiedname>goals::start_at</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="49" column="31" bodyfile="include/goals.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1abec8eece24c1cd0febe0d20448b0e3bd" prot="public" static="no" mutable="no">
+        <type>eosio::time_point_sec</type>
+        <definition>eosio::time_point_sec goals::finish_at</definition>
+        <argsstring></argsstring>
+        <name>finish_at</name>
+        <qualifiedname>goals::finish_at</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="50" column="31" bodyfile="include/goals.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a054538540aa86753bde7bce3094c0a6b" prot="public" static="no" mutable="no">
+        <type>eosio::time_point_sec</type>
+        <definition>eosio::time_point_sec goals::expired_at</definition>
+        <argsstring></argsstring>
+        <name>expired_at</name>
+        <qualifiedname>goals::expired_at</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="51" column="31" bodyfile="include/goals.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1abb90a7b4a33e2e4f1998ed1b67ecd3c2" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; eosio::name &gt;</type>
+        <definition>std::vector&lt;eosio::name&gt; goals::voters</definition>
+        <argsstring></argsstring>
+        <name>voters</name>
+        <qualifiedname>goals::voters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="53" column="21" bodyfile="include/goals.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1af4397668a230464d201d04d2d681a396" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string goals::report</definition>
+        <argsstring></argsstring>
+        <name>report</name>
+        <qualifiedname>goals::report</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="55" column="21" bodyfile="include/goals.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a556bed0c2aa8e8199bba15f7e547bb2b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string goals::meta</definition>
+        <argsstring></argsstring>
+        <name>meta</name>
+        <qualifiedname>goals::meta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="56" column="21" bodyfile="include/goals.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a1a3dce3796566536500e69fc8dbc393c" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::second_circuit_votes</definition>
+        <argsstring></argsstring>
+        <name>second_circuit_votes</name>
+        <qualifiedname>goals::second_circuit_votes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="58" column="18" bodyfile="include/goals.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a9ea5a83ff71e309cec1cd2df3aab5903" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset goals::total_asset_on_distribution</definition>
+        <argsstring></argsstring>
+        <name>total_asset_on_distribution</name>
+        <qualifiedname>goals::total_asset_on_distribution</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="59" column="22" bodyfile="include/goals.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a100edac3074fc04a8f93e5be79f23e99" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset goals::remain_asset_on_distribution</definition>
+        <argsstring></argsstring>
+        <name>remain_asset_on_distribution</name>
+        <qualifiedname>goals::remain_asset_on_distribution</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="60" column="22" bodyfile="include/goals.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1a9de9391f2062747d1d5476c93e38496a" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::total_power_on_distribution</definition>
+        <argsstring></argsstring>
+        <name>total_power_on_distribution</name>
+        <qualifiedname>goals::total_power_on_distribution</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="62" column="18" bodyfile="include/goals.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgoals_1ae355daa5f11373ea935e5a7725c3d442" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::remain_power_on_distribution</definition>
+        <argsstring></argsstring>
+        <name>remain_power_on_distribution</name>
+        <qualifiedname>goals::remain_power_on_distribution</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="63" column="18" bodyfile="include/goals.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgoals_1a0f596c490585385d6c3b97bb7f836e88" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>goals::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="68" column="18" bodyfile="include/goals.hpp" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="structgoals_1a35bab0d724d1a6c708132c66523a4c4b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::byvotes</definition>
+        <argsstring>() const</argsstring>
+        <name>byvotes</name>
+        <qualifiedname>goals::byvotes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="70" column="18" bodyfile="include/goals.hpp" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="structgoals_1a3496a6e0ef4c8cb4e2ad2869f38afd14" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::bynvotes</definition>
+        <argsstring>() const</argsstring>
+        <name>bynvotes</name>
+        <qualifiedname>goals::bynvotes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="74" column="18" bodyfile="include/goals.hpp" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="structgoals_1ad49889434ae2b7d6b90a128de3dc3a9f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::bytype</definition>
+        <argsstring>() const</argsstring>
+        <name>bytype</name>
+        <qualifiedname>goals::bytype</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="86" column="18" bodyfile="include/goals.hpp" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="structgoals_1a7d12f5bc6b9ec3585aedc6f88027cc25" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::bystatus</definition>
+        <argsstring>() const</argsstring>
+        <name>bystatus</name>
+        <qualifiedname>goals::bystatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="87" column="18" bodyfile="include/goals.hpp" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="structgoals_1a9a29a715bd4420ff1ac6fdbb2c87fc1b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::byparentid</definition>
+        <argsstring>() const</argsstring>
+        <name>byparentid</name>
+        <qualifiedname>goals::byparentid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="88" column="18" bodyfile="include/goals.hpp" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="structgoals_1a47f474aedab8dfa47c728067b49e07d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::bycreated</definition>
+        <argsstring>() const</argsstring>
+        <name>bycreated</name>
+        <qualifiedname>goals::bycreated</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="91" column="18" bodyfile="include/goals.hpp" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="structgoals_1a81da6a1176d4c433a7948db72954a0fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::bypriority</definition>
+        <argsstring>() const</argsstring>
+        <name>bypriority</name>
+        <qualifiedname>goals::bypriority</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="92" column="18" bodyfile="include/goals.hpp" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="structgoals_1ae9639cc0f759eb74705f68947f773107" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::byusername</definition>
+        <argsstring>() const</argsstring>
+        <name>byusername</name>
+        <qualifiedname>goals::byusername</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="93" column="18" bodyfile="include/goals.hpp" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="structgoals_1a523680b1ce247d7a24187f0fcac9962d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t goals::byhost</definition>
+        <argsstring>() const</argsstring>
+        <name>byhost</name>
+        <qualifiedname>goals::byhost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="94" column="18" bodyfile="include/goals.hpp" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="structgoals_1ac35b433e7b0d7bed8f2041a093b4d0d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint128_t</type>
+        <definition>uint128_t goals::by_username_and_host</definition>
+        <argsstring>() const</argsstring>
+        <name>by_username_and_host</name>
+        <qualifiedname>goals::by_username_and_host</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="96" column="19" bodyfile="include/goals.hpp" bodystart="96" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура целей хоста Двойной Спирали. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>asset</label>
+      </node>
+      <node id="1">
+        <label>goals</label>
+        <link refid="structgoals"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>description</edgelabel>
+          <edgelabel>meta</edgelabel>
+          <edgelabel>public_key</edgelabel>
+          <edgelabel>report</edgelabel>
+          <edgelabel>title</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>available</edgelabel>
+          <edgelabel>debt_amount</edgelabel>
+          <edgelabel>remain_asset_on_distribution</edgelabel>
+          <edgelabel>target</edgelabel>
+          <edgelabel>target1</edgelabel>
+          <edgelabel>target2</edgelabel>
+          <edgelabel>total_asset_on_distribution</edgelabel>
+          <edgelabel>withdrawed</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/goals.hpp" line="6" column="5" bodyfile="include/goals.hpp" bodystart="6" bodyend="102"/>
+    <listofallmembers>
+      <member refid="structgoals_1ae745f15ffce3b1963c1082a392b74137" prot="public" virt="non-virtual"><scope>goals</scope><name>approved_reports</name></member>
+      <member refid="structgoals_1a833e3922b9ed3788cdac61c3762d15ce" prot="public" virt="non-virtual"><scope>goals</scope><name>available</name></member>
+      <member refid="structgoals_1a7dc6a3016c29afd4c500f176063b5d05" prot="public" virt="non-virtual"><scope>goals</scope><name>benefactor</name></member>
+      <member refid="structgoals_1a328ac2d2c21b5b926d97b315ab274faa" prot="public" virt="non-virtual"><scope>goals</scope><name>benefactors_weight</name></member>
+      <member refid="structgoals_1ac35b433e7b0d7bed8f2041a093b4d0d4" prot="public" virt="non-virtual"><scope>goals</scope><name>by_username_and_host</name></member>
+      <member refid="structgoals_1a47f474aedab8dfa47c728067b49e07d1" prot="public" virt="non-virtual"><scope>goals</scope><name>bycreated</name></member>
+      <member refid="structgoals_1a523680b1ce247d7a24187f0fcac9962d" prot="public" virt="non-virtual"><scope>goals</scope><name>byhost</name></member>
+      <member refid="structgoals_1a3496a6e0ef4c8cb4e2ad2869f38afd14" prot="public" virt="non-virtual"><scope>goals</scope><name>bynvotes</name></member>
+      <member refid="structgoals_1a9a29a715bd4420ff1ac6fdbb2c87fc1b" prot="public" virt="non-virtual"><scope>goals</scope><name>byparentid</name></member>
+      <member refid="structgoals_1a81da6a1176d4c433a7948db72954a0fa" prot="public" virt="non-virtual"><scope>goals</scope><name>bypriority</name></member>
+      <member refid="structgoals_1a7d12f5bc6b9ec3585aedc6f88027cc25" prot="public" virt="non-virtual"><scope>goals</scope><name>bystatus</name></member>
+      <member refid="structgoals_1ad49889434ae2b7d6b90a128de3dc3a9f" prot="public" virt="non-virtual"><scope>goals</scope><name>bytype</name></member>
+      <member refid="structgoals_1ae9639cc0f759eb74705f68947f773107" prot="public" virt="non-virtual"><scope>goals</scope><name>byusername</name></member>
+      <member refid="structgoals_1a35bab0d724d1a6c708132c66523a4c4b" prot="public" virt="non-virtual"><scope>goals</scope><name>byvotes</name></member>
+      <member refid="structgoals_1a0ecedf561b672247e629495d0d766b9e" prot="public" virt="non-virtual"><scope>goals</scope><name>created</name></member>
+      <member refid="structgoals_1a29e945bda7a528dc7bd80f90395708c8" prot="public" virt="non-virtual"><scope>goals</scope><name>creator</name></member>
+      <member refid="structgoals_1a50c7f7557639a42246ae4a75c986b881" prot="public" virt="non-virtual"><scope>goals</scope><name>debt_amount</name></member>
+      <member refid="structgoals_1af44690442247cc7759c9c5e14b9b8146" prot="public" virt="non-virtual"><scope>goals</scope><name>debt_count</name></member>
+      <member refid="structgoals_1a8a42593c3da900821bbd980f85c8fb51" prot="public" virt="non-virtual"><scope>goals</scope><name>description</name></member>
+      <member refid="structgoals_1a2e0dc500739ead42a7cfdbfd40145974" prot="public" virt="non-virtual"><scope>goals</scope><name>duration</name></member>
+      <member refid="structgoals_1a054538540aa86753bde7bce3094c0a6b" prot="public" virt="non-virtual"><scope>goals</scope><name>expired_at</name></member>
+      <member refid="structgoals_1a611820a224bb806661c5e45130f82a37" prot="public" virt="non-virtual"><scope>goals</scope><name>filled_votes</name></member>
+      <member refid="structgoals_1abec8eece24c1cd0febe0d20448b0e3bd" prot="public" virt="non-virtual"><scope>goals</scope><name>finish_at</name></member>
+      <member refid="structgoals_1a94172280727369516f5570c3dca488a6" prot="public" virt="non-virtual"><scope>goals</scope><name>host</name></member>
+      <member refid="structgoals_1a8eba3dc0dab674064061651c6eb71779" prot="public" virt="non-virtual"><scope>goals</scope><name>id</name></member>
+      <member refid="structgoals_1a50495b51590f77692594d4e9cffc8ab9" prot="public" virt="non-virtual"><scope>goals</scope><name>is_encrypted</name></member>
+      <member refid="structgoals_1a556bed0c2aa8e8199bba15f7e547bb2b" prot="public" virt="non-virtual"><scope>goals</scope><name>meta</name></member>
+      <member refid="structgoals_1a7ed623f14010e7e4dea16cbcfa6acb4e" prot="public" virt="non-virtual"><scope>goals</scope><name>negative_votes</name></member>
+      <member refid="structgoals_1a2140de541b014cae48b3ac810f4ebb05" prot="public" virt="non-virtual"><scope>goals</scope><name>parent_id</name></member>
+      <member refid="structgoals_1a3a51dcaf96d6b6e502669ca023cd9cbb" prot="public" virt="non-virtual"><scope>goals</scope><name>positive_votes</name></member>
+      <member refid="structgoals_1a0f596c490585385d6c3b97bb7f836e88" prot="public" virt="non-virtual"><scope>goals</scope><name>primary_key</name></member>
+      <member refid="structgoals_1a08c4cae575347e4a488c2faa683675e8" prot="public" virt="non-virtual"><scope>goals</scope><name>priority</name></member>
+      <member refid="structgoals_1a3fb010568bcb02eb1f3bee688471fb82" prot="public" virt="non-virtual"><scope>goals</scope><name>public_key</name></member>
+      <member refid="structgoals_1a100edac3074fc04a8f93e5be79f23e99" prot="public" virt="non-virtual"><scope>goals</scope><name>remain_asset_on_distribution</name></member>
+      <member refid="structgoals_1ae355daa5f11373ea935e5a7725c3d442" prot="public" virt="non-virtual"><scope>goals</scope><name>remain_power_on_distribution</name></member>
+      <member refid="structgoals_1af4397668a230464d201d04d2d681a396" prot="public" virt="non-virtual"><scope>goals</scope><name>report</name></member>
+      <member refid="structgoals_1a1a3dce3796566536500e69fc8dbc393c" prot="public" virt="non-virtual"><scope>goals</scope><name>second_circuit_votes</name></member>
+      <member refid="structgoals_1a5f1d91c6770c6a5e6c8a1d299dabae6b" prot="public" virt="non-virtual"><scope>goals</scope><name>start_at</name></member>
+      <member refid="structgoals_1ab3105f1413e48499857aaf65829566a6" prot="public" virt="non-virtual"><scope>goals</scope><name>status</name></member>
+      <member refid="structgoals_1a0a521876420d2c69fe308854d5c48fa1" prot="public" virt="non-virtual"><scope>goals</scope><name>target</name></member>
+      <member refid="structgoals_1aa60c4415980afa5747628a8487bf57db" prot="public" virt="non-virtual"><scope>goals</scope><name>target1</name></member>
+      <member refid="structgoals_1a0d8f605a8ef5b750312a4ef25447e8c5" prot="public" virt="non-virtual"><scope>goals</scope><name>target2</name></member>
+      <member refid="structgoals_1a11180e768d20241137069484b9c9cb65" prot="public" virt="non-virtual"><scope>goals</scope><name>title</name></member>
+      <member refid="structgoals_1a9ea5a83ff71e309cec1cd2df3aab5903" prot="public" virt="non-virtual"><scope>goals</scope><name>total_asset_on_distribution</name></member>
+      <member refid="structgoals_1a9de9391f2062747d1d5476c93e38496a" prot="public" virt="non-virtual"><scope>goals</scope><name>total_power_on_distribution</name></member>
+      <member refid="structgoals_1a95c8e523acd310174e2809342ea4c862" prot="public" virt="non-virtual"><scope>goals</scope><name>total_reports</name></member>
+      <member refid="structgoals_1a5557be4e2582c641a4d8971eed91dd81" prot="public" virt="non-virtual"><scope>goals</scope><name>total_tasks</name></member>
+      <member refid="structgoals_1a041e781eb67475545e0bdf8f52df94dc" prot="public" virt="non-virtual"><scope>goals</scope><name>type</name></member>
+      <member refid="structgoals_1abb90a7b4a33e2e4f1998ed1b67ecd3c2" prot="public" virt="non-virtual"><scope>goals</scope><name>voters</name></member>
+      <member refid="structgoals_1a26f12e3cf4bd9b71bcc23835b0218f13" prot="public" virt="non-virtual"><scope>goals</scope><name>who_can_create_tasks</name></member>
+      <member refid="structgoals_1a7be33b74b9775c4a81eccc70c88287af" prot="public" virt="non-virtual"><scope>goals</scope><name>withdrawed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

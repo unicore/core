@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d0/d03/structpower" kind="struct" language="C++" prot="public">
+    <compoundname>power</compoundname>
+    <includes refid="d2/da3/shares_8hpp" local="no">shares.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/d03/structpower_1ab77f28af76fdd70f9b74eeed48d54870" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name power::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <qualifiedname>power::host</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="7" column="13" bodyfile="include/shares.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d03/structpower_1ae3806eb0de73dd7ad6d7aea781238236" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t power::power</definition>
+        <argsstring></argsstring>
+        <name>power</name>
+        <qualifiedname>power::power</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="8" column="14" bodyfile="include/shares.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d03/structpower_1afc77ca7b22e5a62402eada2a2b237b96" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t power::staked</definition>
+        <argsstring></argsstring>
+        <name>staked</name>
+        <qualifiedname>power::staked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="9" column="10" bodyfile="include/shares.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d03/structpower_1a29ae18db4785b901524f580bc470914c" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t power::delegated</definition>
+        <argsstring></argsstring>
+        <name>delegated</name>
+        <qualifiedname>power::delegated</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="10" column="10" bodyfile="include/shares.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d03/structpower_1a01f487ee3cc0de104701ae9bd3a5549f" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t power::with_badges</definition>
+        <argsstring></argsstring>
+        <name>with_badges</name>
+        <qualifiedname>power::with_badges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="11" column="14" bodyfile="include/shares.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d03/structpower_1a861dcae256146b2b675f9eaf7c76556e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t power::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>power::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/shares.hpp" line="12" column="10" bodyfile="include/shares.hpp" bodystart="12" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура силы пользователя у хоста Двойной Спирали. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/shares.hpp" line="6" column="3" bodyfile="include/shares.hpp" bodystart="6" bodyend="15"/>
+    <listofallmembers>
+      <member refid="d0/d03/structpower_1a29ae18db4785b901524f580bc470914c" prot="public" virt="non-virtual"><scope>power</scope><name>delegated</name></member>
+      <member refid="d0/d03/structpower_1ab77f28af76fdd70f9b74eeed48d54870" prot="public" virt="non-virtual"><scope>power</scope><name>host</name></member>
+      <member refid="d0/d03/structpower_1ae3806eb0de73dd7ad6d7aea781238236" prot="public" virt="non-virtual"><scope>power</scope><name>power</name></member>
+      <member refid="d0/d03/structpower_1a861dcae256146b2b675f9eaf7c76556e" prot="public" virt="non-virtual"><scope>power</scope><name>primary_key</name></member>
+      <member refid="d0/d03/structpower_1afc77ca7b22e5a62402eada2a2b237b96" prot="public" virt="non-virtual"><scope>power</scope><name>staked</name></member>
+      <member refid="d0/d03/structpower_1a01f487ee3cc0de104701ae9bd3a5549f" prot="public" virt="non-virtual"><scope>power</scope><name>with_badges</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d5/d07/ref_8hpp" kind="file" language="C++">
+    <compoundname>ref.hpp</compoundname>
+    <includedby refid="da/d47/core_8hpp" local="yes">include/core.hpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/core.hpp</label>
+        <link refid="da/d47/core_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>include/ref.hpp</label>
+        <link refid="d5/d07/ref_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d2/d8a/structpartners2" prot="public">partners2</innerclass>
+    <innerclass refid="d8/d64/structrefbalances" prot="public">refbalances</innerclass>
+    <innerclass refid="d1/db2/structrefbalances2" prot="public">refbalances2</innerclass>
+    <innerclass refid="d7/d33/structusdtwithdraw" prot="public">usdtwithdraw</innerclass>
+    <innerclass refid="d1/d12/structrstat" prot="public">rstat</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d5/d07/ref_8hpp_1ae663c7d2d86c74a0375f60e38e1e3883" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;partners2&quot;_n, <ref refid="d2/d8a/structpartners2" kindref="compound">partners2</ref>, eosio::indexed_by&lt;&quot;byreferer&quot;_n, eosio::const_mem_fun&lt; <ref refid="d2/d8a/structpartners2" kindref="compound">partners2</ref>, uint64_t, &amp;partners2::byreferer &gt; &gt;, eosio::indexed_by&lt;&quot;byid&quot;_n, eosio::const_mem_fun&lt; <ref refid="d2/d8a/structpartners2" kindref="compound">partners2</ref>, uint64_t, &amp;partners2::byid &gt; &gt;, eosio::indexed_by&lt;&quot;bynickhash&quot;_n, eosio::const_mem_fun&lt; <ref refid="d2/d8a/structpartners2" kindref="compound">partners2</ref>, eosio::checksum256, &amp;partners2::bynickhash &gt; &gt;, eosio::indexed_by&lt;&quot;bystatus&quot;_n, eosio::const_mem_fun&lt; <ref refid="d2/d8a/structpartners2" kindref="compound">partners2</ref>, uint64_t, &amp;partners2::bystatus &gt; &gt; &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;partners2&quot;_n, partners2, eosio::indexed_by&lt;&quot;byreferer&quot;_n, eosio::const_mem_fun&lt;partners2, uint64_t, &amp;partners2::byreferer&gt; &gt;, eosio::indexed_by&lt;&quot;byid&quot;_n, eosio::const_mem_fun&lt;partners2, uint64_t, &amp;partners2::byid&gt; &gt;, eosio::indexed_by&lt;&quot;bynickhash&quot;_n, eosio::const_mem_fun&lt;partners2, eosio::checksum256, &amp;partners2::bynickhash&gt; &gt;, eosio::indexed_by&lt;&quot;bystatus&quot;_n, eosio::const_mem_fun&lt;partners2, uint64_t, &amp;partners2::bystatus&gt; &gt; &gt; partners2_index</definition>
+        <argsstring></argsstring>
+        <name>partners2_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="35" column="2" bodyfile="include/ref.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d5/d07/ref_8hpp_1aa512dafb06b235d099cb1560200d7310" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;refbalances&quot;_n, <ref refid="d8/d64/structrefbalances" kindref="compound">refbalances</ref> &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;refbalances&quot;_n, refbalances&gt; refbalances_index</definition>
+        <argsstring></argsstring>
+        <name>refbalances_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="60" column="32" bodyfile="include/ref.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d5/d07/ref_8hpp_1ac537990c59f1e89853ddd5a003402411" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;refbalances2&quot;_n, <ref refid="d1/db2/structrefbalances2" kindref="compound">refbalances2</ref> &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;refbalances2&quot;_n, refbalances2&gt; refbalances2_index</definition>
+        <argsstring></argsstring>
+        <name>refbalances2_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="78" column="32" bodyfile="include/ref.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d5/d07/ref_8hpp_1a6615a935b3fdb51a55452f7806270e58" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;usdtwithdraw&quot;_n, <ref refid="d7/d33/structusdtwithdraw" kindref="compound">usdtwithdraw</ref>, eosio::indexed_by&lt;&quot;byusername&quot;_n, eosio::const_mem_fun&lt; <ref refid="d7/d33/structusdtwithdraw" kindref="compound">usdtwithdraw</ref>, uint64_t, &amp;usdtwithdraw::byusername &gt; &gt;, eosio::indexed_by&lt;&quot;byhost&quot;_n, eosio::const_mem_fun&lt; <ref refid="d7/d33/structusdtwithdraw" kindref="compound">usdtwithdraw</ref>, uint64_t, &amp;usdtwithdraw::byhost &gt; &gt;, eosio::indexed_by&lt;&quot;bystatus&quot;_n, eosio::const_mem_fun&lt; <ref refid="d7/d33/structusdtwithdraw" kindref="compound">usdtwithdraw</ref>, uint64_t, &amp;usdtwithdraw::bystatus &gt; &gt;, eosio::indexed_by&lt;&quot;bycreated&quot;_n, eosio::const_mem_fun&lt; <ref refid="d7/d33/structusdtwithdraw" kindref="compound">usdtwithdraw</ref>, uint64_t, &amp;usdtwithdraw::bycreated &gt; &gt; &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;usdtwithdraw&quot;_n, usdtwithdraw, eosio::indexed_by&lt;&quot;byusername&quot;_n, eosio::const_mem_fun&lt;usdtwithdraw, uint64_t, &amp;usdtwithdraw::byusername&gt; &gt;, eosio::indexed_by&lt;&quot;byhost&quot;_n, eosio::const_mem_fun&lt;usdtwithdraw, uint64_t, &amp;usdtwithdraw::byhost&gt; &gt;, eosio::indexed_by&lt;&quot;bystatus&quot;_n, eosio::const_mem_fun&lt;usdtwithdraw, uint64_t, &amp;usdtwithdraw::bystatus&gt; &gt;, eosio::indexed_by&lt;&quot;bycreated&quot;_n, eosio::const_mem_fun&lt;usdtwithdraw, uint64_t, &amp;usdtwithdraw::bycreated&gt; &gt; &gt; usdtwithdraw_index</definition>
+        <argsstring></argsstring>
+        <name>usdtwithdraw_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="112" column="2" bodyfile="include/ref.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d5/d07/ref_8hpp_1abf4a493e6f288cddd40095db93e31d0f" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;rstat&quot;_n, <ref refid="d1/d12/structrstat" kindref="compound">rstat</ref> &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;rstat&quot;_n, rstat&gt; rstat_index</definition>
+        <argsstring></argsstring>
+        <name>rstat_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ref.hpp" line="129" column="32" bodyfile="include/ref.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="d2/d8a/structpartners2" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table]]<sp/><ref refid="d2/d8a/structpartners2" kindref="compound">partners2</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>username;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>referer;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>nickname;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::checksum256<sp/>nickhash;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>id;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>cashback;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>status;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>meta;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>username.value;}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>byreferer()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>referer.value;}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>byid()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>bystatus()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status.value;}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::checksum256<sp/>bynickhash()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nickhash;<sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(<ref refid="d2/d8a/structpartners2" kindref="compound">partners2</ref>,<sp/>(username)(referer)(nickname)(nickhash)(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)(cashback)(status)(meta))</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index&lt;</highlight><highlight class="stringliteral">&quot;partners2&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="d2/d8a/structpartners2" kindref="compound">partners2</ref>,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;byreferer&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;partners2,<sp/>uint64_t,<sp/>&amp;partners2::byreferer&gt;&gt;,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;byid&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;partners2,<sp/>uint64_t,<sp/>&amp;partners2::byid&gt;&gt;,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;bynickhash&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;partners2,<sp/>eosio::checksum256,<sp/>&amp;partners2::bynickhash&gt;&gt;,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;bystatus&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;partners2,<sp/>uint64_t,<sp/>&amp;partners2::bystatus&gt;&gt;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/>partners2_index;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="d8/d64/structrefbalances" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="de/d91/namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><ref refid="d8/d64/structrefbalances" kindref="compound">refbalances</ref>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>id;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>host;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::time_point_sec<sp/>timepoint_sec;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>refs_amount;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>win_amount;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>amount;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>from;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>cashback;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>level;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>percent;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>segments;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(<ref refid="d8/d64/structrefbalances" kindref="compound">refbalances</ref>,<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)(host)(timepoint_sec)(refs_amount)(win_amount)(amount)(from)(cashback)(level)(percent)(segments))</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index&lt;</highlight><highlight class="stringliteral">&quot;refbalances&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="d8/d64/structrefbalances" kindref="compound">refbalances</ref>&gt;<sp/>refbalances_index;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="d1/db2/structrefbalances2" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="de/d91/namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><ref refid="d1/db2/structrefbalances2" kindref="compound">refbalances2</ref>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>host;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>available;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>withdrawed;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::string<sp/>wallet;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>host.value;}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(<ref refid="d1/db2/structrefbalances2" kindref="compound">refbalances2</ref>,<sp/>(host)(available)(withdrawed)(wallet))</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index&lt;</highlight><highlight class="stringliteral">&quot;refbalances2&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="d1/db2/structrefbalances2" kindref="compound">refbalances2</ref>&gt;<sp/>refbalances2_index;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="d7/d33/structusdtwithdraw" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="de/d91/namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><ref refid="d7/d33/structusdtwithdraw" kindref="compound">usdtwithdraw</ref><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>id;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::time_point_sec<sp/>created_at;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>host;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>username;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>status;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>to_withdraw;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::string<sp/>wallet;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::string<sp/>comment;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>byusername()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>username.value;}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>byhost()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>host.value;}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>bystatus()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status.value;}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>bycreated()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>created_at.sec_since_epoch();}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(<ref refid="d7/d33/structusdtwithdraw" kindref="compound">usdtwithdraw</ref>,<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)(created_at)(host)(username)(status)(to_withdraw)(wallet)(comment))</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index&lt;</highlight><highlight class="stringliteral">&quot;usdtwithdraw&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="d7/d33/structusdtwithdraw" kindref="compound">usdtwithdraw</ref>,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;byusername&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;usdtwithdraw,<sp/>uint64_t,<sp/>&amp;usdtwithdraw::byusername&gt;&gt;,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;byhost&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;usdtwithdraw,<sp/>uint64_t,<sp/>&amp;usdtwithdraw::byhost&gt;&gt;,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;bystatus&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;usdtwithdraw,<sp/>uint64_t,<sp/>&amp;usdtwithdraw::bystatus&gt;&gt;,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;bycreated&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;usdtwithdraw,<sp/>uint64_t,<sp/>&amp;usdtwithdraw::bycreated&gt;&gt;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/>usdtwithdraw_index;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="d1/d12/structrstat" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="de/d91/namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><ref refid="d1/d12/structrstat" kindref="compound">rstat</ref>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>host;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>withdrawed;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sediment;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>host.value;}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(<ref refid="d1/d12/structrstat" kindref="compound">rstat</ref>,<sp/>(host)(withdrawed)(sediment))</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index&lt;</highlight><highlight class="stringliteral">&quot;rstat&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="d1/d12/structrstat" kindref="compound">rstat</ref>&gt;<sp/>rstat_index;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/ref.hpp"/>
+  </compounddef>
+</doxygen>

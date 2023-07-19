@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="goals_8hpp" kind="file" language="C++">
+    <compoundname>goals.hpp</compoundname>
+    <includedby refid="core_8hpp" local="yes">include/core.hpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/core.hpp</label>
+        <link refid="core_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>include/goals.hpp</label>
+        <link refid="goals_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structgoals" prot="public">goals</innerclass>
+    <innerclass refid="structgoalspartic" prot="public">goalspartic</innerclass>
+    <innerclass refid="structbenefactors" prot="public">benefactors</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="goals_8hpp_1a054ded42ee6b170997dbb84cf2a4d225" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;goals&quot;_n, <ref refid="structgoals" kindref="compound">goals</ref>, eosio::indexed_by&lt;&quot;byhost&quot;_n, eosio::const_mem_fun&lt; <ref refid="structgoals" kindref="compound">goals</ref>, uint64_t, &amp;goals::byhost &gt; &gt;, eosio::indexed_by&lt;&quot;bystatus&quot;_n, eosio::const_mem_fun&lt; <ref refid="structgoals" kindref="compound">goals</ref>, uint64_t, &amp;goals::bystatus &gt; &gt;, eosio::indexed_by&lt;&quot;type&quot;_n, eosio::const_mem_fun&lt; <ref refid="structgoals" kindref="compound">goals</ref>, uint64_t, &amp;goals::bytype &gt; &gt;, eosio::indexed_by&lt;&quot;votes&quot;_n, eosio::const_mem_fun&lt; <ref refid="structgoals" kindref="compound">goals</ref>, uint64_t, &amp;goals::byvotes &gt; &gt;, eosio::indexed_by&lt;&quot;nvotes&quot;_n, eosio::const_mem_fun&lt; <ref refid="structgoals" kindref="compound">goals</ref>, uint64_t, &amp;goals::bynvotes &gt; &gt;, eosio::indexed_by&lt;&quot;byparentid&quot;_n, eosio::const_mem_fun&lt; <ref refid="structgoals" kindref="compound">goals</ref>, uint64_t, &amp;goals::byparentid &gt; &gt;, eosio::indexed_by&lt;&quot;creator&quot;_n, eosio::const_mem_fun&lt; <ref refid="structgoals" kindref="compound">goals</ref>, uint64_t, &amp;goals::byusername &gt; &gt;, eosio::indexed_by&lt;&quot;created&quot;_n, eosio::const_mem_fun&lt; <ref refid="structgoals" kindref="compound">goals</ref>, uint64_t, &amp;goals::bycreated &gt; &gt;, eosio::indexed_by&lt;&quot;bypriority&quot;_n, eosio::const_mem_fun&lt; <ref refid="structgoals" kindref="compound">goals</ref>, uint64_t, &amp;goals::bypriority &gt; &gt; &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;goals&quot;_n, goals, eosio::indexed_by&lt;&quot;byhost&quot;_n, eosio::const_mem_fun&lt;goals, uint64_t, &amp;goals::byhost&gt; &gt;, eosio::indexed_by&lt;&quot;bystatus&quot;_n, eosio::const_mem_fun&lt;goals, uint64_t, &amp;goals::bystatus&gt; &gt;, eosio::indexed_by&lt;&quot;type&quot;_n, eosio::const_mem_fun&lt;goals, uint64_t, &amp;goals::bytype&gt; &gt;, eosio::indexed_by&lt;&quot;votes&quot;_n, eosio::const_mem_fun&lt;goals, uint64_t, &amp;goals::byvotes&gt; &gt;, eosio::indexed_by&lt;&quot;nvotes&quot;_n, eosio::const_mem_fun&lt;goals, uint64_t, &amp;goals::bynvotes&gt; &gt;, eosio::indexed_by&lt;&quot;byparentid&quot;_n, eosio::const_mem_fun&lt;goals, uint64_t, &amp;goals::byparentid&gt; &gt;, eosio::indexed_by&lt;&quot;creator&quot;_n, eosio::const_mem_fun&lt;goals, uint64_t, &amp;goals::byusername&gt; &gt;, eosio::indexed_by&lt;&quot;created&quot;_n, eosio::const_mem_fun&lt;goals, uint64_t, &amp;goals::bycreated&gt; &gt;, eosio::indexed_by&lt;&quot;bypriority&quot;_n, eosio::const_mem_fun&lt;goals, uint64_t, &amp;goals::bypriority&gt; &gt; &gt; goals_index</definition>
+        <argsstring></argsstring>
+        <name>goals_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="115" column="2" bodyfile="include/goals.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="goals_8hpp_1a0b4545d8943dbe85beaf7fb230e4dfd7" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;goalspartic&quot;_n, <ref refid="structgoalspartic" kindref="compound">goalspartic</ref>, eosio::indexed_by&lt;&quot;byusergoal&quot;_n, eosio::const_mem_fun&lt; <ref refid="structgoalspartic" kindref="compound">goalspartic</ref>, uint128_t, &amp;goalspartic::byusergoal &gt; &gt;, eosio::indexed_by&lt;&quot;byusername&quot;_n, eosio::const_mem_fun&lt; <ref refid="structgoalspartic" kindref="compound">goalspartic</ref>, uint64_t, &amp;goalspartic::byusername &gt; &gt;, eosio::indexed_by&lt;&quot;byrole&quot;_n, eosio::const_mem_fun&lt; <ref refid="structgoalspartic" kindref="compound">goalspartic</ref>, uint64_t, &amp;goalspartic::byrole &gt; &gt; &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;goalspartic&quot;_n, goalspartic, eosio::indexed_by&lt;&quot;byusergoal&quot;_n, eosio::const_mem_fun&lt;goalspartic, uint128_t, &amp;goalspartic::byusergoal&gt; &gt;, eosio::indexed_by&lt;&quot;byusername&quot;_n, eosio::const_mem_fun&lt;goalspartic, uint64_t, &amp;goalspartic::byusername&gt; &gt;, eosio::indexed_by&lt;&quot;byrole&quot;_n, eosio::const_mem_fun&lt;goalspartic, uint64_t, &amp;goalspartic::byrole&gt; &gt; &gt; goalspartic_index</definition>
+        <argsstring></argsstring>
+        <name>goalspartic_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="162" column="2" bodyfile="include/goals.hpp" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="goals_8hpp_1a149f34e8e6e5d8a499d2acec6d2b7e3e" prot="public" static="no">
+        <type>eosio::multi_index&lt;&quot;benefactors&quot;_n, <ref refid="structbenefactors" kindref="compound">benefactors</ref>, eosio::indexed_by&lt;&quot;bygoalid&quot;_n, eosio::const_mem_fun&lt; <ref refid="structbenefactors" kindref="compound">benefactors</ref>, uint64_t, &amp;benefactors::bygoalid &gt; &gt;, eosio::indexed_by&lt;&quot;bybengoal&quot;_n, eosio::const_mem_fun&lt; <ref refid="structbenefactors" kindref="compound">benefactors</ref>, uint128_t, &amp;benefactors::bybengoal &gt; &gt; &gt;</type>
+        <definition>typedef eosio::multi_index&lt;&quot;benefactors&quot;_n, benefactors, eosio::indexed_by&lt;&quot;bygoalid&quot;_n, eosio::const_mem_fun&lt;benefactors, uint64_t, &amp;benefactors::bygoalid&gt; &gt;, eosio::indexed_by&lt;&quot;bybengoal&quot;_n, eosio::const_mem_fun&lt;benefactors, uint128_t, &amp;benefactors::bybengoal&gt; &gt; &gt; benefactors_index</definition>
+        <argsstring></argsstring>
+        <name>benefactors_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/goals.hpp" line="189" column="2" bodyfile="include/goals.hpp" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="structgoals" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><sp/><ref refid="structgoals" kindref="compound">goals</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>id;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>parent_id;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>type;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>creator;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>benefactor;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>host;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>status;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>who_can_create_tasks;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>benefactors_weight;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>duration;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>priority<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>title;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>description;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>target;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>target1;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>target2;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>available;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>withdrawed;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>debt_count;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>debt_amount;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>positive_votes;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>negative_votes;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>filled_votes;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>total_tasks;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>total_reports;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>approved_reports;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_encrypted<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>public_key;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::time_point_sec<sp/>created;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::time_point_sec<sp/>start_at;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::time_point_sec<sp/>finish_at;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::time_point_sec<sp/>expired_at;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;eosio::name&gt;<sp/>voters;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>report;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>meta;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>second_circuit_votes;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>total_asset_on_distribution;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>remain_asset_on_distribution;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>total_power_on_distribution;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>remain_power_on_distribution;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;<sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>byvotes()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>positive_votes;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>bynvotes()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>negative_votes;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>double<sp/>byvotes()<sp/>const<sp/>{<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>return<sp/>(double)total_votes;<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>uint64_t<sp/>byvotes()<sp/>const<sp/>{<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>return<sp/>-uint64_t(uint128_t(total_votes)<sp/>+<sp/>pow(2,<sp/>63));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>bytype()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>type.value;}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>bystatus()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status.value;}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>byparentid()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>parent_id;}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>bycreated()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>created.sec_since_epoch();<sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>bypriority()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>priority;<sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>byusername()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>creator.value;<sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>byhost()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>host.value;}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint128_t<sp/>by_username_and_host()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>combine_ids(creator.value,<sp/>host.value);<sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(<sp/><ref refid="structgoals" kindref="compound">goals</ref>,<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)(parent_id)(type)(creator)(benefactor)(host)(status)(who_can_create_tasks)(benefactors_weight)(duration)(priority)(title)(description)(target)(target1)(target2)(available)(withdrawed)(debt_count)(debt_amount)(positive_votes)(negative_votes)(filled_votes)(total_tasks)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(total_reports)(approved_reports)(is_encrypted)(public_key)(created)(start_at)(finish_at)(expired_at)(voters)(report)(meta)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(second_circuit_votes)(total_asset_on_distribution)(remain_asset_on_distribution)(total_power_on_distribution)(remain_power_on_distribution))</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index<sp/>&lt;</highlight><highlight class="stringliteral">&quot;goals&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="structgoals" kindref="compound">goals</ref>,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;byhost&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;goals,<sp/>uint64_t,<sp/>&amp;goals::byhost&gt;&gt;,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;bystatus&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;goals,<sp/>uint64_t,<sp/>&amp;goals::bystatus&gt;&gt;,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;type&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;goals,<sp/>uint64_t,<sp/>&amp;goals::bytype&gt;&gt;,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;votes&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;goals,<sp/>uint64_t,<sp/>&amp;goals::byvotes&gt;&gt;,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;nvotes&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;goals,<sp/>uint64_t,<sp/>&amp;goals::bynvotes&gt;&gt;,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;byparentid&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;goals,<sp/>uint64_t,<sp/>&amp;goals::byparentid&gt;&gt;,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;creator&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;goals,<sp/>uint64_t,<sp/>&amp;goals::byusername&gt;&gt;,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;created&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;goals,<sp/>uint64_t,<sp/>&amp;goals::bycreated&gt;&gt;,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;bypriority&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;goals,<sp/>uint64_t,<sp/>&amp;goals::bypriority&gt;&gt;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/>goals_index;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//<sp/>/*!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>\brief<sp/>Структура<sp/>целей<sp/>хоста<sp/>Двойной<sp/>Спирали.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><sp/>goals3<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>id;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>total_on_distribution;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>remain_on_distribution;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;<sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(<sp/>goals3,<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)(total_on_distribution)(remain_on_distribution))</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index<sp/>&lt;</highlight><highlight class="stringliteral">&quot;goals3&quot;</highlight><highlight class="normal">_n,<sp/>goals3&gt;<sp/>goals3_index;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="structgoalspartic" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><sp/><ref refid="structgoalspartic" kindref="compound">goalspartic</ref><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>id;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>goal_id;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>username;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>role;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>completed<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::time_point_sec<sp/>expiration;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;<sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint128_t<sp/>byusergoal()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>combine_ids(username.value,<sp/>goal_id);<sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>byusername()</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>username.value;}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>byrole()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>role.value;}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(<sp/><ref refid="structgoalspartic" kindref="compound">goalspartic</ref>,<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)(goal_id)(username)(role)(completed)(expiration))</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index<sp/>&lt;</highlight><highlight class="stringliteral">&quot;goalspartic&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="structgoalspartic" kindref="compound">goalspartic</ref>,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;byusergoal&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;goalspartic,<sp/>uint128_t,<sp/>&amp;goalspartic::byusergoal&gt;&gt;,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;byusername&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;goalspartic,<sp/>uint64_t,<sp/>&amp;goalspartic::byusername&gt;&gt;,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;byrole&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;goalspartic,<sp/>uint64_t,<sp/>&amp;goalspartic::byrole&gt;&gt;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/>goalspartic_index;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="structbenefactors" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">[[eosio::table,<sp/><ref refid="namespaceeosio" kindref="compound">eosio</ref>::contract(&quot;unicore&quot;)]]<sp/><ref refid="structbenefactors" kindref="compound">benefactors</ref><sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>id;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>goal_id;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::name<sp/>benefactor;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>weight;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>income;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint128_t<sp/>income_in_segments;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>withdrawed;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eosio::asset<sp/>income_limit;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>primary_key()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;}<sp/><sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>bygoalid()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>goal_id;}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint128_t<sp/>bybengoal()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>combine_ids(benefactor.value,<sp/>goal_id);<sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EOSLIB_SERIALIZE(<ref refid="structbenefactors" kindref="compound">benefactors</ref>,<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)(goal_id)(benefactor)(weight)(income)(income_in_segments)(withdrawed)(income_limit))<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>eosio::multi_index<sp/>&lt;</highlight><highlight class="stringliteral">&quot;benefactors&quot;</highlight><highlight class="normal">_n,<sp/><ref refid="structbenefactors" kindref="compound">benefactors</ref>,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;bygoalid&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;benefactors,<sp/>uint64_t,<sp/>&amp;benefactors::bygoalid&gt;&gt;,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>eosio::indexed_by&lt;</highlight><highlight class="stringliteral">&quot;bybengoal&quot;</highlight><highlight class="normal">_n,<sp/>eosio::const_mem_fun&lt;benefactors,<sp/>uint128_t,<sp/>&amp;benefactors::bybengoal&gt;&gt;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>&gt;<sp/>benefactors_index;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/goals.hpp"/>
+  </compounddef>
+</doxygen>

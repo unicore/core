@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="db/d80/structrvotes" kind="struct" language="C++" prot="public">
+    <compoundname>rvotes</compoundname>
+    <includes refid="de/df3/voting_8hpp" local="no">voting.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="db/d80/structrvotes_1a322bf9b1d0e5489d26b6b24a13532722" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t rvotes::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>rvotes::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voting.hpp" line="33" column="10" bodyfile="include/voting.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d80/structrvotes_1a6b175e7d84f8aac98675102b07ae93fe" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t rvotes::task_id</definition>
+        <argsstring></argsstring>
+        <name>task_id</name>
+        <qualifiedname>rvotes::task_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voting.hpp" line="34" column="10" bodyfile="include/voting.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d80/structrvotes_1a854dbd32980b0bf64c82bf499a80c2a1" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t rvotes::report_id</definition>
+        <argsstring></argsstring>
+        <name>report_id</name>
+        <qualifiedname>rvotes::report_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voting.hpp" line="35" column="10" bodyfile="include/voting.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d80/structrvotes_1af867680150bd09153f10fe2831687b8c" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name rvotes::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <qualifiedname>rvotes::host</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voting.hpp" line="36" column="13" bodyfile="include/voting.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d80/structrvotes_1ad8590180d851272c4712165aa9b30883" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t rvotes::power</definition>
+        <argsstring></argsstring>
+        <name>power</name>
+        <qualifiedname>rvotes::power</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voting.hpp" line="37" column="9" bodyfile="include/voting.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d80/structrvotes_1a7b9563ac61083fbdc75bec7c955c6fc5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t rvotes::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>rvotes::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voting.hpp" line="39" column="10" bodyfile="include/voting.hpp" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d80/structrvotes_1a8c0d5e2570290b890412846556c2a494" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t rvotes::byhost</definition>
+        <argsstring>() const</argsstring>
+        <name>byhost</name>
+        <qualifiedname>rvotes::byhost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voting.hpp" line="40" column="10" bodyfile="include/voting.hpp" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d80/structrvotes_1a31893f25a092c6b9a70919f547b51107" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint128_t</type>
+        <definition>uint128_t rvotes::idwithhost</definition>
+        <argsstring>() const</argsstring>
+        <name>idwithhost</name>
+        <qualifiedname>rvotes::idwithhost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voting.hpp" line="42" column="11" bodyfile="include/voting.hpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d80/structrvotes_1ac76fa641e0af8e6d2f4664d7df4d6fc1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t rvotes::bytaskid</definition>
+        <argsstring>() const</argsstring>
+        <name>bytaskid</name>
+        <qualifiedname>rvotes::bytaskid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voting.hpp" line="43" column="10" bodyfile="include/voting.hpp" bodystart="43" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура голосов за отчёты </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/voting.hpp" line="32" column="1" bodyfile="include/voting.hpp" bodystart="32" bodyend="47"/>
+    <listofallmembers>
+      <member refid="db/d80/structrvotes_1a8c0d5e2570290b890412846556c2a494" prot="public" virt="non-virtual"><scope>rvotes</scope><name>byhost</name></member>
+      <member refid="db/d80/structrvotes_1ac76fa641e0af8e6d2f4664d7df4d6fc1" prot="public" virt="non-virtual"><scope>rvotes</scope><name>bytaskid</name></member>
+      <member refid="db/d80/structrvotes_1af867680150bd09153f10fe2831687b8c" prot="public" virt="non-virtual"><scope>rvotes</scope><name>host</name></member>
+      <member refid="db/d80/structrvotes_1a322bf9b1d0e5489d26b6b24a13532722" prot="public" virt="non-virtual"><scope>rvotes</scope><name>id</name></member>
+      <member refid="db/d80/structrvotes_1a31893f25a092c6b9a70919f547b51107" prot="public" virt="non-virtual"><scope>rvotes</scope><name>idwithhost</name></member>
+      <member refid="db/d80/structrvotes_1ad8590180d851272c4712165aa9b30883" prot="public" virt="non-virtual"><scope>rvotes</scope><name>power</name></member>
+      <member refid="db/d80/structrvotes_1a7b9563ac61083fbdc75bec7c955c6fc5" prot="public" virt="non-virtual"><scope>rvotes</scope><name>primary_key</name></member>
+      <member refid="db/d80/structrvotes_1a854dbd32980b0bf64c82bf499a80c2a1" prot="public" virt="non-virtual"><scope>rvotes</scope><name>report_id</name></member>
+      <member refid="db/d80/structrvotes_1a6b175e7d84f8aac98675102b07ae93fe" prot="public" virt="non-virtual"><scope>rvotes</scope><name>task_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

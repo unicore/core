@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="df/d55/structexchange__state" kind="struct" language="C++" prot="public">
+    <compoundname>exchange_state</compoundname>
+    <innerclass refid="d4/dd4/structexchange__state_1_1connector" prot="public">exchange_state::connector</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/d55/structexchange__state_1aed724d12bf57c748a1bd1cae697323e3" prot="public" static="no" mutable="no">
+        <type>asset</type>
+        <definition>asset exchange_state::supply</definition>
+        <argsstring></argsstring>
+        <name>supply</name>
+        <qualifiedname>exchange_state::supply</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="64" column="16" bodyfile="include/exchange_state.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d55/structexchange__state_1ac347aedb89368530adf4740be02822bd" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/dd4/structexchange__state_1_1connector" kindref="compound">connector</ref></type>
+        <definition>connector exchange_state::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <qualifiedname>exchange_state::base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="73" column="17" bodyfile="include/exchange_state.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d55/structexchange__state_1a72f37d7232ee04314ea2096e923c6ad5" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/dd4/structexchange__state_1_1connector" kindref="compound">connector</ref></type>
+        <definition>connector exchange_state::quote</definition>
+        <argsstring></argsstring>
+        <name>quote</name>
+        <qualifiedname>exchange_state::quote</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="74" column="17" bodyfile="include/exchange_state.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d55/structexchange__state_1a7891948a4c98433065f6297a846770b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t exchange_state::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>exchange_state::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="76" column="16" bodyfile="include/exchange_state.hpp" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d55/structexchange__state_1ac3dab3448c9d5bb55770d33d95f688ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>asset</type>
+        <definition>asset exchange_state::convert_to_exchange</definition>
+        <argsstring>(connector &amp;c, asset in)</argsstring>
+        <name>convert_to_exchange</name>
+        <qualifiedname>exchange_state::convert_to_exchange</qualifiedname>
+        <param>
+          <type><ref refid="d4/dd4/structexchange__state_1_1connector" kindref="compound">connector</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>asset</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="78" column="13" bodyfile="src/exchange_state.cpp" bodystart="103" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d55/structexchange__state_1a65e34e352f066f1dae0385b2e6aa333e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>asset</type>
+        <definition>asset exchange_state::convert_from_exchange</definition>
+        <argsstring>(connector &amp;c, asset in)</argsstring>
+        <name>convert_from_exchange</name>
+        <qualifiedname>exchange_state::convert_from_exchange</qualifiedname>
+        <param>
+          <type><ref refid="d4/dd4/structexchange__state_1_1connector" kindref="compound">connector</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>asset</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="79" column="13" bodyfile="src/exchange_state.cpp" bodystart="120" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d55/structexchange__state_1aa791a6a6eac2f7a8c7b5615bc57f177b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>asset</type>
+        <definition>asset exchange_state::convert</definition>
+        <argsstring>(asset from, const symbol &amp;to)</argsstring>
+        <name>convert</name>
+        <qualifiedname>exchange_state::convert</qualifiedname>
+        <param>
+          <type>asset</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const symbol &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="80" column="13" bodyfile="src/exchange_state.cpp" bodystart="145" bodyend="178"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>asset</label>
+      </node>
+      <node id="1">
+        <label>exchange_state</label>
+        <link refid="df/d55/structexchange__state"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>supply</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>base</edgelabel>
+          <edgelabel>quote</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>exchange_state::connector</label>
+        <link refid="d4/dd4/structexchange__state_1_1connector"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>balance</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/exchange_state.hpp" line="63" column="5" bodyfile="include/exchange_state.hpp" bodystart="63" bodyend="83"/>
+    <listofallmembers>
+      <member refid="df/d55/structexchange__state_1ac347aedb89368530adf4740be02822bd" prot="public" virt="non-virtual"><scope>exchange_state</scope><name>base</name></member>
+      <member refid="df/d55/structexchange__state_1aa791a6a6eac2f7a8c7b5615bc57f177b" prot="public" virt="non-virtual"><scope>exchange_state</scope><name>convert</name></member>
+      <member refid="df/d55/structexchange__state_1a65e34e352f066f1dae0385b2e6aa333e" prot="public" virt="non-virtual"><scope>exchange_state</scope><name>convert_from_exchange</name></member>
+      <member refid="df/d55/structexchange__state_1ac3dab3448c9d5bb55770d33d95f688ba" prot="public" virt="non-virtual"><scope>exchange_state</scope><name>convert_to_exchange</name></member>
+      <member refid="df/d55/structexchange__state_1a7891948a4c98433065f6297a846770b4" prot="public" virt="non-virtual"><scope>exchange_state</scope><name>primary_key</name></member>
+      <member refid="df/d55/structexchange__state_1a72f37d7232ee04314ea2096e923c6ad5" prot="public" virt="non-virtual"><scope>exchange_state</scope><name>quote</name></member>
+      <member refid="df/d55/structexchange__state_1aed724d12bf57c748a1bd1cae697323e3" prot="public" virt="non-virtual"><scope>exchange_state</scope><name>supply</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

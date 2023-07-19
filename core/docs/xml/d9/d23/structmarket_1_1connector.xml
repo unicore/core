@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d9/d23/structmarket_1_1connector" kind="struct" language="C++" prot="public">
+    <compoundname>market::connector</compoundname>
+    <includes refid="df/d43/exchange__state_8hpp" local="no">exchange_state.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d9/d23/structmarket_1_1connector_1ad219384bf98be14060d3ffc95368a0d9" prot="public" static="no" mutable="no">
+        <type>eosio::asset</type>
+        <definition>eosio::asset market::connector::balance</definition>
+        <argsstring></argsstring>
+        <name>balance</name>
+        <qualifiedname>market::connector::balance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="32" column="23" bodyfile="include/exchange_state.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d23/structmarket_1_1connector_1a8c91ee071e79b355dbdcaa47e57c94e4" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double market::connector::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <qualifiedname>market::connector::weight</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="33" column="17" bodyfile="include/exchange_state.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d23/structmarket_1_1connector_1a07c202c4ae0204d5b71ddccdf4dc9169" prot="public" static="no" mutable="no">
+        <type>eosio::name</type>
+        <definition>eosio::name market::connector::contract</definition>
+        <argsstring></argsstring>
+        <name>contract</name>
+        <qualifiedname>market::connector::contract</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/exchange_state.hpp" line="34" column="22" bodyfile="include/exchange_state.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура коннектора рынка торгового робота Bancor. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>asset</label>
+      </node>
+      <node id="1">
+        <label>market::connector</label>
+        <link refid="d9/d23/structmarket_1_1connector"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>balance</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/exchange_state.hpp" line="31" column="7" bodyfile="include/exchange_state.hpp" bodystart="31" bodyend="37"/>
+    <listofallmembers>
+      <member refid="d9/d23/structmarket_1_1connector_1ad219384bf98be14060d3ffc95368a0d9" prot="public" virt="non-virtual"><scope>market::connector</scope><name>balance</name></member>
+      <member refid="d9/d23/structmarket_1_1connector_1a07c202c4ae0204d5b71ddccdf4dc9169" prot="public" virt="non-virtual"><scope>market::connector</scope><name>contract</name></member>
+      <member refid="d9/d23/structmarket_1_1connector_1a8c91ee071e79b355dbdcaa47e57c94e4" prot="public" virt="non-virtual"><scope>market::connector</scope><name>weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

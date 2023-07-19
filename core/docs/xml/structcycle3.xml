@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structcycle3" kind="struct" language="C++" prot="public">
+    <compoundname>cycle3</compoundname>
+    <includes refid="core_8hpp" local="no">core.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcycle3_1a3cf542d190bd8cd0fbf14940da5842e4" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t cycle3::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>cycle3::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="772" column="18" bodyfile="include/core.hpp" bodystart="772" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcycle3_1a392a76c646ae64580bbfec515c7d9448" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t cycle3::burned_quants</definition>
+        <argsstring></argsstring>
+        <name>burned_quants</name>
+        <qualifiedname>cycle3::burned_quants</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="773" column="18" bodyfile="include/core.hpp" bodystart="773" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcycle3_1a6a62a7509628dbddfebe013acdf253b8" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t cycle3::black_burned_quants</definition>
+        <argsstring></argsstring>
+        <name>black_burned_quants</name>
+        <qualifiedname>cycle3::black_burned_quants</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="774" column="18" bodyfile="include/core.hpp" bodystart="774" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcycle3_1a06fdfa87b0e7088a600ac84eb55c3171" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t cycle3::white_burned_quants</definition>
+        <argsstring></argsstring>
+        <name>white_burned_quants</name>
+        <qualifiedname>cycle3::white_burned_quants</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="775" column="18" bodyfile="include/core.hpp" bodystart="775" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcycle3_1a004564991f58638fb60be5a624f69496" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t cycle3::primary_key</definition>
+        <argsstring>() const</argsstring>
+        <name>primary_key</name>
+        <qualifiedname>cycle3::primary_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/core.hpp" line="777" column="18" bodyfile="include/core.hpp" bodystart="777" bodyend="777"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Структура для учёта сжигания внутренней конвертационной единицы. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/core.hpp" line="771" column="5" bodyfile="include/core.hpp" bodystart="771" bodyend="780"/>
+    <listofallmembers>
+      <member refid="structcycle3_1a6a62a7509628dbddfebe013acdf253b8" prot="public" virt="non-virtual"><scope>cycle3</scope><name>black_burned_quants</name></member>
+      <member refid="structcycle3_1a392a76c646ae64580bbfec515c7d9448" prot="public" virt="non-virtual"><scope>cycle3</scope><name>burned_quants</name></member>
+      <member refid="structcycle3_1a3cf542d190bd8cd0fbf14940da5842e4" prot="public" virt="non-virtual"><scope>cycle3</scope><name>id</name></member>
+      <member refid="structcycle3_1a004564991f58638fb60be5a624f69496" prot="public" virt="non-virtual"><scope>cycle3</scope><name>primary_key</name></member>
+      <member refid="structcycle3_1a06fdfa87b0e7088a600ac84eb55c3171" prot="public" virt="non-virtual"><scope>cycle3</scope><name>white_burned_quants</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
